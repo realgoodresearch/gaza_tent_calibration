@@ -1,0 +1,4159 @@
+{
+  "filter": {
+    "rule": "Case-insensitive airstrike/air strike or attack on civilian(s) in Incident Tags or Incident Type.",
+    "incidents_after_text_filter": 1535,
+    "incidents_with_valid_date_and_coordinates": 1535,
+    "incidents_matched_to_available_tent_week": 1518,
+    "incidents_inside_corresponding_weekly_prediction_coverage": 1194
+  },
+  "tent_proximity": {
+    "denominator": "Filtered incidents with valid coordinates/date that match an available weekly tent file and fall inside that week's prediction-coverage polygon.",
+    "tent_points_are": "Detected tent point geometries in the corresponding weekly merged GPKG after canonical DBSCAN noise removal and time-valid yellow-line exclusion.",
+    "postprocessing": {
+      "dbscan_eps_m": 40.0,
+      "dbscan_min_samples": 3,
+      "yellow_line_path": "data/spatial_context/yellow-line-zone.json",
+      "weekly_log": [
+        {
+          "week_key": "20231002-20231008",
+          "n_input": 7661,
+          "n_after_dbscan": 2389,
+          "n_removed_yellow": 0,
+          "n_output": 2389
+        },
+        {
+          "week_key": "20231009-20231015",
+          "n_input": 23773,
+          "n_after_dbscan": 9903,
+          "n_removed_yellow": 0,
+          "n_output": 9903
+        },
+        {
+          "week_key": "20231016-20231022",
+          "n_input": 20309,
+          "n_after_dbscan": 9208,
+          "n_removed_yellow": 0,
+          "n_output": 9208
+        },
+        {
+          "week_key": "20231023-20231029",
+          "n_input": 2656,
+          "n_after_dbscan": 665,
+          "n_removed_yellow": 0,
+          "n_output": 665
+        },
+        {
+          "week_key": "20231030-20231105",
+          "n_input": 17545,
+          "n_after_dbscan": 8981,
+          "n_removed_yellow": 0,
+          "n_output": 8981
+        },
+        {
+          "week_key": "20231106-20231112",
+          "n_input": 19838,
+          "n_after_dbscan": 9404,
+          "n_removed_yellow": 0,
+          "n_output": 9404
+        },
+        {
+          "week_key": "20231113-20231119",
+          "n_input": 25038,
+          "n_after_dbscan": 14705,
+          "n_removed_yellow": 0,
+          "n_output": 14705
+        },
+        {
+          "week_key": "20231204-20231210",
+          "n_input": 52417,
+          "n_after_dbscan": 35927,
+          "n_removed_yellow": 0,
+          "n_output": 35927
+        },
+        {
+          "week_key": "20240108-20240114",
+          "n_input": 125634,
+          "n_after_dbscan": 109305,
+          "n_removed_yellow": 0,
+          "n_output": 109305
+        },
+        {
+          "week_key": "20240122-20240128",
+          "n_input": 13143,
+          "n_after_dbscan": 8556,
+          "n_removed_yellow": 0,
+          "n_output": 8556
+        },
+        {
+          "week_key": "20240129-20240204",
+          "n_input": 90579,
+          "n_after_dbscan": 77984,
+          "n_removed_yellow": 0,
+          "n_output": 77984
+        },
+        {
+          "week_key": "20240205-20240211",
+          "n_input": 53290,
+          "n_after_dbscan": 43320,
+          "n_removed_yellow": 0,
+          "n_output": 43320
+        },
+        {
+          "week_key": "20240212-20240218",
+          "n_input": 85705,
+          "n_after_dbscan": 73864,
+          "n_removed_yellow": 0,
+          "n_output": 73864
+        },
+        {
+          "week_key": "20240219-20240225",
+          "n_input": 83226,
+          "n_after_dbscan": 80356,
+          "n_removed_yellow": 0,
+          "n_output": 80356
+        },
+        {
+          "week_key": "20240226-20240303",
+          "n_input": 113956,
+          "n_after_dbscan": 104401,
+          "n_removed_yellow": 0,
+          "n_output": 104401
+        },
+        {
+          "week_key": "20240304-20240310",
+          "n_input": 60203,
+          "n_after_dbscan": 54469,
+          "n_removed_yellow": 0,
+          "n_output": 54469
+        },
+        {
+          "week_key": "20240311-20240317",
+          "n_input": 51495,
+          "n_after_dbscan": 42840,
+          "n_removed_yellow": 0,
+          "n_output": 42840
+        },
+        {
+          "week_key": "20240318-20240324",
+          "n_input": 102360,
+          "n_after_dbscan": 85703,
+          "n_removed_yellow": 0,
+          "n_output": 85703
+        },
+        {
+          "week_key": "20240325-20240331",
+          "n_input": 97295,
+          "n_after_dbscan": 83798,
+          "n_removed_yellow": 0,
+          "n_output": 83798
+        },
+        {
+          "week_key": "20240401-20240407",
+          "n_input": 131847,
+          "n_after_dbscan": 121839,
+          "n_removed_yellow": 0,
+          "n_output": 121839
+        },
+        {
+          "week_key": "20240610-20240616",
+          "n_input": 293435,
+          "n_after_dbscan": 277161,
+          "n_removed_yellow": 0,
+          "n_output": 277161
+        },
+        {
+          "week_key": "20240617-20240623",
+          "n_input": 215543,
+          "n_after_dbscan": 207989,
+          "n_removed_yellow": 0,
+          "n_output": 207989
+        },
+        {
+          "week_key": "20240624-20240630",
+          "n_input": 216204,
+          "n_after_dbscan": 203126,
+          "n_removed_yellow": 0,
+          "n_output": 203126
+        },
+        {
+          "week_key": "20240715-20240721",
+          "n_input": 166842,
+          "n_after_dbscan": 159488,
+          "n_removed_yellow": 0,
+          "n_output": 159488
+        },
+        {
+          "week_key": "20240729-20240804",
+          "n_input": 84284,
+          "n_after_dbscan": 78148,
+          "n_removed_yellow": 0,
+          "n_output": 78148
+        },
+        {
+          "week_key": "20240805-20240811",
+          "n_input": 188506,
+          "n_after_dbscan": 178398,
+          "n_removed_yellow": 0,
+          "n_output": 178398
+        },
+        {
+          "week_key": "20240819-20240825",
+          "n_input": 108421,
+          "n_after_dbscan": 105161,
+          "n_removed_yellow": 0,
+          "n_output": 105161
+        },
+        {
+          "week_key": "20240826-20240901",
+          "n_input": 189602,
+          "n_after_dbscan": 176703,
+          "n_removed_yellow": 0,
+          "n_output": 176703
+        },
+        {
+          "week_key": "20240902-20240908",
+          "n_input": 110423,
+          "n_after_dbscan": 104773,
+          "n_removed_yellow": 0,
+          "n_output": 104773
+        },
+        {
+          "week_key": "20240909-20240915",
+          "n_input": 159652,
+          "n_after_dbscan": 153943,
+          "n_removed_yellow": 0,
+          "n_output": 153943
+        },
+        {
+          "week_key": "20240923-20240929",
+          "n_input": 178838,
+          "n_after_dbscan": 169931,
+          "n_removed_yellow": 0,
+          "n_output": 169931
+        },
+        {
+          "week_key": "20241021-20241027",
+          "n_input": 350141,
+          "n_after_dbscan": 336096,
+          "n_removed_yellow": 0,
+          "n_output": 336096
+        },
+        {
+          "week_key": "20241028-20241103",
+          "n_input": 207565,
+          "n_after_dbscan": 200324,
+          "n_removed_yellow": 0,
+          "n_output": 200324
+        },
+        {
+          "week_key": "20241209-20241215",
+          "n_input": 203650,
+          "n_after_dbscan": 190420,
+          "n_removed_yellow": 0,
+          "n_output": 190420
+        },
+        {
+          "week_key": "20250113-20250119",
+          "n_input": 239087,
+          "n_after_dbscan": 228738,
+          "n_removed_yellow": 0,
+          "n_output": 228738
+        },
+        {
+          "week_key": "20250120-20250126",
+          "n_input": 247081,
+          "n_after_dbscan": 234449,
+          "n_removed_yellow": 0,
+          "n_output": 234449
+        },
+        {
+          "week_key": "20250127-20250202",
+          "n_input": 207453,
+          "n_after_dbscan": 194503,
+          "n_removed_yellow": 0,
+          "n_output": 194503
+        },
+        {
+          "week_key": "20250203-20250209",
+          "n_input": 76650,
+          "n_after_dbscan": 69260,
+          "n_removed_yellow": 0,
+          "n_output": 69260
+        },
+        {
+          "week_key": "20250210-20250216",
+          "n_input": 184288,
+          "n_after_dbscan": 172701,
+          "n_removed_yellow": 0,
+          "n_output": 172701
+        },
+        {
+          "week_key": "20250224-20250302",
+          "n_input": 217171,
+          "n_after_dbscan": 206445,
+          "n_removed_yellow": 0,
+          "n_output": 206445
+        },
+        {
+          "week_key": "20250310-20250316",
+          "n_input": 192631,
+          "n_after_dbscan": 181973,
+          "n_removed_yellow": 0,
+          "n_output": 181973
+        },
+        {
+          "week_key": "20250317-20250323",
+          "n_input": 248046,
+          "n_after_dbscan": 237001,
+          "n_removed_yellow": 0,
+          "n_output": 237001
+        },
+        {
+          "week_key": "20250324-20250330",
+          "n_input": 280480,
+          "n_after_dbscan": 267081,
+          "n_removed_yellow": 0,
+          "n_output": 267081
+        },
+        {
+          "week_key": "20250331-20250406",
+          "n_input": 387916,
+          "n_after_dbscan": 374967,
+          "n_removed_yellow": 0,
+          "n_output": 374967
+        },
+        {
+          "week_key": "20250414-20250420",
+          "n_input": 249634,
+          "n_after_dbscan": 237926,
+          "n_removed_yellow": 0,
+          "n_output": 237926
+        },
+        {
+          "week_key": "20250421-20250427",
+          "n_input": 271265,
+          "n_after_dbscan": 256161,
+          "n_removed_yellow": 0,
+          "n_output": 256161
+        },
+        {
+          "week_key": "20250428-20250504",
+          "n_input": 194780,
+          "n_after_dbscan": 183093,
+          "n_removed_yellow": 0,
+          "n_output": 183093
+        },
+        {
+          "week_key": "20250505-20250511",
+          "n_input": 261057,
+          "n_after_dbscan": 250315,
+          "n_removed_yellow": 0,
+          "n_output": 250315
+        },
+        {
+          "week_key": "20250512-20250518",
+          "n_input": 251468,
+          "n_after_dbscan": 239318,
+          "n_removed_yellow": 0,
+          "n_output": 239318
+        },
+        {
+          "week_key": "20250519-20250525",
+          "n_input": 124520,
+          "n_after_dbscan": 115302,
+          "n_removed_yellow": 0,
+          "n_output": 115302
+        },
+        {
+          "week_key": "20250526-20250601",
+          "n_input": 140459,
+          "n_after_dbscan": 129518,
+          "n_removed_yellow": 0,
+          "n_output": 129518
+        },
+        {
+          "week_key": "20250602-20250608",
+          "n_input": 111477,
+          "n_after_dbscan": 104653,
+          "n_removed_yellow": 0,
+          "n_output": 104653
+        },
+        {
+          "week_key": "20250609-20250615",
+          "n_input": 260096,
+          "n_after_dbscan": 245207,
+          "n_removed_yellow": 0,
+          "n_output": 245207
+        },
+        {
+          "week_key": "20250616-20250622",
+          "n_input": 220616,
+          "n_after_dbscan": 204579,
+          "n_removed_yellow": 0,
+          "n_output": 204579
+        },
+        {
+          "week_key": "20250623-20250629",
+          "n_input": 105883,
+          "n_after_dbscan": 99458,
+          "n_removed_yellow": 0,
+          "n_output": 99458
+        },
+        {
+          "week_key": "20250630-20250706",
+          "n_input": 250834,
+          "n_after_dbscan": 237429,
+          "n_removed_yellow": 0,
+          "n_output": 237429
+        },
+        {
+          "week_key": "20250707-20250713",
+          "n_input": 321752,
+          "n_after_dbscan": 308309,
+          "n_removed_yellow": 0,
+          "n_output": 308309
+        },
+        {
+          "week_key": "20250714-20250720",
+          "n_input": 331111,
+          "n_after_dbscan": 315679,
+          "n_removed_yellow": 0,
+          "n_output": 315679
+        },
+        {
+          "week_key": "20250721-20250727",
+          "n_input": 134262,
+          "n_after_dbscan": 122017,
+          "n_removed_yellow": 0,
+          "n_output": 122017
+        },
+        {
+          "week_key": "20250728-20250803",
+          "n_input": 100309,
+          "n_after_dbscan": 90931,
+          "n_removed_yellow": 0,
+          "n_output": 90931
+        },
+        {
+          "week_key": "20250804-20250810",
+          "n_input": 190121,
+          "n_after_dbscan": 178988,
+          "n_removed_yellow": 0,
+          "n_output": 178988
+        },
+        {
+          "week_key": "20250811-20250817",
+          "n_input": 95385,
+          "n_after_dbscan": 89796,
+          "n_removed_yellow": 0,
+          "n_output": 89796
+        },
+        {
+          "week_key": "20250818-20250824",
+          "n_input": 305329,
+          "n_after_dbscan": 292866,
+          "n_removed_yellow": 0,
+          "n_output": 292866
+        },
+        {
+          "week_key": "20250825-20250831",
+          "n_input": 318789,
+          "n_after_dbscan": 304883,
+          "n_removed_yellow": 0,
+          "n_output": 304883
+        },
+        {
+          "week_key": "20250901-20250907",
+          "n_input": 238366,
+          "n_after_dbscan": 226540,
+          "n_removed_yellow": 0,
+          "n_output": 226540
+        },
+        {
+          "week_key": "20250908-20250914",
+          "n_input": 193080,
+          "n_after_dbscan": 187815,
+          "n_removed_yellow": 0,
+          "n_output": 187815
+        },
+        {
+          "week_key": "20250915-20250921",
+          "n_input": 322848,
+          "n_after_dbscan": 310222,
+          "n_removed_yellow": 0,
+          "n_output": 310222
+        },
+        {
+          "week_key": "20250922-20250928",
+          "n_input": 306492,
+          "n_after_dbscan": 296887,
+          "n_removed_yellow": 0,
+          "n_output": 296887
+        },
+        {
+          "week_key": "20250929-20251005",
+          "n_input": 399864,
+          "n_after_dbscan": 389794,
+          "n_removed_yellow": 0,
+          "n_output": 389794
+        },
+        {
+          "week_key": "20251006-20251012",
+          "n_input": 181090,
+          "n_after_dbscan": 169987,
+          "n_removed_yellow": 0,
+          "n_output": 169987
+        },
+        {
+          "week_key": "20251013-20251019",
+          "n_input": 387069,
+          "n_after_dbscan": 371084,
+          "n_removed_yellow": 31414,
+          "n_output": 339670
+        },
+        {
+          "week_key": "20251020-20251026",
+          "n_input": 364649,
+          "n_after_dbscan": 355926,
+          "n_removed_yellow": 15047,
+          "n_output": 340879
+        },
+        {
+          "week_key": "20251027-20251102",
+          "n_input": 188139,
+          "n_after_dbscan": 182981,
+          "n_removed_yellow": 6739,
+          "n_output": 176242
+        }
+      ]
+    },
+    "buffers": {
+      "within_10m": {
+        "incidents_with_at_least_one_tent": 53,
+        "percent_incidents_with_at_least_one_tent": 4.438860971524288,
+        "tent_count_per_incident": {
+          "mean": 0.11976549413735343,
+          "median": 0.0,
+          "iqr": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "within_20m": {
+        "incidents_with_at_least_one_tent": 108,
+        "percent_incidents_with_at_least_one_tent": 9.045226130653267,
+        "tent_count_per_incident": {
+          "mean": 0.440536013400335,
+          "median": 0.0,
+          "iqr": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "within_50m": {
+        "incidents_with_at_least_one_tent": 272,
+        "percent_incidents_with_at_least_one_tent": 22.780569514237854,
+        "tent_count_per_incident": {
+          "mean": 3.022613065326633,
+          "median": 0.0,
+          "iqr": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "within_100m": {
+        "incidents_with_at_least_one_tent": 458,
+        "percent_incidents_with_at_least_one_tent": 38.358458961474035,
+        "tent_count_per_incident": {
+          "mean": 13.124790619765495,
+          "median": 0.0,
+          "iqr": [
+            0.0,
+            4.0
+          ]
+        }
+      },
+      "within_200m": {
+        "incidents_with_at_least_one_tent": 740,
+        "percent_incidents_with_at_least_one_tent": 61.97654941373534,
+        "tent_count_per_incident": {
+          "mean": 53.26298157453936,
+          "median": 4.0,
+          "iqr": [
+            0.0,
+            21.0
+          ]
+        }
+      }
+    }
+  },
+  "humanitarian_zone_and_high_density": {
+    "incidents_inside_humanitarian_zone_when_officially_active": 9,
+    "percent_of_matched_incidents_inside_active_humanitarian_zone": 0.592885375494071,
+    "incidents_inside_active_zone_and_block_density_over_1000_per_km2": 3,
+    "percent_of_all_matched_incidents_inside_active_zone_and_density_over_1000_per_km2": 0.1976284584980237,
+    "percent_of_active_zone_incidents_in_blocks_over_1000_tents_per_km2": 33.33333333333333
+  },
+  "block_density_quintile_incident_rates": {
+    "method": "Block-weeks with zero raw detected tents form a separate no_tents category. Corrected tent density among tent-present block-weeks is divided into five global quintiles. Rates use summed covered block km2-weeks as exposure.",
+    "incident_and_exposure_period": [
+      "2023-10-07",
+      "2025-10-29"
+    ],
+    "incidents_assigned_to_a_block_week_with_density": 1220,
+    "quintiles": [
+      {
+        "category": "no_tents",
+        "density_range_tents_per_km2": [
+          0.753935398265975,
+          112.5451931508917
+        ],
+        "incidents": 237,
+        "covered_block_area_km2_weeks": 2291.2799999999997,
+        "incident_rate_per_covered_km2_week": 0.10343563423064839
+      },
+      {
+        "category": "Q1",
+        "density_range_tents_per_km2": [
+          1.1291900542321498,
+          13.317953607049425
+        ],
+        "incidents": 371,
+        "covered_block_area_km2_weeks": 6099.17,
+        "incident_rate_per_covered_km2_week": 0.060827948720891534
+      },
+      {
+        "category": "Q2",
+        "density_range_tents_per_km2": [
+          13.320506085312129,
+          32.57664191325244
+        ],
+        "incidents": 181,
+        "covered_block_area_km2_weeks": 4819.56,
+        "incident_rate_per_covered_km2_week": 0.0375552955041539
+      },
+      {
+        "category": "Q3",
+        "density_range_tents_per_km2": [
+          32.57836264551027,
+          82.45300165203422
+        ],
+        "incidents": 129,
+        "covered_block_area_km2_weeks": 4362.69,
+        "incident_rate_per_covered_km2_week": 0.029568912757954383
+      },
+      {
+        "category": "Q4",
+        "density_range_tents_per_km2": [
+          82.46134450897031,
+          319.0075978474997
+        ],
+        "incidents": 116,
+        "covered_block_area_km2_weeks": 3826.04,
+        "incident_rate_per_covered_km2_week": 0.030318553909525255
+      },
+      {
+        "category": "Q5",
+        "density_range_tents_per_km2": [
+          319.09924601266175,
+          10638.572792715528
+        ],
+        "incidents": 186,
+        "covered_block_area_km2_weeks": 4909.34,
+        "incident_rate_per_covered_km2_week": 0.03788696647614547
+      }
+    ],
+    "Q5_vs_no_tents": {
+      "rate_ratio": 0.3662854369091248,
+      "rate_ratio_95_percent_confidence_interval": [
+        0.3022986378254583,
+        0.4438161622454047
+      ]
+    },
+    "Q5_vs_Q1": {
+      "rate_ratio": 0.6228545803835908,
+      "rate_ratio_95_percent_confidence_interval": [
+        0.5222888688735889,
+        0.7427840251344033
+      ]
+    }
+  },
+  "evacuation_direction_adjacent_block_incidents": {
+    "method": "Incident counts are pooled across evacuation-order-direction events and classified by whether their adjacent block lies in the indicated half-plane. An incident can contribute to more than one association when orders/directions overlap.",
+    "t_evacuation_order_week": {
+      "counting_unit": "incident-order-direction association in an adjacent block",
+      "total_incidents_in_adjacent_blocks": 25,
+      "indicated_direction": {
+        "incidents": 17,
+        "percent_of_adjacent_block_incidents": 68.0
+      },
+      "not_indicated_direction": {
+        "incidents": 8,
+        "percent_of_adjacent_block_incidents": 32.0
+      }
+    },
+    "t_plus_1_following_week": {
+      "counting_unit": "incident-order-direction association in an adjacent block",
+      "total_incidents_in_adjacent_blocks": 13,
+      "indicated_direction": {
+        "incidents": 10,
+        "percent_of_adjacent_block_incidents": 76.92307692307693
+      },
+      "not_indicated_direction": {
+        "incidents": 3,
+        "percent_of_adjacent_block_incidents": 23.076923076923077
+      }
+    },
+    "t_and_t_plus_1_combined": {
+      "counting_unit": "incident-order-direction association in an adjacent block",
+      "total_incidents_in_adjacent_blocks": 38,
+      "indicated_direction": {
+        "incidents": 27,
+        "percent_of_adjacent_block_incidents": 71.05263157894737
+      },
+      "not_indicated_direction": {
+        "incidents": 11,
+        "percent_of_adjacent_block_incidents": 28.947368421052634
+      }
+    },
+    "observations": [
+      {
+        "order_date": "2023-12-03",
+        "direction": "south",
+        "week_t": "20231127-20231203",
+        "week_t_plus_1": "20231204-20231210",
+        "affected_blocks_in_order": 29,
+        "adjacent_blocks": 18,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2023-12-03",
+        "direction": "west",
+        "week_t": "20231127-20231203",
+        "week_t_plus_1": "20231204-20231210",
+        "affected_blocks_in_order": 29,
+        "adjacent_blocks": 18,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2023-12-04",
+        "direction": "south",
+        "week_t": "20231204-20231210",
+        "week_t_plus_1": "20231211-20231217",
+        "affected_blocks_in_order": 29,
+        "adjacent_blocks": 18,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2023-12-09",
+        "direction": "south",
+        "week_t": "20231204-20231210",
+        "week_t_plus_1": "20231211-20231217",
+        "affected_blocks_in_order": 6,
+        "adjacent_blocks": 10,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2023-12-09",
+        "direction": "west",
+        "week_t": "20231204-20231210",
+        "week_t_plus_1": "20231211-20231217",
+        "affected_blocks_in_order": 6,
+        "adjacent_blocks": 10,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2023-12-13",
+        "direction": "south",
+        "week_t": "20231211-20231217",
+        "week_t_plus_1": "20231218-20231224",
+        "affected_blocks_in_order": 12,
+        "adjacent_blocks": 11,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2023-12-14",
+        "direction": "south",
+        "week_t": "20231211-20231217",
+        "week_t_plus_1": "20231218-20231224",
+        "affected_blocks_in_order": 12,
+        "adjacent_blocks": 11,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2023-12-22",
+        "direction": "south",
+        "week_t": "20231218-20231224",
+        "week_t_plus_1": "20231225-20231231",
+        "affected_blocks_in_order": 19,
+        "adjacent_blocks": 19,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2023-12-25",
+        "direction": "south",
+        "week_t": "20231225-20231231",
+        "week_t_plus_1": "20240101-20240107",
+        "affected_blocks_in_order": 19,
+        "adjacent_blocks": 19,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2023-12-27",
+        "direction": "south",
+        "week_t": "20231225-20231231",
+        "week_t_plus_1": "20240101-20240107",
+        "affected_blocks_in_order": 19,
+        "adjacent_blocks": 19,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2023-12-28",
+        "direction": "south",
+        "week_t": "20231225-20231231",
+        "week_t_plus_1": "20240101-20240107",
+        "affected_blocks_in_order": 19,
+        "adjacent_blocks": 19,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2023-12-31",
+        "direction": "south",
+        "week_t": "20231225-20231231",
+        "week_t_plus_1": "20240101-20240107",
+        "affected_blocks_in_order": 19,
+        "adjacent_blocks": 19,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-01-23",
+        "direction": "west",
+        "week_t": "20240122-20240128",
+        "week_t_plus_1": "20240129-20240204",
+        "affected_blocks_in_order": 6,
+        "adjacent_blocks": 7,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 1,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 1,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-01-26",
+        "direction": "west",
+        "week_t": "20240122-20240128",
+        "week_t_plus_1": "20240129-20240204",
+        "affected_blocks_in_order": 6,
+        "adjacent_blocks": 7,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 1,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 1,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-01-28",
+        "direction": "west",
+        "week_t": "20240122-20240128",
+        "week_t_plus_1": "20240129-20240204",
+        "affected_blocks_in_order": 6,
+        "adjacent_blocks": 7,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 1,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 1,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-01-29",
+        "direction": "south",
+        "week_t": "20240129-20240204",
+        "week_t_plus_1": "20240205-20240211",
+        "affected_blocks_in_order": 42,
+        "adjacent_blocks": 10,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-01-30",
+        "direction": "south",
+        "week_t": "20240129-20240204",
+        "week_t_plus_1": "20240205-20240211",
+        "affected_blocks_in_order": 42,
+        "adjacent_blocks": 10,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-01-31",
+        "direction": "south",
+        "week_t": "20240129-20240204",
+        "week_t_plus_1": "20240205-20240211",
+        "affected_blocks_in_order": 42,
+        "adjacent_blocks": 10,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-02-04",
+        "direction": "south",
+        "week_t": "20240129-20240204",
+        "week_t_plus_1": "20240205-20240211",
+        "affected_blocks_in_order": 48,
+        "adjacent_blocks": 17,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-02-04",
+        "direction": "west",
+        "week_t": "20240129-20240204",
+        "week_t_plus_1": "20240205-20240211",
+        "affected_blocks_in_order": 48,
+        "adjacent_blocks": 17,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-02-05",
+        "direction": "south",
+        "week_t": "20240205-20240211",
+        "week_t_plus_1": "20240212-20240218",
+        "affected_blocks_in_order": 48,
+        "adjacent_blocks": 17,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-02-05",
+        "direction": "west",
+        "week_t": "20240205-20240211",
+        "week_t_plus_1": "20240212-20240218",
+        "affected_blocks_in_order": 48,
+        "adjacent_blocks": 17,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-03-18",
+        "direction": "south",
+        "week_t": "20240318-20240324",
+        "week_t_plus_1": "20240325-20240331",
+        "affected_blocks_in_order": 10,
+        "adjacent_blocks": 10,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-05-06",
+        "direction": "west",
+        "week_t": "20240506-20240512",
+        "week_t_plus_1": "20240513-20240519",
+        "affected_blocks_in_order": 9,
+        "adjacent_blocks": 8,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-05-11",
+        "direction": "south",
+        "week_t": "20240506-20240512",
+        "week_t_plus_1": "20240513-20240519",
+        "affected_blocks_in_order": 63,
+        "adjacent_blocks": 40,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 29,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 29,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-05-11",
+        "direction": "west",
+        "week_t": "20240506-20240512",
+        "week_t_plus_1": "20240513-20240519",
+        "affected_blocks_in_order": 63,
+        "adjacent_blocks": 40,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 29,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 29,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-05-14",
+        "direction": "south",
+        "week_t": "20240513-20240519",
+        "week_t_plus_1": "20240520-20240526",
+        "affected_blocks_in_order": 10,
+        "adjacent_blocks": 12,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-05-15",
+        "direction": "south",
+        "week_t": "20240513-20240519",
+        "week_t_plus_1": "20240520-20240526",
+        "affected_blocks_in_order": 10,
+        "adjacent_blocks": 9,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-05-18",
+        "direction": "south",
+        "week_t": "20240513-20240519",
+        "week_t_plus_1": "20240520-20240526",
+        "affected_blocks_in_order": 12,
+        "adjacent_blocks": 9,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 1,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 1,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-06-27",
+        "direction": "south",
+        "week_t": "20240624-20240630",
+        "week_t_plus_1": "20240701-20240707",
+        "affected_blocks_in_order": 28,
+        "adjacent_blocks": 16,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-07-01",
+        "direction": "west",
+        "week_t": "20240701-20240707",
+        "week_t_plus_1": "20240708-20240714",
+        "affected_blocks_in_order": 72,
+        "adjacent_blocks": 24,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 22,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 2,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 22,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 2,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-07-07",
+        "direction": "west",
+        "week_t": "20240701-20240707",
+        "week_t_plus_1": "20240708-20240714",
+        "affected_blocks_in_order": 5,
+        "adjacent_blocks": 8,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-07-08",
+        "direction": "south",
+        "week_t": "20240708-20240714",
+        "week_t_plus_1": "20240715-20240721",
+        "affected_blocks_in_order": 15,
+        "adjacent_blocks": 16,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-07-22",
+        "direction": "west",
+        "week_t": "20240722-20240728",
+        "week_t_plus_1": "20240729-20240804",
+        "affected_blocks_in_order": 87,
+        "adjacent_blocks": 18,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 16,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 2,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 16,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 2,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-07-27",
+        "direction": "west",
+        "week_t": "20240722-20240728",
+        "week_t_plus_1": "20240729-20240804",
+        "affected_blocks_in_order": 27,
+        "adjacent_blocks": 21,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 12,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 12,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-04",
+        "direction": "west",
+        "week_t": "20240729-20240804",
+        "week_t_plus_1": "20240805-20240811",
+        "affected_blocks_in_order": 23,
+        "adjacent_blocks": 16,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-05",
+        "direction": "west",
+        "week_t": "20240805-20240811",
+        "week_t_plus_1": "20240812-20240818",
+        "affected_blocks_in_order": 30,
+        "adjacent_blocks": 20,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 12,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 12,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-06",
+        "direction": "south",
+        "week_t": "20240805-20240811",
+        "week_t_plus_1": "20240812-20240818",
+        "affected_blocks_in_order": 13,
+        "adjacent_blocks": 16,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-07",
+        "direction": "south",
+        "week_t": "20240805-20240811",
+        "week_t_plus_1": "20240812-20240818",
+        "affected_blocks_in_order": 13,
+        "adjacent_blocks": 16,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-08",
+        "direction": "west",
+        "week_t": "20240805-20240811",
+        "week_t_plus_1": "20240812-20240818",
+        "affected_blocks_in_order": 41,
+        "adjacent_blocks": 26,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 16,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 16,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-10",
+        "direction": "west",
+        "week_t": "20240805-20240811",
+        "week_t_plus_1": "20240812-20240818",
+        "affected_blocks_in_order": 5,
+        "adjacent_blocks": 14,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-11",
+        "direction": "west",
+        "week_t": "20240805-20240811",
+        "week_t_plus_1": "20240812-20240818",
+        "affected_blocks_in_order": 1,
+        "adjacent_blocks": 4,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 2,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 2,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 2,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 2,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-13",
+        "direction": "west",
+        "week_t": "20240812-20240818",
+        "week_t_plus_1": "20240819-20240825",
+        "affected_blocks_in_order": 4,
+        "adjacent_blocks": 14,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-15",
+        "direction": "west",
+        "week_t": "20240812-20240818",
+        "week_t_plus_1": "20240819-20240825",
+        "affected_blocks_in_order": 4,
+        "adjacent_blocks": 10,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-16",
+        "direction": "south",
+        "week_t": "20240812-20240818",
+        "week_t_plus_1": "20240819-20240825",
+        "affected_blocks_in_order": 16,
+        "adjacent_blocks": 23,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 16,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 16,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-16",
+        "direction": "west",
+        "week_t": "20240812-20240818",
+        "week_t_plus_1": "20240819-20240825",
+        "affected_blocks_in_order": 16,
+        "adjacent_blocks": 23,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 16,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 16,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-17",
+        "direction": "west",
+        "week_t": "20240812-20240818",
+        "week_t_plus_1": "20240819-20240825",
+        "affected_blocks_in_order": 9,
+        "adjacent_blocks": 9,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 2,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 2,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-22",
+        "direction": "west",
+        "week_t": "20240819-20240825",
+        "week_t_plus_1": "20240826-20240901",
+        "affected_blocks_in_order": 19,
+        "adjacent_blocks": 20,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-23",
+        "direction": "south",
+        "week_t": "20240819-20240825",
+        "week_t_plus_1": "20240826-20240901",
+        "affected_blocks_in_order": 10,
+        "adjacent_blocks": 13,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-08-24",
+        "direction": "west",
+        "week_t": "20240819-20240825",
+        "week_t_plus_1": "20240826-20240901",
+        "affected_blocks_in_order": 4,
+        "adjacent_blocks": 9,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-09-09",
+        "direction": "south",
+        "week_t": "20240909-20240915",
+        "week_t_plus_1": "20240916-20240922",
+        "affected_blocks_in_order": 9,
+        "adjacent_blocks": 11,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2024-11-23",
+        "direction": "south",
+        "week_t": "20241118-20241124",
+        "week_t_plus_1": "20241125-20241201",
+        "affected_blocks_in_order": 4,
+        "adjacent_blocks": 12,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-03-20",
+        "direction": "west",
+        "week_t": "20250317-20250323",
+        "week_t_plus_1": "20250324-20250330",
+        "affected_blocks_in_order": 9,
+        "adjacent_blocks": 13,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-03-21",
+        "direction": "south",
+        "week_t": "20250317-20250323",
+        "week_t_plus_1": "20250324-20250330",
+        "affected_blocks_in_order": 7,
+        "adjacent_blocks": 13,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 3,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 2,
+            "percent_of_adjacent_block_incidents": 66.66666666666666
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 33.33333333333333
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        }
+      },
+      {
+        "order_date": "2025-03-23",
+        "direction": "north",
+        "week_t": "20250317-20250323",
+        "week_t_plus_1": "20250324-20250330",
+        "affected_blocks_in_order": 9,
+        "adjacent_blocks": 15,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 2,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 2,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-03-24",
+        "direction": "south",
+        "week_t": "20250324-20250330",
+        "week_t_plus_1": "20250331-20250406",
+        "affected_blocks_in_order": 17,
+        "adjacent_blocks": 22,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 13,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 13,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-03-26",
+        "direction": "south",
+        "week_t": "20250324-20250330",
+        "week_t_plus_1": "20250331-20250406",
+        "affected_blocks_in_order": 23,
+        "adjacent_blocks": 22,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 16,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 16,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        }
+      },
+      {
+        "order_date": "2025-03-29",
+        "direction": "west",
+        "week_t": "20250324-20250330",
+        "week_t_plus_1": "20250331-20250406",
+        "affected_blocks_in_order": 7,
+        "adjacent_blocks": 17,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-03-31",
+        "direction": "north-west",
+        "week_t": "20250331-20250406",
+        "week_t_plus_1": "20250414-20250420",
+        "affected_blocks_in_order": 58,
+        "adjacent_blocks": 13,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-04-01",
+        "direction": "north-west",
+        "week_t": "20250331-20250406",
+        "week_t_plus_1": "20250414-20250420",
+        "affected_blocks_in_order": 78,
+        "adjacent_blocks": 23,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 17,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 17,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-04-01",
+        "direction": "south",
+        "week_t": "20250331-20250406",
+        "week_t_plus_1": "20250414-20250420",
+        "affected_blocks_in_order": 78,
+        "adjacent_blocks": 23,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 13,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 13,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-04-02",
+        "direction": "south",
+        "week_t": "20250331-20250406",
+        "week_t_plus_1": "20250414-20250420",
+        "affected_blocks_in_order": 16,
+        "adjacent_blocks": 21,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-04-03",
+        "direction": "south",
+        "week_t": "20250331-20250406",
+        "week_t_plus_1": "20250414-20250420",
+        "affected_blocks_in_order": 29,
+        "adjacent_blocks": 34,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 20,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 20,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-04-03",
+        "direction": "west",
+        "week_t": "20250331-20250406",
+        "week_t_plus_1": "20250414-20250420",
+        "affected_blocks_in_order": 29,
+        "adjacent_blocks": 34,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 19,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 15,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 19,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 15,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-04-06",
+        "direction": "south",
+        "week_t": "20250331-20250406",
+        "week_t_plus_1": "20250414-20250420",
+        "affected_blocks_in_order": 5,
+        "adjacent_blocks": 8,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-04-24",
+        "direction": "south",
+        "week_t": "20250421-20250427",
+        "week_t_plus_1": "20250428-20250504",
+        "affected_blocks_in_order": 20,
+        "adjacent_blocks": 13,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-04-25",
+        "direction": "west",
+        "week_t": "20250421-20250427",
+        "week_t_plus_1": "20250428-20250504",
+        "affected_blocks_in_order": 21,
+        "adjacent_blocks": 16,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-05-13",
+        "direction": "west",
+        "week_t": "20250512-20250518",
+        "week_t_plus_1": "20250519-20250525",
+        "affected_blocks_in_order": 20,
+        "adjacent_blocks": 21,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 2,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 2,
+            "percent_of_adjacent_block_incidents": 100.0
+          }
+        }
+      },
+      {
+        "order_date": "2025-05-18",
+        "direction": "south",
+        "week_t": "20250512-20250518",
+        "week_t_plus_1": "20250519-20250525",
+        "affected_blocks_in_order": 9,
+        "adjacent_blocks": 15,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-05-19",
+        "direction": "west",
+        "week_t": "20250519-20250525",
+        "week_t_plus_1": "20250526-20250601",
+        "affected_blocks_in_order": 111,
+        "adjacent_blocks": 12,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 3,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 33.33333333333333
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 2,
+            "percent_of_adjacent_block_incidents": 66.66666666666666
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-05-21",
+        "direction": "south",
+        "week_t": "20250519-20250525",
+        "week_t_plus_1": "20250526-20250601",
+        "affected_blocks_in_order": 58,
+        "adjacent_blocks": 24,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 2,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 2,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 2,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 2,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        }
+      },
+      {
+        "order_date": "2025-05-22",
+        "direction": "south",
+        "week_t": "20250519-20250525",
+        "week_t_plus_1": "20250526-20250601",
+        "affected_blocks_in_order": 58,
+        "adjacent_blocks": 24,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 2,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 2,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 2,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 2,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 10,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        }
+      },
+      {
+        "order_date": "2025-05-26",
+        "direction": "west",
+        "week_t": "20250526-20250601",
+        "week_t_plus_1": "20250602-20250608",
+        "affected_blocks_in_order": 178,
+        "adjacent_blocks": 10,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-05-29",
+        "direction": "west",
+        "week_t": "20250526-20250601",
+        "week_t_plus_1": "20250602-20250608",
+        "affected_blocks_in_order": 257,
+        "adjacent_blocks": 36,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 2,
+          "indicated_direction": {
+            "n_adjacent_blocks": 36,
+            "incidents": 2,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 0,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 36,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 0,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-02",
+        "direction": "west",
+        "week_t": "20250602-20250608",
+        "week_t_plus_1": "20250609-20250615",
+        "affected_blocks_in_order": 4,
+        "adjacent_blocks": 10,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-06",
+        "direction": "west",
+        "week_t": "20250602-20250608",
+        "week_t_plus_1": "20250609-20250615",
+        "affected_blocks_in_order": 4,
+        "adjacent_blocks": 8,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-07",
+        "direction": "south",
+        "week_t": "20250602-20250608",
+        "week_t_plus_1": "20250609-20250615",
+        "affected_blocks_in_order": 7,
+        "adjacent_blocks": 16,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-09",
+        "direction": "west",
+        "week_t": "20250609-20250615",
+        "week_t_plus_1": "20250616-20250622",
+        "affected_blocks_in_order": 29,
+        "adjacent_blocks": 22,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-10",
+        "direction": "south",
+        "week_t": "20250609-20250615",
+        "week_t_plus_1": "20250616-20250622",
+        "affected_blocks_in_order": 6,
+        "adjacent_blocks": 14,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 9,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-12",
+        "direction": "west",
+        "week_t": "20250609-20250615",
+        "week_t_plus_1": "20250616-20250622",
+        "affected_blocks_in_order": 13,
+        "adjacent_blocks": 28,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 12,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 16,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 12,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 16,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-14",
+        "direction": "west",
+        "week_t": "20250609-20250615",
+        "week_t_plus_1": "20250616-20250622",
+        "affected_blocks_in_order": 10,
+        "adjacent_blocks": 14,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-17",
+        "direction": "south",
+        "week_t": "20250616-20250622",
+        "week_t_plus_1": "20250623-20250629",
+        "affected_blocks_in_order": 7,
+        "adjacent_blocks": 16,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-20",
+        "direction": "west",
+        "week_t": "20250616-20250622",
+        "week_t_plus_1": "20250623-20250629",
+        "affected_blocks_in_order": 4,
+        "adjacent_blocks": 11,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-23",
+        "direction": "west",
+        "week_t": "20250623-20250629",
+        "week_t_plus_1": "20250630-20250706",
+        "affected_blocks_in_order": 3,
+        "adjacent_blocks": 10,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-24",
+        "direction": "south",
+        "week_t": "20250623-20250629",
+        "week_t_plus_1": "20250630-20250706",
+        "affected_blocks_in_order": 11,
+        "adjacent_blocks": 12,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-27",
+        "direction": "south",
+        "week_t": "20250623-20250629",
+        "week_t_plus_1": "20250630-20250706",
+        "affected_blocks_in_order": 8,
+        "adjacent_blocks": 13,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-28",
+        "direction": "south",
+        "week_t": "20250623-20250629",
+        "week_t_plus_1": "20250630-20250706",
+        "affected_blocks_in_order": 8,
+        "adjacent_blocks": 13,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-29",
+        "direction": "south",
+        "week_t": "20250623-20250629",
+        "week_t_plus_1": "20250630-20250706",
+        "affected_blocks_in_order": 52,
+        "adjacent_blocks": 34,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 20,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 20,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-06-30",
+        "direction": "south-west",
+        "week_t": "20250630-20250706",
+        "week_t_plus_1": "20250707-20250713",
+        "affected_blocks_in_order": 52,
+        "adjacent_blocks": 34,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 20,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 14,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 20,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-07-01",
+        "direction": "north",
+        "week_t": "20250630-20250706",
+        "week_t_plus_1": "20250707-20250713",
+        "affected_blocks_in_order": 3,
+        "adjacent_blocks": 14,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-07-02",
+        "direction": "south",
+        "week_t": "20250630-20250706",
+        "week_t_plus_1": "20250707-20250713",
+        "affected_blocks_in_order": 5,
+        "adjacent_blocks": 7,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 2,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 2,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-07-04",
+        "direction": "west",
+        "week_t": "20250630-20250706",
+        "week_t_plus_1": "20250707-20250713",
+        "affected_blocks_in_order": 7,
+        "adjacent_blocks": 18,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-07-06",
+        "direction": "west",
+        "week_t": "20250630-20250706",
+        "week_t_plus_1": "20250707-20250713",
+        "affected_blocks_in_order": 7,
+        "adjacent_blocks": 18,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 11,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-07-08",
+        "direction": "west",
+        "week_t": "20250707-20250713",
+        "week_t_plus_1": "20250714-20250720",
+        "affected_blocks_in_order": 9,
+        "adjacent_blocks": 7,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 1,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 1,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-07-15",
+        "direction": "south",
+        "week_t": "20250714-20250720",
+        "week_t_plus_1": "20250721-20250727",
+        "affected_blocks_in_order": 56,
+        "adjacent_blocks": 38,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 18,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 20,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 18,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 20,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-07-17",
+        "direction": "south",
+        "week_t": "20250714-20250720",
+        "week_t_plus_1": "20250721-20250727",
+        "affected_blocks_in_order": 9,
+        "adjacent_blocks": 13,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 7,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-07-18",
+        "direction": "south",
+        "week_t": "20250714-20250720",
+        "week_t_plus_1": "20250721-20250727",
+        "affected_blocks_in_order": 5,
+        "adjacent_blocks": 11,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 8,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-07-20",
+        "direction": "south",
+        "week_t": "20250714-20250720",
+        "week_t_plus_1": "20250721-20250727",
+        "affected_blocks_in_order": 9,
+        "adjacent_blocks": 9,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 5,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 4,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-08-06",
+        "direction": "south",
+        "week_t": "20250804-20250810",
+        "week_t_plus_1": "20250811-20250817",
+        "affected_blocks_in_order": 11,
+        "adjacent_blocks": 28,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 15,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 13,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 15,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 13,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-08-06",
+        "direction": "west",
+        "week_t": "20250804-20250810",
+        "week_t_plus_1": "20250811-20250817",
+        "affected_blocks_in_order": 11,
+        "adjacent_blocks": 28,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 15,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 13,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 15,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 13,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        }
+      },
+      {
+        "order_date": "2025-08-07",
+        "direction": "south",
+        "week_t": "20250804-20250810",
+        "week_t_plus_1": "20250811-20250817",
+        "affected_blocks_in_order": 4,
+        "adjacent_blocks": 9,
+        "t_evacuation_order_week": {
+          "total_incidents_in_adjacent_blocks": 0,
+          "indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": null
+          }
+        },
+        "t_plus_1_following_week": {
+          "total_incidents_in_adjacent_blocks": 1,
+          "indicated_direction": {
+            "n_adjacent_blocks": 3,
+            "incidents": 1,
+            "percent_of_adjacent_block_incidents": 100.0
+          },
+          "not_indicated_direction": {
+            "n_adjacent_blocks": 6,
+            "incidents": 0,
+            "percent_of_adjacent_block_incidents": 0.0
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1187 @@
+{
+  "analysis": "Average tent-count change in blocks adjacent to evacuation-order blocks, by indicated direction.",
+  "adjacency_definition": "A block is adjacent when its geometry touches the union of blocks in the evacuation order.",
+  "baseline": "t_minus_1 is the week before the evacuation-order week; pairs with zero baseline tent count are excluded because percent change is undefined.",
+  "maximum_order_date_included": "2024-05-31",
+  "summary_test": "Two-sided one-sample t-test of the equally weighted indicated-minus-not-indicated average percentage-point difference for each evacuation-order-direction event against zero.",
+  "n_order_direction_events": 29,
+  "t_evacuation_order_week_vs_t_minus_1": {
+    "unit_of_analysis": "evacuation-order-direction event",
+    "n_events_with_both_groups": 22,
+    "average_indicated_minus_not_indicated_percent_change_percentage_points": 152.26918239840936,
+    "average_difference_95_percent_confidence_interval": [
+      26.520154053822665,
+      278.0182107429961
+    ],
+    "standard_deviation_of_event_differences": 283.61766576292797,
+    "one_sample_t_test_against_zero": {
+      "t_statistic": 2.518199178234272,
+      "p_value_two_sided": 0.01997613889669942,
+      "degrees_of_freedom": 21
+    }
+  },
+  "t_plus_1_vs_t_minus_1": {
+    "unit_of_analysis": "evacuation-order-direction event",
+    "n_events_with_both_groups": 22,
+    "average_indicated_minus_not_indicated_percent_change_percentage_points": -1.6046878619539762,
+    "average_difference_95_percent_confidence_interval": [
+      -38.71418744649594,
+      35.50481172258799
+    ],
+    "standard_deviation_of_event_differences": 83.69774135317378,
+    "one_sample_t_test_against_zero": {
+      "t_statistic": -0.08992659916050275,
+      "p_value_two_sided": 0.9291977255308661,
+      "degrees_of_freedom": 21
+    }
+  },
+  "observations": [
+    {
+      "order_date": "2023-12-03",
+      "direction": "south",
+      "week_t_minus_1": "20231120-20231126",
+      "week_t": "20231127-20231203",
+      "week_t_plus_1": "20231204-20231210",
+      "affected_blocks_in_order": 29,
+      "affected_blocks_matched_to_boundaries": 29,
+      "adjacent_blocks": 18,
+      "adjacent_blocks_with_nonzero_t_minus_1": 18,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 14,
+          "average_percent_change_from_t_minus_1": 188.73235721354345
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": 76.31893951053577
+        },
+        "difference_in_average_percent_change_percentage_points": 112.41341770300768,
+        "welch_t_test": {
+          "t_statistic": 1.7595155116862018,
+          "p_value_two_sided": 0.09890532932860445,
+          "degrees_of_freedom": 14.969193622603335
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 14,
+          "average_percent_change_from_t_minus_1": 49.64538535873688
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": -21.508336352898972
+        },
+        "difference_in_average_percent_change_percentage_points": 71.15372171163585,
+        "welch_t_test": {
+          "t_statistic": 0.884272489515107,
+          "p_value_two_sided": 0.39157281389661125,
+          "degrees_of_freedom": 13.914550855886318
+        }
+      }
+    },
+    {
+      "order_date": "2023-12-03",
+      "direction": "west",
+      "week_t_minus_1": "20231120-20231126",
+      "week_t": "20231127-20231203",
+      "week_t_plus_1": "20231204-20231210",
+      "affected_blocks_in_order": 29,
+      "affected_blocks_matched_to_boundaries": 29,
+      "adjacent_blocks": 18,
+      "adjacent_blocks_with_nonzero_t_minus_1": 18,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 9,
+          "average_percent_change_from_t_minus_1": 245.4105484780151
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 9,
+          "average_percent_change_from_t_minus_1": 82.09264696995723
+        },
+        "difference_in_average_percent_change_percentage_points": 163.31790150805787,
+        "welch_t_test": {
+          "t_statistic": 1.7843987537579724,
+          "p_value_two_sided": 0.10239322386703052,
+          "degrees_of_freedom": 10.81834419776831
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 9,
+          "average_percent_change_from_t_minus_1": 127.87951050426221
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 9,
+          "average_percent_change_from_t_minus_1": -60.21261610307106
+        },
+        "difference_in_average_percent_change_percentage_points": 188.09212660733328,
+        "welch_t_test": {
+          "t_statistic": 1.600107364229735,
+          "p_value_two_sided": 0.148057462562512,
+          "degrees_of_freedom": 8.039396983140486
+        }
+      }
+    },
+    {
+      "order_date": "2023-12-04",
+      "direction": "south",
+      "week_t_minus_1": "20231127-20231203",
+      "week_t": "20231204-20231210",
+      "week_t_plus_1": "20231211-20231217",
+      "affected_blocks_in_order": 29,
+      "affected_blocks_matched_to_boundaries": 29,
+      "adjacent_blocks": 18,
+      "adjacent_blocks_with_nonzero_t_minus_1": 18,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 14,
+          "average_percent_change_from_t_minus_1": -61.54164970098393
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": -55.74551058608819
+        },
+        "difference_in_average_percent_change_percentage_points": -5.796139114895745,
+        "welch_t_test": {
+          "t_statistic": -0.44832380544302197,
+          "p_value_two_sided": 0.6599434033557872,
+          "degrees_of_freedom": 15.967134296438914
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 14,
+          "average_percent_change_from_t_minus_1": 242.64885151858275
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": 41.15930763029541
+        },
+        "difference_in_average_percent_change_percentage_points": 201.48954388828733,
+        "welch_t_test": {
+          "t_statistic": 1.3738491896498655,
+          "p_value_two_sided": 0.1890211496601339,
+          "degrees_of_freedom": 15.508965983646535
+        }
+      }
+    },
+    {
+      "order_date": "2023-12-09",
+      "direction": "south",
+      "week_t_minus_1": "20231127-20231203",
+      "week_t": "20231204-20231210",
+      "week_t_plus_1": "20231211-20231217",
+      "affected_blocks_in_order": 6,
+      "affected_blocks_matched_to_boundaries": 6,
+      "adjacent_blocks": 10,
+      "adjacent_blocks_with_nonzero_t_minus_1": 10,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 5,
+          "average_percent_change_from_t_minus_1": -47.41950678207663
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 5,
+          "average_percent_change_from_t_minus_1": -51.615511803733135
+        },
+        "difference_in_average_percent_change_percentage_points": 4.196005021656504,
+        "welch_t_test": {
+          "t_statistic": 0.14643054847830203,
+          "p_value_two_sided": 0.8897438234721831,
+          "degrees_of_freedom": 4.627866318232438
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 5,
+          "average_percent_change_from_t_minus_1": 5.928157674624399
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 5,
+          "average_percent_change_from_t_minus_1": 82.68239799999155
+        },
+        "difference_in_average_percent_change_percentage_points": -76.75424032536715,
+        "welch_t_test": {
+          "t_statistic": -1.6997699231695074,
+          "p_value_two_sided": 0.12847768730361925,
+          "degrees_of_freedom": 7.817611605057124
+        }
+      }
+    },
+    {
+      "order_date": "2023-12-09",
+      "direction": "west",
+      "week_t_minus_1": "20231127-20231203",
+      "week_t": "20231204-20231210",
+      "week_t_plus_1": "20231211-20231217",
+      "affected_blocks_in_order": 6,
+      "affected_blocks_matched_to_boundaries": 6,
+      "adjacent_blocks": 10,
+      "adjacent_blocks_with_nonzero_t_minus_1": 10,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": -17.344852879306917
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 6,
+          "average_percent_change_from_t_minus_1": -70.9659469019702
+        },
+        "difference_in_average_percent_change_percentage_points": 53.621094022663286,
+        "welch_t_test": {
+          "t_statistic": 2.121979995594021,
+          "p_value_two_sided": 0.0976781803421756,
+          "degrees_of_freedom": 4.209557419123702
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": 59.336470965150106
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 6,
+          "average_percent_change_from_t_minus_1": 34.284482418746556
+        },
+        "difference_in_average_percent_change_percentage_points": 25.05198854640355,
+        "welch_t_test": {
+          "t_statistic": 0.42648351798488926,
+          "p_value_two_sided": 0.689195564410812,
+          "degrees_of_freedom": 4.544200239036447
+        }
+      }
+    },
+    {
+      "order_date": "2023-12-13",
+      "direction": "south",
+      "week_t_minus_1": "20231204-20231210",
+      "week_t": "20231211-20231217",
+      "week_t_plus_1": "20231218-20231224",
+      "affected_blocks_in_order": 12,
+      "affected_blocks_matched_to_boundaries": 12,
+      "adjacent_blocks": 11,
+      "adjacent_blocks_with_nonzero_t_minus_1": 11,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": 1043.808607573484
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 7,
+          "average_percent_change_from_t_minus_1": 291.8906256011051
+        },
+        "difference_in_average_percent_change_percentage_points": 751.917981972379,
+        "welch_t_test": {
+          "t_statistic": 1.6593567646334202,
+          "p_value_two_sided": 0.1866696589323602,
+          "degrees_of_freedom": 3.3247797783922124
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": 30.58995767174458
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 7,
+          "average_percent_change_from_t_minus_1": -4.140072262656017
+        },
+        "difference_in_average_percent_change_percentage_points": 34.7300299344006,
+        "welch_t_test": {
+          "t_statistic": 0.6344549014302328,
+          "p_value_two_sided": 0.5572175161041872,
+          "degrees_of_freedom": 4.410004956623671
+        }
+      }
+    },
+    {
+      "order_date": "2023-12-14",
+      "direction": "south",
+      "week_t_minus_1": "20231204-20231210",
+      "week_t": "20231211-20231217",
+      "week_t_plus_1": "20231218-20231224",
+      "affected_blocks_in_order": 12,
+      "affected_blocks_matched_to_boundaries": 12,
+      "adjacent_blocks": 11,
+      "adjacent_blocks_with_nonzero_t_minus_1": 11,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": 1043.808607573484
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 7,
+          "average_percent_change_from_t_minus_1": 291.8906256011051
+        },
+        "difference_in_average_percent_change_percentage_points": 751.917981972379,
+        "welch_t_test": {
+          "t_statistic": 1.6593567646334202,
+          "p_value_two_sided": 0.1866696589323602,
+          "degrees_of_freedom": 3.3247797783922124
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": 30.58995767174458
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 7,
+          "average_percent_change_from_t_minus_1": -4.140072262656017
+        },
+        "difference_in_average_percent_change_percentage_points": 34.7300299344006,
+        "welch_t_test": {
+          "t_statistic": 0.6344549014302328,
+          "p_value_two_sided": 0.5572175161041872,
+          "degrees_of_freedom": 4.410004956623671
+        }
+      }
+    },
+    {
+      "order_date": "2023-12-22",
+      "direction": "south",
+      "week_t_minus_1": "20231211-20231217",
+      "week_t": "20231218-20231224",
+      "week_t_plus_1": "20231225-20231231",
+      "affected_blocks_in_order": 19,
+      "affected_blocks_matched_to_boundaries": 19,
+      "adjacent_blocks": 19,
+      "adjacent_blocks_with_nonzero_t_minus_1": 4,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "difference_in_average_percent_change_percentage_points": null,
+        "welch_t_test": null
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": 4312.909552933495
+        },
+        "difference_in_average_percent_change_percentage_points": null,
+        "welch_t_test": null
+      }
+    },
+    {
+      "order_date": "2023-12-25",
+      "direction": "south",
+      "week_t_minus_1": "20231218-20231224",
+      "week_t": "20231225-20231231",
+      "week_t_plus_1": "20240101-20240107",
+      "affected_blocks_in_order": 19,
+      "affected_blocks_matched_to_boundaries": 19,
+      "adjacent_blocks": 19,
+      "adjacent_blocks_with_nonzero_t_minus_1": 8,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 2457.3243685181496
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "difference_in_average_percent_change_percentage_points": null,
+        "welch_t_test": null
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 909.5434683393901
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "difference_in_average_percent_change_percentage_points": null,
+        "welch_t_test": null
+      }
+    },
+    {
+      "order_date": "2023-12-27",
+      "direction": "south",
+      "week_t_minus_1": "20231218-20231224",
+      "week_t": "20231225-20231231",
+      "week_t_plus_1": "20240101-20240107",
+      "affected_blocks_in_order": 19,
+      "affected_blocks_matched_to_boundaries": 19,
+      "adjacent_blocks": 19,
+      "adjacent_blocks_with_nonzero_t_minus_1": 8,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 2457.3243685181496
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "difference_in_average_percent_change_percentage_points": null,
+        "welch_t_test": null
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 909.5434683393901
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "difference_in_average_percent_change_percentage_points": null,
+        "welch_t_test": null
+      }
+    },
+    {
+      "order_date": "2023-12-28",
+      "direction": "south",
+      "week_t_minus_1": "20231218-20231224",
+      "week_t": "20231225-20231231",
+      "week_t_plus_1": "20240101-20240107",
+      "affected_blocks_in_order": 19,
+      "affected_blocks_matched_to_boundaries": 19,
+      "adjacent_blocks": 19,
+      "adjacent_blocks_with_nonzero_t_minus_1": 8,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 2457.3243685181496
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "difference_in_average_percent_change_percentage_points": null,
+        "welch_t_test": null
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 909.5434683393901
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "difference_in_average_percent_change_percentage_points": null,
+        "welch_t_test": null
+      }
+    },
+    {
+      "order_date": "2023-12-31",
+      "direction": "south",
+      "week_t_minus_1": "20231218-20231224",
+      "week_t": "20231225-20231231",
+      "week_t_plus_1": "20240101-20240107",
+      "affected_blocks_in_order": 19,
+      "affected_blocks_matched_to_boundaries": 19,
+      "adjacent_blocks": 19,
+      "adjacent_blocks_with_nonzero_t_minus_1": 8,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 2457.3243685181496
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "difference_in_average_percent_change_percentage_points": null,
+        "welch_t_test": null
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 909.5434683393901
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "difference_in_average_percent_change_percentage_points": null,
+        "welch_t_test": null
+      }
+    },
+    {
+      "order_date": "2024-01-23",
+      "direction": "west",
+      "week_t_minus_1": "20240115-20240121",
+      "week_t": "20240122-20240128",
+      "week_t_plus_1": "20240129-20240204",
+      "affected_blocks_in_order": 6,
+      "affected_blocks_matched_to_boundaries": 6,
+      "adjacent_blocks": 7,
+      "adjacent_blocks_with_nonzero_t_minus_1": 7,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 1,
+          "average_percent_change_from_t_minus_1": -92.76881321031254
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 6,
+          "average_percent_change_from_t_minus_1": -70.7734524971459
+        },
+        "difference_in_average_percent_change_percentage_points": -21.995360713166647,
+        "welch_t_test": null
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 1,
+          "average_percent_change_from_t_minus_1": 56.34186951844173
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 6,
+          "average_percent_change_from_t_minus_1": 108.73174184591494
+        },
+        "difference_in_average_percent_change_percentage_points": -52.389872327473206,
+        "welch_t_test": null
+      }
+    },
+    {
+      "order_date": "2024-01-26",
+      "direction": "west",
+      "week_t_minus_1": "20240115-20240121",
+      "week_t": "20240122-20240128",
+      "week_t_plus_1": "20240129-20240204",
+      "affected_blocks_in_order": 6,
+      "affected_blocks_matched_to_boundaries": 6,
+      "adjacent_blocks": 7,
+      "adjacent_blocks_with_nonzero_t_minus_1": 7,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 1,
+          "average_percent_change_from_t_minus_1": -92.76881321031254
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 6,
+          "average_percent_change_from_t_minus_1": -70.7734524971459
+        },
+        "difference_in_average_percent_change_percentage_points": -21.995360713166647,
+        "welch_t_test": null
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 1,
+          "average_percent_change_from_t_minus_1": 56.34186951844173
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 6,
+          "average_percent_change_from_t_minus_1": 108.73174184591494
+        },
+        "difference_in_average_percent_change_percentage_points": -52.389872327473206,
+        "welch_t_test": null
+      }
+    },
+    {
+      "order_date": "2024-01-28",
+      "direction": "west",
+      "week_t_minus_1": "20240115-20240121",
+      "week_t": "20240122-20240128",
+      "week_t_plus_1": "20240129-20240204",
+      "affected_blocks_in_order": 6,
+      "affected_blocks_matched_to_boundaries": 6,
+      "adjacent_blocks": 7,
+      "adjacent_blocks_with_nonzero_t_minus_1": 7,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 1,
+          "average_percent_change_from_t_minus_1": -92.76881321031254
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 6,
+          "average_percent_change_from_t_minus_1": -70.7734524971459
+        },
+        "difference_in_average_percent_change_percentage_points": -21.995360713166647,
+        "welch_t_test": null
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 1,
+          "average_percent_change_from_t_minus_1": 56.34186951844173
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 6,
+          "average_percent_change_from_t_minus_1": 108.73174184591494
+        },
+        "difference_in_average_percent_change_percentage_points": -52.389872327473206,
+        "welch_t_test": null
+      }
+    },
+    {
+      "order_date": "2024-01-29",
+      "direction": "south",
+      "week_t_minus_1": "20240122-20240128",
+      "week_t": "20240129-20240204",
+      "week_t_plus_1": "20240205-20240211",
+      "affected_blocks_in_order": 42,
+      "affected_blocks_matched_to_boundaries": 42,
+      "adjacent_blocks": 10,
+      "adjacent_blocks_with_nonzero_t_minus_1": 10,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 3,
+          "average_percent_change_from_t_minus_1": 290.44421934695464
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 1,
+          "average_percent_change_from_t_minus_1": -19.789922610087324
+        },
+        "difference_in_average_percent_change_percentage_points": 310.23414195704197,
+        "welch_t_test": null
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 3,
+          "average_percent_change_from_t_minus_1": 111.83579048811879
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 7,
+          "average_percent_change_from_t_minus_1": 151.50306903122745
+        },
+        "difference_in_average_percent_change_percentage_points": -39.667278543108665,
+        "welch_t_test": {
+          "t_statistic": -0.6640836765412095,
+          "p_value_two_sided": 0.5260282686815096,
+          "degrees_of_freedom": 7.695686698230418
+        }
+      }
+    },
+    {
+      "order_date": "2024-01-30",
+      "direction": "south",
+      "week_t_minus_1": "20240122-20240128",
+      "week_t": "20240129-20240204",
+      "week_t_plus_1": "20240205-20240211",
+      "affected_blocks_in_order": 42,
+      "affected_blocks_matched_to_boundaries": 42,
+      "adjacent_blocks": 10,
+      "adjacent_blocks_with_nonzero_t_minus_1": 10,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 3,
+          "average_percent_change_from_t_minus_1": 290.44421934695464
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 1,
+          "average_percent_change_from_t_minus_1": -19.789922610087324
+        },
+        "difference_in_average_percent_change_percentage_points": 310.23414195704197,
+        "welch_t_test": null
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 3,
+          "average_percent_change_from_t_minus_1": 111.83579048811879
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 7,
+          "average_percent_change_from_t_minus_1": 151.50306903122745
+        },
+        "difference_in_average_percent_change_percentage_points": -39.667278543108665,
+        "welch_t_test": {
+          "t_statistic": -0.6640836765412095,
+          "p_value_two_sided": 0.5260282686815096,
+          "degrees_of_freedom": 7.695686698230418
+        }
+      }
+    },
+    {
+      "order_date": "2024-01-31",
+      "direction": "south",
+      "week_t_minus_1": "20240122-20240128",
+      "week_t": "20240129-20240204",
+      "week_t_plus_1": "20240205-20240211",
+      "affected_blocks_in_order": 42,
+      "affected_blocks_matched_to_boundaries": 42,
+      "adjacent_blocks": 10,
+      "adjacent_blocks_with_nonzero_t_minus_1": 10,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 3,
+          "average_percent_change_from_t_minus_1": 290.44421934695464
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 1,
+          "average_percent_change_from_t_minus_1": -19.789922610087324
+        },
+        "difference_in_average_percent_change_percentage_points": 310.23414195704197,
+        "welch_t_test": null
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 3,
+          "average_percent_change_from_t_minus_1": 111.83579048811879
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 7,
+          "average_percent_change_from_t_minus_1": 151.50306903122745
+        },
+        "difference_in_average_percent_change_percentage_points": -39.667278543108665,
+        "welch_t_test": {
+          "t_statistic": -0.6640836765412095,
+          "p_value_two_sided": 0.5260282686815096,
+          "degrees_of_freedom": 7.695686698230418
+        }
+      }
+    },
+    {
+      "order_date": "2024-02-04",
+      "direction": "south",
+      "week_t_minus_1": "20240122-20240128",
+      "week_t": "20240129-20240204",
+      "week_t_plus_1": "20240205-20240211",
+      "affected_blocks_in_order": 48,
+      "affected_blocks_matched_to_boundaries": 48,
+      "adjacent_blocks": 17,
+      "adjacent_blocks_with_nonzero_t_minus_1": 17,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 783.026674826815
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 3,
+          "average_percent_change_from_t_minus_1": 219.85193045633844
+        },
+        "difference_in_average_percent_change_percentage_points": 563.1747443704766,
+        "welch_t_test": {
+          "t_statistic": 2.30400843722582,
+          "p_value_two_sided": 0.04720869096363178,
+          "degrees_of_freedom": 8.83443602965556
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 183.5701129336839
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 9,
+          "average_percent_change_from_t_minus_1": 147.10639194099005
+        },
+        "difference_in_average_percent_change_percentage_points": 36.46372099269385,
+        "welch_t_test": {
+          "t_statistic": 0.2793176418148314,
+          "p_value_two_sided": 0.7865942986297007,
+          "degrees_of_freedom": 8.609755787212707
+        }
+      }
+    },
+    {
+      "order_date": "2024-02-04",
+      "direction": "west",
+      "week_t_minus_1": "20240122-20240128",
+      "week_t": "20240129-20240204",
+      "week_t_plus_1": "20240205-20240211",
+      "affected_blocks_in_order": 48,
+      "affected_blocks_matched_to_boundaries": 48,
+      "adjacent_blocks": 17,
+      "adjacent_blocks_with_nonzero_t_minus_1": 17,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 783.026674826815
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 3,
+          "average_percent_change_from_t_minus_1": 219.85193045633844
+        },
+        "difference_in_average_percent_change_percentage_points": 563.1747443704766,
+        "welch_t_test": {
+          "t_statistic": 2.30400843722582,
+          "p_value_two_sided": 0.04720869096363178,
+          "degrees_of_freedom": 8.83443602965556
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 183.5701129336839
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 9,
+          "average_percent_change_from_t_minus_1": 147.10639194099005
+        },
+        "difference_in_average_percent_change_percentage_points": 36.46372099269385,
+        "welch_t_test": {
+          "t_statistic": 0.2793176418148314,
+          "p_value_two_sided": 0.7865942986297007,
+          "degrees_of_freedom": 8.609755787212707
+        }
+      }
+    },
+    {
+      "order_date": "2024-02-05",
+      "direction": "south",
+      "week_t_minus_1": "20240129-20240204",
+      "week_t": "20240205-20240211",
+      "week_t_plus_1": "20240212-20240218",
+      "affected_blocks_in_order": 48,
+      "affected_blocks_matched_to_boundaries": 48,
+      "adjacent_blocks": 17,
+      "adjacent_blocks_with_nonzero_t_minus_1": 11,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": -69.89854171456844
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 3,
+          "average_percent_change_from_t_minus_1": 108.64232019710629
+        },
+        "difference_in_average_percent_change_percentage_points": -178.5408619116747,
+        "welch_t_test": {
+          "t_statistic": -1.1505517653440192,
+          "p_value_two_sided": 0.3686095454622627,
+          "degrees_of_freedom": 2.0059729116184424
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": -33.51713460502482
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 3,
+          "average_percent_change_from_t_minus_1": 74.64045777487705
+        },
+        "difference_in_average_percent_change_percentage_points": -108.15759237990187,
+        "welch_t_test": {
+          "t_statistic": -0.8356454449466549,
+          "p_value_two_sided": 0.4891185034341529,
+          "degrees_of_freedom": 2.0584509920711365
+        }
+      }
+    },
+    {
+      "order_date": "2024-02-05",
+      "direction": "west",
+      "week_t_minus_1": "20240129-20240204",
+      "week_t": "20240205-20240211",
+      "week_t_plus_1": "20240212-20240218",
+      "affected_blocks_in_order": 48,
+      "affected_blocks_matched_to_boundaries": 48,
+      "adjacent_blocks": 17,
+      "adjacent_blocks_with_nonzero_t_minus_1": 11,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": -69.89854171456844
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 3,
+          "average_percent_change_from_t_minus_1": 108.64232019710629
+        },
+        "difference_in_average_percent_change_percentage_points": -178.5408619116747,
+        "welch_t_test": {
+          "t_statistic": -1.1505517653440192,
+          "p_value_two_sided": 0.3686095454622627,
+          "degrees_of_freedom": 2.0059729116184424
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": -33.51713460502482
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 3,
+          "average_percent_change_from_t_minus_1": 74.64045777487705
+        },
+        "difference_in_average_percent_change_percentage_points": -108.15759237990187,
+        "welch_t_test": {
+          "t_statistic": -0.8356454449466549,
+          "p_value_two_sided": 0.4891185034341529,
+          "degrees_of_freedom": 2.0584509920711365
+        }
+      }
+    },
+    {
+      "order_date": "2024-03-18",
+      "direction": "south",
+      "week_t_minus_1": "20240311-20240317",
+      "week_t": "20240318-20240324",
+      "week_t_plus_1": "20240325-20240331",
+      "affected_blocks_in_order": 10,
+      "affected_blocks_matched_to_boundaries": 10,
+      "adjacent_blocks": 10,
+      "adjacent_blocks_with_nonzero_t_minus_1": 10,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 6,
+          "average_percent_change_from_t_minus_1": -13.772804765317757
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": 39.611169598387825
+        },
+        "difference_in_average_percent_change_percentage_points": -53.38397436370558,
+        "welch_t_test": {
+          "t_statistic": -1.3553719346646547,
+          "p_value_two_sided": 0.2620664799659262,
+          "degrees_of_freedom": 3.2394461392279856
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 6,
+          "average_percent_change_from_t_minus_1": -62.613033817577474
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": -37.181547088568344
+        },
+        "difference_in_average_percent_change_percentage_points": -25.43148672900913,
+        "welch_t_test": {
+          "t_statistic": -0.893794587618218,
+          "p_value_two_sided": 0.42485483191206774,
+          "degrees_of_freedom": 3.7668154990302143
+        }
+      }
+    },
+    {
+      "order_date": "2024-05-06",
+      "direction": "west",
+      "week_t_minus_1": "20240429-20240505",
+      "week_t": "20240506-20240512",
+      "week_t_plus_1": "20240513-20240519",
+      "affected_blocks_in_order": 9,
+      "affected_blocks_matched_to_boundaries": 9,
+      "adjacent_blocks": 8,
+      "adjacent_blocks_with_nonzero_t_minus_1": 8,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": 1.8304489985046395
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": 171.008073325022
+        },
+        "difference_in_average_percent_change_percentage_points": -169.17762432651736,
+        "welch_t_test": {
+          "t_statistic": -1.631000913831663,
+          "p_value_two_sided": 0.175454019214635,
+          "degrees_of_freedom": 4.16179485931109
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": -43.40969583220191
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": 53.77492971192363
+        },
+        "difference_in_average_percent_change_percentage_points": -97.18462554412554,
+        "welch_t_test": {
+          "t_statistic": -2.284592825959657,
+          "p_value_two_sided": 0.0630997944788434,
+          "degrees_of_freedom": 5.9053818477413635
+        }
+      }
+    },
+    {
+      "order_date": "2024-05-11",
+      "direction": "south",
+      "week_t_minus_1": "20240429-20240505",
+      "week_t": "20240506-20240512",
+      "week_t_plus_1": "20240513-20240519",
+      "affected_blocks_in_order": 63,
+      "affected_blocks_matched_to_boundaries": 63,
+      "adjacent_blocks": 40,
+      "adjacent_blocks_with_nonzero_t_minus_1": 11,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 11,
+          "average_percent_change_from_t_minus_1": 94.04092537459042
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "difference_in_average_percent_change_percentage_points": null,
+        "welch_t_test": null
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 11,
+          "average_percent_change_from_t_minus_1": -14.85455203960102
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "difference_in_average_percent_change_percentage_points": null,
+        "welch_t_test": null
+      }
+    },
+    {
+      "order_date": "2024-05-11",
+      "direction": "west",
+      "week_t_minus_1": "20240429-20240505",
+      "week_t": "20240506-20240512",
+      "week_t_plus_1": "20240513-20240519",
+      "affected_blocks_in_order": 63,
+      "affected_blocks_matched_to_boundaries": 63,
+      "adjacent_blocks": 40,
+      "adjacent_blocks_with_nonzero_t_minus_1": 11,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 11,
+          "average_percent_change_from_t_minus_1": 94.04092537459042
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "difference_in_average_percent_change_percentage_points": null,
+        "welch_t_test": null
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 11,
+          "average_percent_change_from_t_minus_1": -14.85455203960102
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 0,
+          "average_percent_change_from_t_minus_1": null
+        },
+        "difference_in_average_percent_change_percentage_points": null,
+        "welch_t_test": null
+      }
+    },
+    {
+      "order_date": "2024-05-14",
+      "direction": "south",
+      "week_t_minus_1": "20240506-20240512",
+      "week_t": "20240513-20240519",
+      "week_t_plus_1": "20240520-20240526",
+      "affected_blocks_in_order": 10,
+      "affected_blocks_matched_to_boundaries": 10,
+      "adjacent_blocks": 12,
+      "adjacent_blocks_with_nonzero_t_minus_1": 12,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 36.78306667046071
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": 2.8287442787282613
+        },
+        "difference_in_average_percent_change_percentage_points": 33.954322391732454,
+        "welch_t_test": {
+          "t_statistic": 1.1218529393479098,
+          "p_value_two_sided": 0.29043034554748487,
+          "degrees_of_freedom": 9.17346507867858
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 2.019213920033245
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": 34.153614214569366
+        },
+        "difference_in_average_percent_change_percentage_points": -32.13440029453612,
+        "welch_t_test": {
+          "t_statistic": -1.0298924482477363,
+          "p_value_two_sided": 0.32785314884241906,
+          "degrees_of_freedom": 9.781677246793594
+        }
+      }
+    },
+    {
+      "order_date": "2024-05-15",
+      "direction": "south",
+      "week_t_minus_1": "20240506-20240512",
+      "week_t": "20240513-20240519",
+      "week_t_plus_1": "20240520-20240526",
+      "affected_blocks_in_order": 10,
+      "affected_blocks_matched_to_boundaries": 10,
+      "adjacent_blocks": 9,
+      "adjacent_blocks_with_nonzero_t_minus_1": 9,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": -14.165261798725652
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 5,
+          "average_percent_change_from_t_minus_1": -13.537518558640482
+        },
+        "difference_in_average_percent_change_percentage_points": -0.6277432400851701,
+        "welch_t_test": {
+          "t_statistic": -0.016615204484686178,
+          "p_value_two_sided": 0.9873626438508991,
+          "degrees_of_freedom": 5.197547715335107
+        }
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 4,
+          "average_percent_change_from_t_minus_1": -51.755368889069075
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 5,
+          "average_percent_change_from_t_minus_1": -30.863145854706165
+        },
+        "difference_in_average_percent_change_percentage_points": -20.89222303436291,
+        "welch_t_test": {
+          "t_statistic": -0.5129486501259168,
+          "p_value_two_sided": 0.6252115486567386,
+          "degrees_of_freedom": 6.398941529211259
+        }
+      }
+    },
+    {
+      "order_date": "2024-05-18",
+      "direction": "south",
+      "week_t_minus_1": "20240506-20240512",
+      "week_t": "20240513-20240519",
+      "week_t_plus_1": "20240520-20240526",
+      "affected_blocks_in_order": 12,
+      "affected_blocks_matched_to_boundaries": 12,
+      "adjacent_blocks": 9,
+      "adjacent_blocks_with_nonzero_t_minus_1": 9,
+      "t_evacuation_order_week_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 36.23978111284373
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 1,
+          "average_percent_change_from_t_minus_1": -37.34489945625949
+        },
+        "difference_in_average_percent_change_percentage_points": 73.58468056910323,
+        "welch_t_test": null
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "indicated_direction": {
+          "n_block_order_direction_pairs": 8,
+          "average_percent_change_from_t_minus_1": 54.84556215462657
+        },
+        "not_indicated_direction": {
+          "n_block_order_direction_pairs": 1,
+          "average_percent_change_from_t_minus_1": -26.560035573487227
+        },
+        "difference_in_average_percent_change_percentage_points": 81.4055977281138,
+        "welch_t_test": null
+      }
+    }
+  ]
+}

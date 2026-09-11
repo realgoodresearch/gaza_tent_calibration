@@ -1,0 +1,668 @@
+{
+  "sources": {
+    "holdout_predictions": "src/calibration/artifacts/holdout_predictions.csv",
+    "municipality_week_counts": "outputs/tent_counts/municipality_counts_by_week.csv",
+    "evacuation_block_week_counts": "outputs/tent_counts/block_counts_by_week.csv"
+  },
+  "definitions": {
+    "error": "calibrated posterior mean prediction minus manual tent count",
+    "calibration_line": "ordinary least-squares regression of observed counts on calibrated predictions",
+    "spatial_context_note": "The five contexts requested in the draft are governorates, not municipalities; municipal validation labels are mapped to them.",
+    "density_bands": "Observed manual tent count per 100 x 100 m tile: zero=0, low=1-9, high=10-49, highest=50+.",
+    "systematic_bias_evidence": "A 20,000-replicate tile bootstrap 95% CI for mean bias excluding zero."
+  },
+  "manuscript_values_rounded_2dp": {
+    "holdout_n_tiles": 377,
+    "overall": {
+      "mean_bias_predicted_minus_observed": -0.7,
+      "mae": 4.2,
+      "rmse": 13.15,
+      "observed_on_predicted_slope": 1.03,
+      "observed_on_predicted_intercept": 0.45
+    },
+    "mae_by_governorate": {
+      "Deir al-Balah": 3.49,
+      "Gaza": 1.14,
+      "Khan Younis": 6.18,
+      "North Gaza": 0.74,
+      "Rafah": 4.7
+    },
+    "geography_bias_sentence": "North Gaza showed a small positive mean bias whose bootstrap 95% CI excluded zero; no other governorate did.",
+    "density": {
+      "zero (0 tents)": {
+        "mae": 0.83,
+        "mean_bias": 0.83
+      },
+      "low (1-9 tents)": {
+        "mae": 2.68,
+        "mean_bias": 0.84
+      },
+      "high (10-49 tents)": {
+        "mae": 10.21,
+        "mean_bias": 1.91
+      },
+      "highest (50+ tents)": {
+        "mae": 33.92,
+        "mean_bias": -20.95
+      }
+    },
+    "humanitarian_zone": {
+      "inside_mae": 25.72,
+      "outside_mae": 2.41,
+      "inside_mean_bias": -14.34,
+      "outside_mean_bias": 0.43
+    }
+  },
+  "holdout_tile_accuracy": {
+    "overall": {
+      "n_tiles": 377,
+      "observed_tents": 3384.0,
+      "predicted_tents": 3118.4035042520445,
+      "mean_bias_predicted_minus_observed": -0.7044999887213677,
+      "mean_bias_bootstrap_95_ci": [
+        -2.0833456292646386,
+        0.5853845125018106
+      ],
+      "bias_ci_excludes_zero": false,
+      "mae": 4.200523919276934,
+      "rmse": 13.149792256339186,
+      "observed_on_predicted_slope": 1.030897399555637,
+      "observed_on_predicted_intercept": 0.4489282140620254
+    },
+    "by_governorate": {
+      "Deir al-Balah": {
+        "n_tiles": 91,
+        "observed_tents": 1046.0,
+        "predicted_tents": 1104.3448651014678,
+        "mean_bias_predicted_minus_observed": 0.6411523637523916,
+        "mean_bias_bootstrap_95_ci": [
+          -1.085261661025805,
+          2.730446197448141
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 3.4872776814963764,
+        "rmse": 9.415303210514281,
+        "observed_on_predicted_slope": 0.9068240862905421,
+        "observed_on_predicted_intercept": 0.48959864565614847
+      },
+      "Gaza": {
+        "n_tiles": 40,
+        "observed_tents": 75.0,
+        "predicted_tents": 102.60871311259072,
+        "mean_bias_predicted_minus_observed": 0.6902178278147676,
+        "mean_bias_bootstrap_95_ci": [
+          -0.13118293770070372,
+          1.6053958586794255
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 1.1391882563135962,
+        "rmse": 2.8670325377839885,
+        "observed_on_predicted_slope": 1.0956525194953766,
+        "observed_on_predicted_intercept": -0.9355873760997081
+      },
+      "Khan Younis": {
+        "n_tiles": 145,
+        "observed_tents": 1775.0,
+        "predicted_tents": 1448.7764504743577,
+        "mean_bias_predicted_minus_observed": -2.2498175829354645,
+        "mean_bias_bootstrap_95_ci": [
+          -5.228773550567619,
+          0.4818940223180548
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 6.1806525816140905,
+        "rmse": 17.660944111557388,
+        "observed_on_predicted_slope": 1.2182260687202175,
+        "observed_on_predicted_intercept": 0.06939834678752464
+      },
+      "North Gaza": {
+        "n_tiles": 38,
+        "observed_tents": 11.0,
+        "predicted_tents": 35.744050155410626,
+        "mean_bias_predicted_minus_observed": 0.6511592146160692,
+        "mean_bias_bootstrap_95_ci": [
+          0.12700416318210486,
+          1.4148288418661374
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 0.7411709289988555,
+        "rmse": 2.1743004392520833,
+        "observed_on_predicted_slope": 0.13158404454952724,
+        "observed_on_predicted_intercept": 0.16570140294657665
+      },
+      "Rafah": {
+        "n_tiles": 63,
+        "observed_tents": 477.0,
+        "predicted_tents": 426.9294254082178,
+        "mean_bias_predicted_minus_observed": -0.7947710252663835,
+        "mean_bias_bootstrap_95_ci": [
+          -4.220044390503638,
+          2.4627384543422006
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 4.703628550201435,
+        "rmse": 13.444489174409625,
+        "observed_on_predicted_slope": 0.8900752016754282,
+        "observed_on_predicted_intercept": 1.5396937393429482
+      }
+    },
+    "by_municipality": {
+      "Al Bureij Camp": {
+        "n_tiles": 11,
+        "observed_tents": 51.0,
+        "predicted_tents": 125.57936886321791,
+        "mean_bias_predicted_minus_observed": 6.779942623928901,
+        "mean_bias_bootstrap_95_ci": [
+          0.13881427492914267,
+          19.48489238725619
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 6.779942623928901,
+        "rmse": 21.057380640272907,
+        "observed_on_predicted_slope": 0.423736353133171,
+        "observed_on_predicted_intercept": -0.2011403446241119
+      },
+      "Al Fukhkhari": {
+        "n_tiles": 45,
+        "observed_tents": 12.0,
+        "predicted_tents": 3.449377584649669,
+        "mean_bias_predicted_minus_observed": -0.19001383145222958,
+        "mean_bias_bootstrap_95_ci": [
+          -0.4001130005226351,
+          -0.02079539422598377
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 0.28620660759008043,
+        "rmse": 0.6796178417005437,
+        "observed_on_predicted_slope": 1.6526764394504398,
+        "observed_on_predicted_intercept": 0.13998433189068946
+      },
+      "Al Maghazi Camp": {
+        "n_tiles": 10,
+        "observed_tents": 50.0,
+        "predicted_tents": 78.79527220772714,
+        "mean_bias_predicted_minus_observed": 2.879527220772713,
+        "mean_bias_bootstrap_95_ci": [
+          -0.004183284737566201,
+          7.225049829604947
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 3.100462559250251,
+        "rmse": 6.990527084775923,
+        "observed_on_predicted_slope": 0.6593262044225111,
+        "observed_on_predicted_intercept": -0.1951787751159258
+      },
+      "Al Mughraqa": {
+        "n_tiles": 19,
+        "observed_tents": 0.0,
+        "predicted_tents": 3.854846288985433,
+        "mean_bias_predicted_minus_observed": 0.20288664678870702,
+        "mean_bias_bootstrap_95_ci": [
+          0.08678496926462478,
+          0.3813221754174602
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 0.20288664678870702,
+        "rmse": 0.39836660593269185,
+        "observed_on_predicted_slope": 0.0,
+        "observed_on_predicted_intercept": 0.0
+      },
+      "Al Musaddar": {
+        "n_tiles": 14,
+        "observed_tents": 5.0,
+        "predicted_tents": 23.704091947435355,
+        "mean_bias_predicted_minus_observed": 1.3360065676739539,
+        "mean_bias_bootstrap_95_ci": [
+          0.07088595726709486,
+          3.7350557975578873
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 1.3360065676739539,
+        "rmse": 4.416830849629478,
+        "observed_on_predicted_slope": 0.2340274757692201,
+        "observed_on_predicted_intercept": -0.03910062884712813
+      },
+      "Al Qarara": {
+        "n_tiles": 6,
+        "observed_tents": 1.0,
+        "predicted_tents": 5.727207308176668,
+        "mean_bias_predicted_minus_observed": 0.7878678846961114,
+        "mean_bias_bootstrap_95_ci": [
+          0.13024797089522383,
+          1.672555645258049
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 0.7878678846961114,
+        "rmse": 1.2946704054881741,
+        "observed_on_predicted_slope": 0.14618406359243674,
+        "observed_on_predicted_intercept": 0.02712892710907232
+      },
+      "Al Qaraya al Badawiya": {
+        "n_tiles": 6,
+        "observed_tents": 0.0,
+        "predicted_tents": 0.34179037698426906,
+        "mean_bias_predicted_minus_observed": 0.05696506283071151,
+        "mean_bias_bootstrap_95_ci": [
+          0.011569575581113267,
+          0.13423724094199838
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 0.05696506283071151,
+        "rmse": 0.10192893893113128,
+        "observed_on_predicted_slope": 0.0,
+        "observed_on_predicted_intercept": 0.0
+      },
+      "Al Zahra": {
+        "n_tiles": 10,
+        "observed_tents": 0.0,
+        "predicted_tents": 11.6958449563662,
+        "mean_bias_predicted_minus_observed": 1.16958449563662,
+        "mean_bias_bootstrap_95_ci": [
+          0.2533017157802703,
+          2.7589489752147855
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 1.16958449563662,
+        "rmse": 2.6231819303000137,
+        "observed_on_predicted_slope": 0.0,
+        "observed_on_predicted_intercept": 0.0
+      },
+      "An Naser": {
+        "n_tiles": 16,
+        "observed_tents": 12.0,
+        "predicted_tents": 22.09497951442355,
+        "mean_bias_predicted_minus_observed": 0.630936219651472,
+        "mean_bias_bootstrap_95_ci": [
+          -0.43012432530820166,
+          2.0931816966190104
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 1.2607226934123936,
+        "rmse": 2.7225662786254152,
+        "observed_on_predicted_slope": 0.26150537811413094,
+        "observed_on_predicted_intercept": 0.3888777517285432
+      },
+      "An Nuseirat Camp": {
+        "n_tiles": 19,
+        "observed_tents": 322.0,
+        "predicted_tents": 259.57158105668367,
+        "mean_bias_predicted_minus_observed": -3.285706260174544,
+        "mean_bias_bootstrap_95_ci": [
+          -7.143787772780319,
+          -0.1629479812213446
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 4.8591288838803495,
+        "rmse": 8.532092813114959,
+        "observed_on_predicted_slope": 1.1408316983536178,
+        "observed_on_predicted_intercept": 1.3617111757247229
+      },
+      "Az Zawayda": {
+        "n_tiles": 15,
+        "observed_tents": 538.0,
+        "predicted_tents": 533.97235574652,
+        "mean_bias_predicted_minus_observed": -0.2685096168986684,
+        "mean_bias_bootstrap_95_ci": [
+          -4.121610854200697,
+          3.4969521348503294
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 5.009528822233989,
+        "rmse": 7.477903799060256,
+        "observed_on_predicted_slope": 1.0279388493750627,
+        "observed_on_predicted_intercept": -0.7260619309446221
+      },
+      "Beit Hanoun": {
+        "n_tiles": 12,
+        "observed_tents": 1.0,
+        "predicted_tents": 1.48245661493533,
+        "mean_bias_predicted_minus_observed": 0.04020471791127749,
+        "mean_bias_bootstrap_95_ci": [
+          -0.21349468852767486,
+          0.2998919510720106
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 0.20094623881242998,
+        "rmse": 0.42381808533412213,
+        "observed_on_predicted_slope": -0.08432549536963505,
+        "observed_on_predicted_intercept": 0.0937507407015345
+      },
+      "Beit Lahiya": {
+        "n_tiles": 12,
+        "observed_tents": 2.0,
+        "predicted_tents": 17.34127926441574,
+        "mean_bias_predicted_minus_observed": 1.2784399387013112,
+        "mean_bias_bootstrap_95_ci": [
+          0.16728981404637713,
+          3.2434667191594273
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 1.2784399387013112,
+        "rmse": 3.398727428953398,
+        "observed_on_predicted_slope": 0.02124643498600436,
+        "observed_on_predicted_intercept": 0.13596330312787042
+      },
+      "Deir al Balah": {
+        "n_tiles": 7,
+        "observed_tents": 80.0,
+        "predicted_tents": 79.721682964614,
+        "mean_bias_predicted_minus_observed": -0.03975957648371293,
+        "mean_bias_bootstrap_95_ci": [
+          -4.508984943967916,
+          3.658355981237648
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 3.226755595786913,
+        "rmse": 5.398630500799839,
+        "observed_on_predicted_slope": 1.1829502638028946,
+        "observed_on_predicted_intercept": -2.043826556257265
+      },
+      "Gaza": {
+        "n_tiles": 11,
+        "observed_tents": 75.0,
+        "predicted_tents": 87.05802186723908,
+        "mean_bias_predicted_minus_observed": 1.0961838061126425,
+        "mean_bias_bootstrap_95_ci": [
+          -1.6595749811506681,
+          3.995659615745258
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 2.7288035461083826,
+        "rmse": 4.833302704929194,
+        "observed_on_predicted_slope": 1.1331023904733082,
+        "observed_on_predicted_intercept": -2.149604789786011
+      },
+      "Jabalya": {
+        "n_tiles": 8,
+        "observed_tents": 8.0,
+        "predicted_tents": 16.578523899075293,
+        "mean_bias_predicted_minus_observed": 1.0723154873844116,
+        "mean_bias_bootstrap_95_ci": [
+          -0.03091879211133347,
+          2.5462356706342235
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 1.258758849350918,
+        "rmse": 2.202673241885334,
+        "observed_on_predicted_slope": 0.341564377063883,
+        "observed_on_predicted_intercept": 0.29217085147170613
+      },
+      "Khan Yunis": {
+        "n_tiles": 48,
+        "observed_tents": 1761.0,
+        "predicted_tents": 1430.0706191686004,
+        "mean_bias_predicted_minus_observed": -6.894362100654161,
+        "mean_bias_bootstrap_95_ci": [
+          -15.72441190821616,
+          1.1574266282595556
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 18.08706728574377,
+        "rmse": 30.680692911715873,
+        "observed_on_predicted_slope": 1.2038080861282103,
+        "observed_on_predicted_intercept": 0.8222796856346044
+      },
+      "Khuza'a": {
+        "n_tiles": 46,
+        "observed_tents": 1.0,
+        "predicted_tents": 9.529246412931052,
+        "mean_bias_predicted_minus_observed": 0.1854184002811098,
+        "mean_bias_bootstrap_95_ci": [
+          0.05419895973605007,
+          0.3442923948380645
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 0.22628021670894852,
+        "rmse": 0.5381048239862289,
+        "observed_on_predicted_slope": -0.014043618769545706,
+        "observed_on_predicted_intercept": 0.024648371821397053
+      },
+      "Rafah": {
+        "n_tiles": 23,
+        "observed_tents": 462.0,
+        "predicted_tents": 382.6433276542795,
+        "mean_bias_predicted_minus_observed": -3.450290101987848,
+        "mean_bias_bootstrap_95_ci": [
+          -12.458409796431463,
+          5.541844329326351
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 11.002254848501748,
+        "rmse": 22.060383493949818,
+        "observed_on_predicted_slope": 0.837454743315775,
+        "observed_on_predicted_intercept": 6.154501315556157
+      },
+      "Shokat as Sufi": {
+        "n_tiles": 24,
+        "observed_tents": 3.0,
+        "predicted_tents": 22.191118239514783,
+        "mean_bias_predicted_minus_observed": 0.7996299266464493,
+        "mean_bias_bootstrap_95_ci": [
+          0.24708481747762162,
+          1.4925614229090753
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 0.9627155855229977,
+        "rmse": 1.7763537697146348,
+        "observed_on_predicted_slope": -0.03187825375948083,
+        "observed_on_predicted_intercept": 0.15447558743524573
+      },
+      "Wadi as Salqa": {
+        "n_tiles": 15,
+        "observed_tents": 0.0,
+        "predicted_tents": 3.0005123152695985,
+        "mean_bias_predicted_minus_observed": 0.20003415435130656,
+        "mean_bias_bootstrap_95_ci": [
+          0.07714700394113654,
+          0.3511566334925046
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 0.20003415435130656,
+        "rmse": 0.335265973729702,
+        "observed_on_predicted_slope": 0.0,
+        "observed_on_predicted_intercept": 0.0
+      }
+    },
+    "geographical_heterogeneity": {
+      "mae_min": 0.7411709289988555,
+      "mae_max": 6.1806525816140905,
+      "governorates_with_bias_ci_excluding_zero": [
+        "North Gaza"
+      ]
+    },
+    "by_observed_density": {
+      "zero (0 tents)": {
+        "n_tiles": 281,
+        "observed_tents": 0.0,
+        "predicted_tents": 233.0913138984,
+        "mean_bias_predicted_minus_observed": 0.8295064551544483,
+        "mean_bias_bootstrap_95_ci": [
+          0.4819353934254672,
+          1.3415468000992363
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 0.8295064551544483,
+        "rmse": 3.8687243344602233,
+        "observed_on_predicted_slope": 0.0,
+        "observed_on_predicted_intercept": 0.0
+      },
+      "low (1-9 tents)": {
+        "n_tiles": 39,
+        "observed_tents": 101.0,
+        "predicted_tents": 133.5733969344164,
+        "mean_bias_predicted_minus_observed": 0.8352153060106767,
+        "mean_bias_bootstrap_95_ci": [
+          -0.41245267355248527,
+          2.2818995246358864
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 2.6792572301459594,
+        "rmse": 4.426695762659562,
+        "observed_on_predicted_slope": 0.21776833937124074,
+        "observed_on_predicted_intercept": 1.8438959786004254
+      },
+      "high (10-49 tents)": {
+        "n_tiles": 29,
+        "observed_tents": 840.0,
+        "predicted_tents": 895.4434088193005,
+        "mean_bias_predicted_minus_observed": 1.911841683424158,
+        "mean_bias_bootstrap_95_ci": [
+          -2.8073799427110298,
+          6.9063866045354
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 10.211100390705843,
+        "rmse": 13.424564218547568,
+        "observed_on_predicted_slope": 0.48316368720799713,
+        "observed_on_predicted_intercept": 14.046698652026501
+      },
+      "highest (50+ tents)": {
+        "n_tiles": 28,
+        "observed_tents": 2443.0,
+        "predicted_tents": 1856.2953845999277,
+        "mean_bias_predicted_minus_observed": -20.953736264288306,
+        "mean_bias_bootstrap_95_ci": [
+          -35.227789269941596,
+          -6.126466405751671
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 33.92475929867293,
+        "rmse": 44.317607459805885,
+        "observed_on_predicted_slope": -0.17912288414480676,
+        "observed_on_predicted_intercept": 99.12517796836542
+      }
+    },
+    "humanitarian_zone": {
+      "inside": {
+        "n_tiles": 29,
+        "observed_tents": 1445.0,
+        "predicted_tents": 1029.1778850636556,
+        "mean_bias_predicted_minus_observed": -14.33869361849463,
+        "mean_bias_bootstrap_95_ci": [
+          -27.256021229031294,
+          -2.0030553239596824
+        ],
+        "bias_ci_excludes_zero": true,
+        "mae": 25.72475859003937,
+        "rmse": 37.57900704313378,
+        "observed_on_predicted_slope": 0.9533853257894377,
+        "observed_on_predicted_intercept": 15.992996784596627
+      },
+      "outside": {
+        "n_tiles": 348,
+        "observed_tents": 1939.0,
+        "predicted_tents": 2089.2256191883885,
+        "mean_bias_predicted_minus_observed": 0.4316828137597377,
+        "mean_bias_bootstrap_95_ci": [
+          -0.47844165030426533,
+          1.309350033428185
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 2.406837696713397,
+        "rmse": 8.34535650654261,
+        "observed_on_predicted_slope": 0.947696247306279,
+        "observed_on_predicted_intercept": -0.1176760893131387
+      }
+    },
+    "by_land_use": {
+      "Buildings/Roads": {
+        "n_tiles": 129,
+        "observed_tents": 1604.0,
+        "predicted_tents": 1283.330110477806,
+        "mean_bias_predicted_minus_observed": -2.485813097071269,
+        "mean_bias_bootstrap_95_ci": [
+          -5.720346023429991,
+          0.4532289989393993
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 6.9386128081437635,
+        "rmse": 17.99016348487777,
+        "observed_on_predicted_slope": 1.1695806040271168,
+        "observed_on_predicted_intercept": 0.7987751490013998
+      },
+      "Empty Field": {
+        "n_tiles": 127,
+        "observed_tents": 631.0,
+        "predicted_tents": 597.446853203766,
+        "mean_bias_predicted_minus_observed": -0.2641980062695606,
+        "mean_bias_bootstrap_95_ci": [
+          -2.253791377877202,
+          1.514905412188489
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 2.683902707583746,
+        "rmse": 10.703147239110946,
+        "observed_on_predicted_slope": 1.030027995710042,
+        "observed_on_predicted_intercept": 0.12293712796262932
+      },
+      "Trees/Vegetation": {
+        "n_tiles": 121,
+        "observed_tents": 1149.0,
+        "predicted_tents": 1237.6265405704726,
+        "mean_bias_predicted_minus_observed": 0.7324507485163009,
+        "mean_bias_bootstrap_95_ci": [
+          -0.6728490871914674,
+          2.4064900685999064
+        ],
+        "bias_ci_excludes_zero": false,
+        "mae": 2.873229929369609,
+        "rmse": 8.571819188029428,
+        "observed_on_predicted_slope": 0.9161197307265643,
+        "observed_on_predicted_intercept": 0.12550336291347872
+      }
+    }
+  },
+  "holdout_aggregate_accuracy": {
+    "municipality": {
+      "unit": "tents",
+      "n_groups": 21,
+      "mean_absolute_error": 33.597410281016685,
+      "95th_percentile_absolute_error": 79.35667234572054
+    },
+    "evacuation_block": {
+      "unit": "tents",
+      "n_groups": 151,
+      "mean_absolute_error": 8.370582602561266,
+      "95th_percentile_absolute_error": 47.33440223793425
+    },
+    "note": "Each held-out tile is summed once by spatial unit across the complete holdout; these reproduce the calibration pipeline metric definition."
+  },
+  "week_specific_95pct_credible_interval_widths": {
+    "municipality": {
+      "n_area_weeks": 1458,
+      "absolute_width_tents": {
+        "p25": 130.52835879859774,
+        "median": 477.66930078159527,
+        "p75": 2550.0899878786413,
+        "p90": 10186.65713677381,
+        "p95": 20898.412761971817
+      },
+      "width_as_percent_of_posterior_median": {
+        "p25": 62.512271229936864,
+        "median": 79.34983155996638,
+        "p75": 98.77207692352592,
+        "p90": 121.22069910753838,
+        "p95": 135.14715624047628
+      },
+      "definition": "upper 97.5% bound minus lower 2.5% bound for each area-week"
+    },
+    "evacuation_block": {
+      "n_area_weeks": 80114,
+      "absolute_width_tents": {
+        "p25": 1.1718592404823145,
+        "median": 5.482205505166748,
+        "p75": 28.93933404615402,
+        "p90": 136.31714666811575,
+        "p95": 322.6712509529286
+      },
+      "width_as_percent_of_posterior_median": {
+        "p25": 72.6871907278309,
+        "median": 91.41812761195902,
+        "p75": 110.77590158044629,
+        "p90": 131.17026305809674,
+        "p95": 144.16528395355624
+      },
+      "definition": "upper 97.5% bound minus lower 2.5% bound for each area-week"
+    }
+  }
+}

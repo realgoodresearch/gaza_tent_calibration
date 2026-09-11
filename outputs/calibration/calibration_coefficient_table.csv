@@ -1,0 +1,23 @@
+parameter,feature_name,component,coefficient_index,median,sd,credible_interval_2_5,credible_interval_97_5,status
+Intercept,alpha_muni,Shared: hurdle and positive count,,1.105916110986739,0.20320825838046364,0.6954252570188573,1.511869649149185,Estimated shared intercept
+Land use: Buildings/Roads,reference_land_use_Buildings/Roads,Hurdle,,0.0,0.0,0.0,0.0,Reference category; coefficient fixed to zero
+log(1+predicted count),log1p_model_tent_count,Hurdle,0.0,-1.5758221338991865,0.10860562011930142,-1.7938266019237858,-1.3689289567962888,Estimated
+Land use: Empty Field,land_use_Empty Field,Hurdle,1.0,1.491375740212904,0.23066333943505568,1.0496108824403372,1.9579418111029454,Estimated
+Land use: Trees/Vegetation,land_use_Trees/Vegetation,Hurdle,2.0,0.7756188452986341,0.20879916860977726,0.37567457913977576,1.1916430570716872,Estimated
+log(1+distance to Yellow Line),log1p_distance_to_yellow_line,Hurdle,3.0,-0.7155788192304633,0.12279715858292274,-0.9641285019915384,-0.47764279473012594,Estimated
+Humanitarian zone,is_humanitarian_zone,Hurdle,4.0,-1.2253726884444083,0.38080328468024444,-1.9850502461680204,-0.4957158888051048,Estimated
+Month: sine term,month_sin,Hurdle,5.0,-0.22063498091972839,0.0913820132996807,-0.3994770184530892,-0.04135338438156902,Estimated
+Month: cosine term,month_cos,Hurdle,6.0,0.13637911871799707,0.1071394787286173,-0.06924357441837428,0.34726134449293916,Estimated
+Land use: Buildings/Roads,reference_land_use_Buildings/Roads,Positive count,,0.0,0.0,0.0,0.0,Reference category; coefficient fixed to zero
+log(1+predicted count),log1p_model_tent_count,Positive count,0.0,1.2439969401631372,0.046245626506310575,1.1542070989051374,1.3354886086102584,Estimated
+Hours from sunrise: spline 1,hours_from_sunrise_cand_s0,Positive count,1.0,0.09184469177085469,0.07186686169551926,-0.04654434007974586,0.2337316679548419,Estimated
+Hours from sunrise: spline 2,hours_from_sunrise_cand_s1,Positive count,2.0,0.10633102438412467,0.25223218944772074,-0.40607054688663313,0.5942540389282487,Estimated
+Hours from sunrise: spline 3,hours_from_sunrise_cand_s2,Positive count,3.0,0.10259331871875506,0.2366552604964647,-0.3610538111299208,0.5659963311521043,Estimated
+Hours from sunrise: spline 4,hours_from_sunrise_cand_s3,Positive count,4.0,-0.08534876641529084,0.047591873792196475,-0.17529614284750972,0.010607582912436856,Estimated
+Solar elevation,sun_elevation,Positive count,5.0,-0.12119852615243004,0.05628300908758862,-0.2294258555160656,-0.008929435574293912,Estimated
+log(1+distance to nearest outpost),log1p_distance_to_nearest_outpost,Positive count,6.0,0.04632624488084698,0.06513159151201425,-0.07737285456976883,0.17688362303967048,Estimated
+Land use: Empty Field,land_use_Empty Field,Positive count,7.0,-0.1188155655970083,0.10577672371943603,-0.32937220770766445,0.0849113283163655,Estimated
+Land use: Trees/Vegetation,land_use_Trees/Vegetation,Positive count,8.0,-0.24631085545447284,0.1268467424400727,-0.4997134900947392,0.0003097099471932943,Estimated
+Agricultural land,is_agriculture,Positive count,9.0,0.06139609243703219,0.09004763000806017,-0.10976069853314352,0.24050200527879523,Estimated
+sigma_muni,sigma_muni,Municipality SD,,0.7633830461593447,0.1675471595295236,0.5015117318995803,1.16182716447591,Estimated
+phi,alpha,Dispersion,,4.206043910132264,0.5424527770206583,3.2562063350081405,5.388663130623991,Estimated

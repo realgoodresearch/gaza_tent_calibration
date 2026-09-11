@@ -1,0 +1,321 @@
+{
+  "method_note": "Week-level territory CI for min/max weeks estimated from municipality-level means and 95% CrI using normal approximation per municipality and Monte Carlo summation.",
+  "draws": 20000,
+  "seed": 2026,
+  "extremes": {
+    "min": {
+      "week_id": "20231002-20231008",
+      "territory_corrected_count_mean": 220.54396385874085,
+      "territory_corrected_count_sum_of_means": 4631.423241033558,
+      "territory_corrected_count_p2_5": 4036.4251940666327,
+      "territory_corrected_count_p50": 4631.183361109182,
+      "territory_corrected_count_p97_5": 5228.07216818256,
+      "municipality_week_sources": [
+        {
+          "municipality": "Al Bureij Camp",
+          "target_week": "20231002-20231008",
+          "source_week": "20231002-20231008",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Al Fukhkhari",
+          "target_week": "20231002-20231008",
+          "source_week": "20231113-20231119",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        },
+        {
+          "municipality": "Al Maghazi Camp",
+          "target_week": "20231002-20231008",
+          "source_week": "20231009-20231015",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        },
+        {
+          "municipality": "Al Mughraqa",
+          "target_week": "20231002-20231008",
+          "source_week": "20231002-20231008",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Al Musaddar",
+          "target_week": "20231002-20231008",
+          "source_week": "20231009-20231015",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        },
+        {
+          "municipality": "Al Qarara",
+          "target_week": "20231002-20231008",
+          "source_week": "20231009-20231015",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        },
+        {
+          "municipality": "Al Qaraya al Badawiya",
+          "target_week": "20231002-20231008",
+          "source_week": "20231002-20231008",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Al Zahra",
+          "target_week": "20231002-20231008",
+          "source_week": "20231002-20231008",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "An Naser",
+          "target_week": "20231002-20231008",
+          "source_week": "20231016-20231022",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        },
+        {
+          "municipality": "An Nuseirat Camp",
+          "target_week": "20231002-20231008",
+          "source_week": "20231009-20231015",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        },
+        {
+          "municipality": "Az Zawayda",
+          "target_week": "20231002-20231008",
+          "source_week": "20231009-20231015",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        },
+        {
+          "municipality": "Beit Hanoun",
+          "target_week": "20231002-20231008",
+          "source_week": "20231113-20231119",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        },
+        {
+          "municipality": "Beit Lahiya",
+          "target_week": "20231002-20231008",
+          "source_week": "20231002-20231008",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Deir al Balah",
+          "target_week": "20231002-20231008",
+          "source_week": "20231009-20231015",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        },
+        {
+          "municipality": "Gaza",
+          "target_week": "20231002-20231008",
+          "source_week": "20231002-20231008",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Jabalya",
+          "target_week": "20231002-20231008",
+          "source_week": "20231009-20231015",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        },
+        {
+          "municipality": "Khan Yunis",
+          "target_week": "20231002-20231008",
+          "source_week": "20231009-20231015",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        },
+        {
+          "municipality": "Khuza'a",
+          "target_week": "20231002-20231008",
+          "source_week": "20231113-20231119",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        },
+        {
+          "municipality": "Rafah",
+          "target_week": "20231002-20231008",
+          "source_week": "20231009-20231015",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        },
+        {
+          "municipality": "Shokat as Sufi",
+          "target_week": "20231002-20231008",
+          "source_week": "20231113-20231119",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        },
+        {
+          "municipality": "Wadi as Salqa",
+          "target_week": "20231002-20231008",
+          "source_week": "20231009-20231015",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": true
+        }
+      ]
+    },
+    "max": {
+      "week_id": "20260309-20260315",
+      "territory_corrected_count_mean": 13162.61734403511,
+      "territory_corrected_count_sum_of_means": 276414.9642247373,
+      "territory_corrected_count_p2_5": 242099.4537262925,
+      "territory_corrected_count_p50": 276407.0641528163,
+      "territory_corrected_count_p97_5": 311283.36873723083,
+      "municipality_week_sources": [
+        {
+          "municipality": "Al Bureij Camp",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Al Fukhkhari",
+          "target_week": "20260309-20260315",
+          "source_week": "20260126-20260201",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Al Maghazi Camp",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Al Mughraqa",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Al Musaddar",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Al Qarara",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Al Qaraya al Badawiya",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Al Zahra",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "An Naser",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "An Nuseirat Camp",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Az Zawayda",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Beit Hanoun",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Beit Lahiya",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Deir al Balah",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Gaza",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Jabalya",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Khan Yunis",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Khuza'a",
+          "target_week": "20260309-20260315",
+          "source_week": "20260126-20260201",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Rafah",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Shokat as Sufi",
+          "target_week": "20260309-20260315",
+          "source_week": "20260216-20260222",
+          "imputed_from_previous_week": true,
+          "imputed_from_next_week": false
+        },
+        {
+          "municipality": "Wadi as Salqa",
+          "target_week": "20260309-20260315",
+          "source_week": "20260309-20260315",
+          "imputed_from_previous_week": false,
+          "imputed_from_next_week": false
+        }
+      ]
+    }
+  }
+}

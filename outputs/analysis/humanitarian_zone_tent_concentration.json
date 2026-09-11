@@ -1,0 +1,1003 @@
+{
+  "primary_metric": "Fraction of all calibrated tents located within the contemporaneously designated humanitarian zone.",
+  "spatial_allocation_method": "Each calibrated block-week count is allocated to the active zone in proportion to the fraction of the block polygon lying inside it.",
+  "temporal_rule": "The humanitarian-zone designation active on the final day of each observation week is used. Where no designation is active, the most recently available humanitarian-zone polygon is carried forward and the week is flagged as unofficial.",
+  "coverage_rule": "Only weeks with geospatial prediction coverage of at least 80% of Gaza's land area are included.",
+  "uncertainty_method": "10,000 Monte Carlo draws from independent non-negative normal marginal approximations reconstructed from each block-week 95% credible interval. This approximates, rather than recovers, the unavailable joint posterior draws.",
+  "land_area_denominator": "Zone size is reported against Gaza's full municipal-boundary land area; the density ratio compares the zone with the remainder of contemporaneously covered Gaza.",
+  "gaza_land_area_km2": 364.78108148247617,
+  "baseline": {
+    "week_key": "20231120-20231126",
+    "week_end": "2023-11-26",
+    "official_humanitarian_zone_active": true,
+    "calibrated_tent_count": 19163.331744290692,
+    "calibrated_tents_in_humanitarian_zone": 1018.3895185717391,
+    "fraction_of_tents_in_humanitarian_zone": 0.05314261278575145,
+    "percent_of_tents_in_humanitarian_zone": 5.314261278575145,
+    "percent_of_tents_in_humanitarian_zone_95_cri": [
+      4.789473996603977,
+      5.847548043463567
+    ],
+    "humanitarian_zone_area_km2": 7.069314165583772,
+    "humanitarian_zone_percent_of_gaza_land_area": 1.9379607453473096,
+    "gaza_land_area_covered_percent": 88.4726288809152,
+    "humanitarian_zone_percent_of_covered_gaza_area": 2.1904636155390143,
+    "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 2.5061293790142507,
+    "blocks_with_calibrated_counts": 603
+  },
+  "peak": {
+    "week_key": "20240708-20240714",
+    "week_end": "2024-07-14",
+    "official_humanitarian_zone_active": true,
+    "calibrated_tent_count": 117930.99157022101,
+    "calibrated_tents_in_humanitarian_zone": 104459.66793097748,
+    "fraction_of_tents_in_humanitarian_zone": 0.8857694363468305,
+    "percent_of_tents_in_humanitarian_zone": 88.57694363468305,
+    "percent_of_tents_in_humanitarian_zone_95_cri": [
+      87.83324065737614,
+      89.27383289286104
+    ],
+    "humanitarian_zone_area_km2": 60.331836895206976,
+    "humanitarian_zone_percent_of_gaza_land_area": 16.539190204167774,
+    "gaza_land_area_covered_percent": 92.73266523497271,
+    "humanitarian_zone_percent_of_covered_gaza_area": 17.83534438728748,
+    "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 35.72250540746257,
+    "blocks_with_calibrated_counts": 608
+  },
+  "change_baseline_to_peak": {
+    "percentage_point_change_in_zone_tent_share": 83.2626823561079,
+    "fold_change_in_zone_tent_share": 16.66778108780384
+  },
+  "weeks": [
+    {
+      "week_key": "20231120-20231126",
+      "week_end": "2023-11-26",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 19163.331744290692,
+      "calibrated_tents_in_humanitarian_zone": 1018.3895185717391,
+      "fraction_of_tents_in_humanitarian_zone": 0.05314261278575145,
+      "percent_of_tents_in_humanitarian_zone": 5.314261278575145,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        4.789473996603977,
+        5.847548043463567
+      ],
+      "humanitarian_zone_area_km2": 7.069314165583772,
+      "humanitarian_zone_percent_of_gaza_land_area": 1.9379607453473096,
+      "gaza_land_area_covered_percent": 88.4726288809152,
+      "humanitarian_zone_percent_of_covered_gaza_area": 2.1904636155390143,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 2.5061293790142507,
+      "blocks_with_calibrated_counts": 603
+    },
+    {
+      "week_key": "20231127-20231203",
+      "week_end": "2023-12-03",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 25871.324079564612,
+      "calibrated_tents_in_humanitarian_zone": 1391.1444003821202,
+      "fraction_of_tents_in_humanitarian_zone": 0.0537716738464486,
+      "percent_of_tents_in_humanitarian_zone": 5.37716738464486,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        4.908033486009606,
+        5.853653556919378
+      ],
+      "humanitarian_zone_area_km2": 8.487332383573769,
+      "humanitarian_zone_percent_of_gaza_land_area": 2.3266920392584813,
+      "gaza_land_area_covered_percent": 99.75431706201448,
+      "humanitarian_zone_percent_of_covered_gaza_area": 2.3324224031447542,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 2.379582809779418,
+      "blocks_with_calibrated_counts": 619
+    },
+    {
+      "week_key": "20231204-20231210",
+      "week_end": "2023-12-10",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 17644.70628202882,
+      "calibrated_tents_in_humanitarian_zone": 2901.670294428683,
+      "fraction_of_tents_in_humanitarian_zone": 0.16444990628061867,
+      "percent_of_tents_in_humanitarian_zone": 16.444990628061866,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        15.392806710349829,
+        17.50161787301059
+      ],
+      "humanitarian_zone_area_km2": 17.67261961682146,
+      "humanitarian_zone_percent_of_gaza_land_area": 4.844719343722446,
+      "gaza_land_area_covered_percent": 83.37777904650746,
+      "humanitarian_zone_percent_of_covered_gaza_area": 5.8105641564524015,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 3.190399238483539,
+      "blocks_with_calibrated_counts": 573
+    },
+    {
+      "week_key": "20231225-20231231",
+      "week_end": "2023-12-31",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 39482.67300613825,
+      "calibrated_tents_in_humanitarian_zone": 7803.205926150778,
+      "fraction_of_tents_in_humanitarian_zone": 0.19763621183747207,
+      "percent_of_tents_in_humanitarian_zone": 19.763621183747208,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        18.4713563583196,
+        21.038954183768983
+      ],
+      "humanitarian_zone_area_km2": 17.67261961682146,
+      "humanitarian_zone_percent_of_gaza_land_area": 4.844719343722446,
+      "gaza_land_area_covered_percent": 91.11039459043546,
+      "humanitarian_zone_percent_of_covered_gaza_area": 5.317416706952809,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 4.3859593652623685,
+      "blocks_with_calibrated_counts": 595
+    },
+    {
+      "week_key": "20240101-20240107",
+      "week_end": "2024-01-07",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 57214.82676874417,
+      "calibrated_tents_in_humanitarian_zone": 14785.046733494693,
+      "fraction_of_tents_in_humanitarian_zone": 0.2584128549974323,
+      "percent_of_tents_in_humanitarian_zone": 25.84128549974323,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        24.14509663012567,
+        27.419768285509672
+      ],
+      "humanitarian_zone_area_km2": 17.67261961682146,
+      "humanitarian_zone_percent_of_gaza_land_area": 4.844719343722446,
+      "gaza_land_area_covered_percent": 83.48504598124813,
+      "humanitarian_zone_percent_of_covered_gaza_area": 5.803098371426463,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 5.6562501324813965,
+      "blocks_with_calibrated_counts": 565
+    },
+    {
+      "week_key": "20240108-20240114",
+      "week_end": "2024-01-14",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 63149.80607060423,
+      "calibrated_tents_in_humanitarian_zone": 16989.376377792905,
+      "fraction_of_tents_in_humanitarian_zone": 0.2690329145080516,
+      "percent_of_tents_in_humanitarian_zone": 26.90329145080516,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        25.468786585529053,
+        28.363951746948747
+      ],
+      "humanitarian_zone_area_km2": 17.67261961682146,
+      "humanitarian_zone_percent_of_gaza_land_area": 4.844719343722446,
+      "gaza_land_area_covered_percent": 87.74249434549385,
+      "humanitarian_zone_percent_of_covered_gaza_area": 5.52151996573739,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 6.29769821789419,
+      "blocks_with_calibrated_counts": 606
+    },
+    {
+      "week_key": "20240115-20240121",
+      "week_end": "2024-01-21",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 41043.96487746712,
+      "calibrated_tents_in_humanitarian_zone": 10331.60706300296,
+      "fraction_of_tents_in_humanitarian_zone": 0.2517204927410643,
+      "percent_of_tents_in_humanitarian_zone": 25.172049274106428,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        23.351105693045845,
+        26.961089632119407
+      ],
+      "humanitarian_zone_area_km2": 17.67261961682146,
+      "humanitarian_zone_percent_of_gaza_land_area": 4.844719343722446,
+      "gaza_land_area_covered_percent": 90.17254829202284,
+      "humanitarian_zone_percent_of_covered_gaza_area": 5.372660642747968,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 5.924912500162504,
+      "blocks_with_calibrated_counts": 491
+    },
+    {
+      "week_key": "20240212-20240218",
+      "week_end": "2024-02-18",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 46984.581314592244,
+      "calibrated_tents_in_humanitarian_zone": 18586.654122581826,
+      "fraction_of_tents_in_humanitarian_zone": 0.39559050229972514,
+      "percent_of_tents_in_humanitarian_zone": 39.55905022997251,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        37.60664719472629,
+        41.52409647026494
+      ],
+      "humanitarian_zone_area_km2": 17.67261961682146,
+      "humanitarian_zone_percent_of_gaza_land_area": 4.844719343722446,
+      "gaza_land_area_covered_percent": 82.2041007378626,
+      "humanitarian_zone_percent_of_covered_gaza_area": 5.893525140761015,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 10.451026304698644,
+      "blocks_with_calibrated_counts": 542
+    },
+    {
+      "week_key": "20240318-20240324",
+      "week_end": "2024-03-24",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 50948.16131650121,
+      "calibrated_tents_in_humanitarian_zone": 14598.221876719415,
+      "fraction_of_tents_in_humanitarian_zone": 0.28653088746484967,
+      "percent_of_tents_in_humanitarian_zone": 28.65308874648497,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        27.261969210666663,
+        29.981538550348557
+      ],
+      "humanitarian_zone_area_km2": 17.67261961682146,
+      "humanitarian_zone_percent_of_gaza_land_area": 4.844719343722446,
+      "gaza_land_area_covered_percent": 90.34336182724601,
+      "humanitarian_zone_percent_of_covered_gaza_area": 5.362562611945395,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 7.087398697588791,
+      "blocks_with_calibrated_counts": 599
+    },
+    {
+      "week_key": "20240325-20240331",
+      "week_end": "2024-03-31",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 49949.084308888705,
+      "calibrated_tents_in_humanitarian_zone": 18186.092205136218,
+      "fraction_of_tents_in_humanitarian_zone": 0.364092604634594,
+      "percent_of_tents_in_humanitarian_zone": 36.4092604634594,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        34.62890690181956,
+        38.20705776393504
+      ],
+      "humanitarian_zone_area_km2": 17.67261961682146,
+      "humanitarian_zone_percent_of_gaza_land_area": 4.844719343722446,
+      "gaza_land_area_covered_percent": 88.17527825169923,
+      "humanitarian_zone_percent_of_covered_gaza_area": 5.494419115858113,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 9.848127292434125,
+      "blocks_with_calibrated_counts": 599
+    },
+    {
+      "week_key": "20240415-20240421",
+      "week_end": "2024-04-21",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 82306.93687052725,
+      "calibrated_tents_in_humanitarian_zone": 30434.091055259094,
+      "fraction_of_tents_in_humanitarian_zone": 0.3697633785489232,
+      "percent_of_tents_in_humanitarian_zone": 36.97633785489232,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        34.72457394165698,
+        39.17614217444471
+      ],
+      "humanitarian_zone_area_km2": 17.67261961682146,
+      "humanitarian_zone_percent_of_gaza_land_area": 4.844719343722446,
+      "gaza_land_area_covered_percent": 87.53411328612674,
+      "humanitarian_zone_percent_of_covered_gaza_area": 5.532992861357002,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 10.017060748587028,
+      "blocks_with_calibrated_counts": 603
+    },
+    {
+      "week_key": "20240506-20240512",
+      "week_end": "2024-05-12",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 87255.72046068136,
+      "calibrated_tents_in_humanitarian_zone": 48148.601421182735,
+      "fraction_of_tents_in_humanitarian_zone": 0.551810255728496,
+      "percent_of_tents_in_humanitarian_zone": 55.1810255728496,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        53.237707440885615,
+        57.10852577052603
+      ],
+      "humanitarian_zone_area_km2": 60.331836895206976,
+      "humanitarian_zone_percent_of_gaza_land_area": 16.539190204167774,
+      "gaza_land_area_covered_percent": 99.81101002654052,
+      "humanitarian_zone_percent_of_covered_gaza_area": 16.5705068005723,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 6.19885770797997,
+      "blocks_with_calibrated_counts": 620
+    },
+    {
+      "week_key": "20240513-20240519",
+      "week_end": "2024-05-19",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 56605.652084393085,
+      "calibrated_tents_in_humanitarian_zone": 37125.30856932968,
+      "fraction_of_tents_in_humanitarian_zone": 0.6558586855245434,
+      "percent_of_tents_in_humanitarian_zone": 65.58586855245434,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        63.19748194827434,
+        67.81996737432065
+      ],
+      "humanitarian_zone_area_km2": 60.331836895206976,
+      "humanitarian_zone_percent_of_gaza_land_area": 16.539190204167774,
+      "gaza_land_area_covered_percent": 91.57608193857519,
+      "humanitarian_zone_percent_of_covered_gaza_area": 17.062986116676917,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 9.263323229558011,
+      "blocks_with_calibrated_counts": 574
+    },
+    {
+      "week_key": "20240520-20240526",
+      "week_end": "2024-05-26",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 151673.59064044608,
+      "calibrated_tents_in_humanitarian_zone": 117739.83111938446,
+      "fraction_of_tents_in_humanitarian_zone": 0.7762711400331768,
+      "percent_of_tents_in_humanitarian_zone": 77.62711400331767,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        75.81700630167293,
+        79.3499970754863
+      ],
+      "humanitarian_zone_area_km2": 60.331836895206976,
+      "humanitarian_zone_percent_of_gaza_land_area": 16.539190204167774,
+      "gaza_land_area_covered_percent": 85.57454338535679,
+      "humanitarian_zone_percent_of_covered_gaza_area": 19.327231615702576,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 14.482673502907662,
+      "blocks_with_calibrated_counts": 586
+    },
+    {
+      "week_key": "20240527-20240602",
+      "week_end": "2024-06-02",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 146706.0215418296,
+      "calibrated_tents_in_humanitarian_zone": 112198.43337308553,
+      "fraction_of_tents_in_humanitarian_zone": 0.7647841049325635,
+      "percent_of_tents_in_humanitarian_zone": 76.47841049325635,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        74.94595304178291,
+        77.92619315210082
+      ],
+      "humanitarian_zone_area_km2": 60.331836895206976,
+      "humanitarian_zone_percent_of_gaza_land_area": 16.539190204167774,
+      "gaza_land_area_covered_percent": 99.99999999999997,
+      "humanitarian_zone_percent_of_covered_gaza_area": 16.539190204167802,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 16.407429208547434,
+      "blocks_with_calibrated_counts": 620
+    },
+    {
+      "week_key": "20240603-20240609",
+      "week_end": "2024-06-09",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 112031.10263116688,
+      "calibrated_tents_in_humanitarian_zone": 91580.5650766931,
+      "fraction_of_tents_in_humanitarian_zone": 0.8174566073690998,
+      "percent_of_tents_in_humanitarian_zone": 81.74566073690997,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        79.45592565424545,
+        83.80814662941252
+      ],
+      "humanitarian_zone_area_km2": 60.331836895206976,
+      "humanitarian_zone_percent_of_gaza_land_area": 16.539190204167774,
+      "gaza_land_area_covered_percent": 81.96373934326373,
+      "humanitarian_zone_percent_of_covered_gaza_area": 14.350240720613611,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 26.727943905125883,
+      "blocks_with_calibrated_counts": 550
+    },
+    {
+      "week_key": "20240610-20240616",
+      "week_end": "2024-06-16",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 161917.84980941273,
+      "calibrated_tents_in_humanitarian_zone": 125922.46947391736,
+      "fraction_of_tents_in_humanitarian_zone": 0.7776935626438707,
+      "percent_of_tents_in_humanitarian_zone": 77.76935626438707,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        76.24008198913774,
+        79.24229579687653
+      ],
+      "humanitarian_zone_area_km2": 60.331836895206976,
+      "humanitarian_zone_percent_of_gaza_land_area": 16.539190204167774,
+      "gaza_land_area_covered_percent": 99.99569393350791,
+      "humanitarian_zone_percent_of_covered_gaza_area": 16.539902423363873,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 17.652345143639405,
+      "blocks_with_calibrated_counts": 620
+    },
+    {
+      "week_key": "20240624-20240630",
+      "week_end": "2024-06-30",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 99782.33160063655,
+      "calibrated_tents_in_humanitarian_zone": 87049.82368618478,
+      "fraction_of_tents_in_humanitarian_zone": 0.8723971698174816,
+      "percent_of_tents_in_humanitarian_zone": 87.23971698174816,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        86.13040581288357,
+        88.2849362151171
+      ],
+      "humanitarian_zone_area_km2": 60.331836895206976,
+      "humanitarian_zone_percent_of_gaza_land_area": 16.539190204167774,
+      "gaza_land_area_covered_percent": 87.49681112641156,
+      "humanitarian_zone_percent_of_covered_gaza_area": 18.902620554105336,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 29.331802040153566,
+      "blocks_with_calibrated_counts": 539
+    },
+    {
+      "week_key": "20240708-20240714",
+      "week_end": "2024-07-14",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 117930.99157022101,
+      "calibrated_tents_in_humanitarian_zone": 104459.66793097748,
+      "fraction_of_tents_in_humanitarian_zone": 0.8857694363468305,
+      "percent_of_tents_in_humanitarian_zone": 88.57694363468305,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        87.83324065737614,
+        89.27383289286104
+      ],
+      "humanitarian_zone_area_km2": 60.331836895206976,
+      "humanitarian_zone_percent_of_gaza_land_area": 16.539190204167774,
+      "gaza_land_area_covered_percent": 92.73266523497271,
+      "humanitarian_zone_percent_of_covered_gaza_area": 17.83534438728748,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 35.72250540746257,
+      "blocks_with_calibrated_counts": 608
+    },
+    {
+      "week_key": "20240722-20240728",
+      "week_end": "2024-07-28",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 115670.92606697859,
+      "calibrated_tents_in_humanitarian_zone": 96537.47173213707,
+      "fraction_of_tents_in_humanitarian_zone": 0.8345871777341664,
+      "percent_of_tents_in_humanitarian_zone": 83.45871777341664,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        82.28445504447721,
+        84.4934199490404
+      ],
+      "humanitarian_zone_area_km2": 47.33066558023595,
+      "humanitarian_zone_percent_of_gaza_land_area": 12.975087794543336,
+      "gaza_land_area_covered_percent": 96.1589962389393,
+      "humanitarian_zone_percent_of_covered_gaza_area": 13.493368589562218,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 32.34681714000554,
+      "blocks_with_calibrated_counts": 615
+    },
+    {
+      "week_key": "20240826-20240901",
+      "week_end": "2024-09-01",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 103687.69628184268,
+      "calibrated_tents_in_humanitarian_zone": 87299.33012715715,
+      "fraction_of_tents_in_humanitarian_zone": 0.8419449294143939,
+      "percent_of_tents_in_humanitarian_zone": 84.19449294143939,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        83.06085618480031,
+        85.24031041661993
+      ],
+      "humanitarian_zone_area_km2": 47.08357325505175,
+      "humanitarian_zone_percent_of_gaza_land_area": 12.90735063992446,
+      "gaza_land_area_covered_percent": 88.17563925175335,
+      "humanitarian_zone_percent_of_covered_gaza_area": 14.638227462204433,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 31.06348561140325,
+      "blocks_with_calibrated_counts": 546
+    },
+    {
+      "week_key": "20241021-20241027",
+      "week_end": "2024-10-27",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 221086.77044832185,
+      "calibrated_tents_in_humanitarian_zone": 189950.0258386967,
+      "fraction_of_tents_in_humanitarian_zone": 0.859165048426526,
+      "percent_of_tents_in_humanitarian_zone": 85.9165048426526,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        84.33349482025127,
+        87.24329467695114
+      ],
+      "humanitarian_zone_area_km2": 67.59405064123955,
+      "humanitarian_zone_percent_of_gaza_land_area": 18.53003186638305,
+      "gaza_land_area_covered_percent": 89.48796180520016,
+      "humanitarian_zone_percent_of_covered_gaza_area": 20.70673137770168,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 23.360972790714932,
+      "blocks_with_calibrated_counts": 614
+    },
+    {
+      "week_key": "20241230-20250105",
+      "week_end": "2025-01-05",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 176105.49554869483,
+      "calibrated_tents_in_humanitarian_zone": 155463.62940695244,
+      "fraction_of_tents_in_humanitarian_zone": 0.8827869279296017,
+      "percent_of_tents_in_humanitarian_zone": 88.27869279296017,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        86.62163462015671,
+        89.60870683353272
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 80.26282885752394,
+      "humanitarian_zone_percent_of_covered_gaza_area": 23.751448843940718,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 24.17805348474665,
+      "blocks_with_calibrated_counts": 596
+    },
+    {
+      "week_key": "20250120-20250126",
+      "week_end": "2025-01-26",
+      "official_humanitarian_zone_active": false,
+      "calibrated_tent_count": 164542.62128760494,
+      "calibrated_tents_in_humanitarian_zone": 143172.97696282985,
+      "fraction_of_tents_in_humanitarian_zone": 0.870126997141835,
+      "percent_of_tents_in_humanitarian_zone": 87.0126997141835,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        85.32254140915161,
+        88.43065821111018
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 82.63201460650939,
+      "humanitarian_zone_percent_of_covered_gaza_area": 23.823134642129176,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 21.42337815427852,
+      "blocks_with_calibrated_counts": 581
+    },
+    {
+      "week_key": "20250324-20250330",
+      "week_end": "2025-03-30",
+      "official_humanitarian_zone_active": false,
+      "calibrated_tent_count": 196232.86437351775,
+      "calibrated_tents_in_humanitarian_zone": 133287.8585044525,
+      "fraction_of_tents_in_humanitarian_zone": 0.6792331087352773,
+      "percent_of_tents_in_humanitarian_zone": 67.92331087352773,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        65.2420160728909,
+        70.2473922300204
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 87.60919869234469,
+      "humanitarian_zone_percent_of_covered_gaza_area": 22.855520159183545,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 7.147317212226633,
+      "blocks_with_calibrated_counts": 601
+    },
+    {
+      "week_key": "20250331-20250406",
+      "week_end": "2025-04-06",
+      "official_humanitarian_zone_active": false,
+      "calibrated_tent_count": 202642.37425721064,
+      "calibrated_tents_in_humanitarian_zone": 126873.02156866036,
+      "fraction_of_tents_in_humanitarian_zone": 0.6260932444841103,
+      "percent_of_tents_in_humanitarian_zone": 62.60932444841103,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        61.00118888075866,
+        64.11524371965109
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 84.21632647307044,
+      "humanitarian_zone_percent_of_covered_gaza_area": 23.776313818236734,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 5.368106571607916,
+      "blocks_with_calibrated_counts": 581
+    },
+    {
+      "week_key": "20250421-20250427",
+      "week_end": "2025-04-27",
+      "official_humanitarian_zone_active": false,
+      "calibrated_tent_count": 173042.25528345635,
+      "calibrated_tents_in_humanitarian_zone": 112552.98259251754,
+      "fraction_of_tents_in_humanitarian_zone": 0.650436405883333,
+      "percent_of_tents_in_humanitarian_zone": 65.04364058833329,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        63.153220622992954,
+        66.82230640247742
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 86.24487602087885,
+      "humanitarian_zone_percent_of_covered_gaza_area": 23.217075601778994,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 6.153692328867998,
+      "blocks_with_calibrated_counts": 579
+    },
+    {
+      "week_key": "20250512-20250518",
+      "week_end": "2025-05-18",
+      "official_humanitarian_zone_active": false,
+      "calibrated_tent_count": 146061.90638232135,
+      "calibrated_tents_in_humanitarian_zone": 88343.66679107252,
+      "fraction_of_tents_in_humanitarian_zone": 0.6048371473382688,
+      "percent_of_tents_in_humanitarian_zone": 60.48371473382688,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        58.76633832255786,
+        62.14333786760998
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 83.77440335476922,
+      "humanitarian_zone_percent_of_covered_gaza_area": 23.8788041921454,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 4.8792758572059,
+      "blocks_with_calibrated_counts": 577
+    },
+    {
+      "week_key": "20250609-20250615",
+      "week_end": "2025-06-15",
+      "official_humanitarian_zone_active": false,
+      "calibrated_tent_count": 182037.23371778298,
+      "calibrated_tents_in_humanitarian_zone": 112764.37471234133,
+      "fraction_of_tents_in_humanitarian_zone": 0.6194577472384735,
+      "percent_of_tents_in_humanitarian_zone": 61.94577472384735,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        59.87823707618932,
+        63.94869481820557
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 91.40630411299662,
+      "humanitarian_zone_percent_of_covered_gaza_area": 21.90607996104391,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 5.8031174291405545,
+      "blocks_with_calibrated_counts": 597
+    },
+    {
+      "week_key": "20250616-20250622",
+      "week_end": "2025-06-22",
+      "official_humanitarian_zone_active": false,
+      "calibrated_tent_count": 108405.92188483033,
+      "calibrated_tents_in_humanitarian_zone": 54522.06707562648,
+      "fraction_of_tents_in_humanitarian_zone": 0.5029436227067958,
+      "percent_of_tents_in_humanitarian_zone": 50.294362270679585,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        48.425941767377324,
+        52.17105383482367
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 94.54811468261977,
+      "humanitarian_zone_percent_of_covered_gaza_area": 18.936503772101194,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 4.3315086645304515,
+      "blocks_with_calibrated_counts": 607
+    },
+    {
+      "week_key": "20250630-20250706",
+      "week_end": "2025-07-06",
+      "official_humanitarian_zone_active": false,
+      "calibrated_tent_count": 152959.96299757878,
+      "calibrated_tents_in_humanitarian_zone": 109260.56873070174,
+      "fraction_of_tents_in_humanitarian_zone": 0.7143082842693368,
+      "percent_of_tents_in_humanitarian_zone": 71.43082842693367,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        69.61766234447366,
+        73.09519251567599
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 84.41826132213515,
+      "humanitarian_zone_percent_of_covered_gaza_area": 23.719439082048087,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 8.040767470351351,
+      "blocks_with_calibrated_counts": 585
+    },
+    {
+      "week_key": "20250707-20250713",
+      "week_end": "2025-07-13",
+      "official_humanitarian_zone_active": false,
+      "calibrated_tent_count": 171581.88504538202,
+      "calibrated_tents_in_humanitarian_zone": 111303.89601012476,
+      "fraction_of_tents_in_humanitarian_zone": 0.6486925818578446,
+      "percent_of_tents_in_humanitarian_zone": 64.86925818578446,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        62.98286648906944,
+        66.66052194198514
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 92.55350694045019,
+      "humanitarian_zone_percent_of_covered_gaza_area": 21.634553600774243,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 6.688493117055407,
+      "blocks_with_calibrated_counts": 604
+    },
+    {
+      "week_key": "20250714-20250720",
+      "week_end": "2025-07-20",
+      "official_humanitarian_zone_active": false,
+      "calibrated_tent_count": 191108.48683152287,
+      "calibrated_tents_in_humanitarian_zone": 129304.21473929865,
+      "fraction_of_tents_in_humanitarian_zone": 0.6766011121907447,
+      "percent_of_tents_in_humanitarian_zone": 67.66011121907447,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        65.83601634551336,
+        69.3474375459124
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 98.60092392068329,
+      "humanitarian_zone_percent_of_covered_gaza_area": 20.307657648862776,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 8.210147205477508,
+      "blocks_with_calibrated_counts": 620
+    },
+    {
+      "week_key": "20250721-20250727",
+      "week_end": "2025-07-27",
+      "official_humanitarian_zone_active": false,
+      "calibrated_tent_count": 87953.74044388975,
+      "calibrated_tents_in_humanitarian_zone": 20843.748372906914,
+      "fraction_of_tents_in_humanitarian_zone": 0.2369853546615703,
+      "percent_of_tents_in_humanitarian_zone": 23.69853546615703,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        22.10929709686231,
+        25.29145248347841
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 82.34434976554968,
+      "humanitarian_zone_percent_of_covered_gaza_area": 17.413021029235544,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 1.4730791739684042,
+      "blocks_with_calibrated_counts": 580
+    },
+    {
+      "week_key": "20250804-20250810",
+      "week_end": "2025-08-10",
+      "official_humanitarian_zone_active": false,
+      "calibrated_tent_count": 112020.8108940956,
+      "calibrated_tents_in_humanitarian_zone": 68168.98666456278,
+      "fraction_of_tents_in_humanitarian_zone": 0.6085385931459619,
+      "percent_of_tents_in_humanitarian_zone": 60.85385931459619,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        58.99620025515938,
+        62.63881958392551
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 89.60923073159925,
+      "humanitarian_zone_percent_of_covered_gaza_area": 22.215620879686313,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 5.442934495451332,
+      "blocks_with_calibrated_counts": 597
+    },
+    {
+      "week_key": "20250818-20250824",
+      "week_end": "2025-08-24",
+      "official_humanitarian_zone_active": false,
+      "calibrated_tent_count": 177767.53656205366,
+      "calibrated_tents_in_humanitarian_zone": 122323.86713834915,
+      "fraction_of_tents_in_humanitarian_zone": 0.6881113925750404,
+      "percent_of_tents_in_humanitarian_zone": 68.81113925750404,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        67.26195440428259,
+        70.35502062583664
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 81.03691353517127,
+      "humanitarian_zone_percent_of_covered_gaza_area": 24.063853551981897,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 6.9621378038596955,
+      "blocks_with_calibrated_counts": 567
+    },
+    {
+      "week_key": "20250825-20250831",
+      "week_end": "2025-08-31",
+      "official_humanitarian_zone_active": false,
+      "calibrated_tent_count": 194446.94147335686,
+      "calibrated_tents_in_humanitarian_zone": 143959.03152756108,
+      "fraction_of_tents_in_humanitarian_zone": 0.7403512260813131,
+      "percent_of_tents_in_humanitarian_zone": 74.0351226081313,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        72.57232858998857,
+        75.40174007871178
+      ],
+      "humanitarian_zone_area_km2": 73.04207871706694,
+      "humanitarian_zone_percent_of_gaza_land_area": 20.02353806842799,
+      "gaza_land_area_covered_percent": 87.57098855898433,
+      "humanitarian_zone_percent_of_covered_gaza_area": 22.844579267210175,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 9.63018884608273,
+      "blocks_with_calibrated_counts": 591
+    },
+    {
+      "week_key": "20250915-20250921",
+      "week_end": "2025-09-21",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 215068.09303611482,
+      "calibrated_tents_in_humanitarian_zone": 151662.56529341527,
+      "fraction_of_tents_in_humanitarian_zone": 0.7051839403623097,
+      "percent_of_tents_in_humanitarian_zone": 70.51839403623097,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        68.47280196597569,
+        72.37224746820786
+      ],
+      "humanitarian_zone_area_km2": 43.19074873657916,
+      "humanitarian_zone_percent_of_gaza_land_area": 11.840183312427076,
+      "gaza_land_area_covered_percent": 82.58674471297428,
+      "humanitarian_zone_percent_of_covered_gaza_area": 14.336663048745866,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 14.292170406629337,
+      "blocks_with_calibrated_counts": 579
+    },
+    {
+      "week_key": "20251013-20251019",
+      "week_end": "2025-10-19",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 212987.87501971502,
+      "calibrated_tents_in_humanitarian_zone": 141171.93400786375,
+      "fraction_of_tents_in_humanitarian_zone": 0.6628167636058921,
+      "percent_of_tents_in_humanitarian_zone": 66.28167636058922,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        64.49148868663421,
+        67.94045723866682
+      ],
+      "humanitarian_zone_area_km2": 43.19074873657916,
+      "humanitarian_zone_percent_of_gaza_land_area": 11.840183312427076,
+      "gaza_land_area_covered_percent": 99.48155726374969,
+      "humanitarian_zone_percent_of_covered_gaza_area": 11.90188778512571,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 14.550511484806396,
+      "blocks_with_calibrated_counts": 620
+    },
+    {
+      "week_key": "20251117-20251123",
+      "week_end": "2025-11-23",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 176004.7710859233,
+      "calibrated_tents_in_humanitarian_zone": 135488.44563210302,
+      "fraction_of_tents_in_humanitarian_zone": 0.7697998457437228,
+      "percent_of_tents_in_humanitarian_zone": 76.97998457437228,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        75.49252153737974,
+        78.35322965453298
+      ],
+      "humanitarian_zone_area_km2": 43.19074873657916,
+      "humanitarian_zone_percent_of_gaza_land_area": 11.840183312427076,
+      "gaza_land_area_covered_percent": 93.63464709909516,
+      "humanitarian_zone_percent_of_covered_gaza_area": 12.64508777386259,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 23.10136770363613,
+      "blocks_with_calibrated_counts": 610
+    },
+    {
+      "week_key": "20251201-20251207",
+      "week_end": "2025-12-07",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 216207.8740538285,
+      "calibrated_tents_in_humanitarian_zone": 145252.909900291,
+      "fraction_of_tents_in_humanitarian_zone": 0.6718206288089578,
+      "percent_of_tents_in_humanitarian_zone": 67.18206288089577,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        65.30825016295417,
+        68.95073433837064
+      ],
+      "humanitarian_zone_area_km2": 43.19074873657916,
+      "humanitarian_zone_percent_of_gaza_land_area": 11.840183312427076,
+      "gaza_land_area_covered_percent": 92.13909719677102,
+      "humanitarian_zone_percent_of_covered_gaza_area": 12.850335712690269,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 13.883318958115735,
+      "blocks_with_calibrated_counts": 609
+    },
+    {
+      "week_key": "20251215-20251221",
+      "week_end": "2025-12-21",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 155028.19257709497,
+      "calibrated_tents_in_humanitarian_zone": 113076.5630144671,
+      "fraction_of_tents_in_humanitarian_zone": 0.7293935453593998,
+      "percent_of_tents_in_humanitarian_zone": 72.93935453593998,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        70.5810069551183,
+        75.06637059290665
+      ],
+      "humanitarian_zone_area_km2": 43.19074873657916,
+      "humanitarian_zone_percent_of_gaza_land_area": 11.840183312427076,
+      "gaza_land_area_covered_percent": 83.0880052394407,
+      "humanitarian_zone_percent_of_covered_gaza_area": 14.250171584100919,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 16.219480146159672,
+      "blocks_with_calibrated_counts": 541
+    },
+    {
+      "week_key": "20251229-20260104",
+      "week_end": "2026-01-04",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 214812.20384171384,
+      "calibrated_tents_in_humanitarian_zone": 147891.83257257254,
+      "fraction_of_tents_in_humanitarian_zone": 0.6884703472506053,
+      "percent_of_tents_in_humanitarian_zone": 68.84703472506052,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        66.40607036865292,
+        71.0781097824594
+      ],
+      "humanitarian_zone_area_km2": 43.19074873657916,
+      "humanitarian_zone_percent_of_gaza_land_area": 11.840183312427076,
+      "gaza_land_area_covered_percent": 88.23544372958033,
+      "humanitarian_zone_percent_of_covered_gaza_area": 13.418851667720148,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 14.259156582071544,
+      "blocks_with_calibrated_counts": 605
+    },
+    {
+      "week_key": "20260126-20260201",
+      "week_end": "2026-02-01",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 225366.9157360784,
+      "calibrated_tents_in_humanitarian_zone": 136879.82658786073,
+      "fraction_of_tents_in_humanitarian_zone": 0.607364333583716,
+      "percent_of_tents_in_humanitarian_zone": 60.7364333583716,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        58.74882576346829,
+        62.64141198352207
+      ],
+      "humanitarian_zone_area_km2": 43.19074873657916,
+      "humanitarian_zone_percent_of_gaza_land_area": 11.840183312427076,
+      "gaza_land_area_covered_percent": 99.91272773048924,
+      "humanitarian_zone_percent_of_covered_gaza_area": 11.85052553501042,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 11.506457944062747,
+      "blocks_with_calibrated_counts": 620
+    },
+    {
+      "week_key": "20260216-20260222",
+      "week_end": "2026-02-22",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 269199.0527152125,
+      "calibrated_tents_in_humanitarian_zone": 165122.75400332533,
+      "fraction_of_tents_in_humanitarian_zone": 0.6133853456683958,
+      "percent_of_tents_in_humanitarian_zone": 61.33853456683958,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        59.090113252118634,
+        63.4008162626605
+      ],
+      "humanitarian_zone_area_km2": 43.19074873657916,
+      "humanitarian_zone_percent_of_gaza_land_area": 11.840183312427076,
+      "gaza_land_area_covered_percent": 97.35679952240717,
+      "humanitarian_zone_percent_of_covered_gaza_area": 12.161639834618827,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 11.459011788842322,
+      "blocks_with_calibrated_counts": 613
+    },
+    {
+      "week_key": "20260309-20260315",
+      "week_end": "2026-03-15",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 276339.0483652201,
+      "calibrated_tents_in_humanitarian_zone": 172644.0160206749,
+      "fraction_of_tents_in_humanitarian_zone": 0.6247543264045047,
+      "percent_of_tents_in_humanitarian_zone": 62.47543264045047,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        60.28954306107707,
+        64.4157204946914
+      ],
+      "humanitarian_zone_area_km2": 43.19074873657916,
+      "humanitarian_zone_percent_of_gaza_land_area": 11.840183312427076,
+      "gaza_land_area_covered_percent": 92.32722599955845,
+      "humanitarian_zone_percent_of_covered_gaza_area": 12.824151472376835,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 11.317776745478278,
+      "blocks_with_calibrated_counts": 610
+    },
+    {
+      "week_key": "20260323-20260329",
+      "week_end": "2026-03-29",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 197166.87311631878,
+      "calibrated_tents_in_humanitarian_zone": 119331.43618440034,
+      "fraction_of_tents_in_humanitarian_zone": 0.6052306571500004,
+      "percent_of_tents_in_humanitarian_zone": 60.52306571500004,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        58.83730379334007,
+        62.16654265210683
+      ],
+      "humanitarian_zone_area_km2": 43.19074873657916,
+      "humanitarian_zone_percent_of_gaza_land_area": 11.840183312427076,
+      "gaza_land_area_covered_percent": 96.44786448264982,
+      "humanitarian_zone_percent_of_covered_gaza_area": 12.276252435383899,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 10.955415818992947,
+      "blocks_with_calibrated_counts": 616
+    },
+    {
+      "week_key": "20260518-20260524",
+      "week_end": "2026-05-24",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 33537.73606823952,
+      "calibrated_tents_in_humanitarian_zone": 12279.90681340453,
+      "fraction_of_tents_in_humanitarian_zone": 0.36615193072121793,
+      "percent_of_tents_in_humanitarian_zone": 36.61519307212179,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        24.185085781635305,
+        47.83289603067726
+      ],
+      "humanitarian_zone_area_km2": 43.19074873657916,
+      "humanitarian_zone_percent_of_gaza_land_area": 11.840183312427076,
+      "gaza_land_area_covered_percent": 92.1680957480015,
+      "humanitarian_zone_percent_of_covered_gaza_area": 12.846292652936572,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 3.919080742567835,
+      "blocks_with_calibrated_counts": 609
+    },
+    {
+      "week_key": "20260601-20260607",
+      "week_end": "2026-06-07",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 7841.887009908856,
+      "calibrated_tents_in_humanitarian_zone": 2924.1950213749983,
+      "fraction_of_tents_in_humanitarian_zone": 0.3728943069034331,
+      "percent_of_tents_in_humanitarian_zone": 37.28943069034331,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        22.7419962774963,
+        54.0058616467752
+      ],
+      "humanitarian_zone_area_km2": 43.19074873657916,
+      "humanitarian_zone_percent_of_gaza_land_area": 11.840183312427076,
+      "gaza_land_area_covered_percent": 88.02852421204932,
+      "humanitarian_zone_percent_of_covered_gaza_area": 13.450393969920016,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 3.826265478591134,
+      "blocks_with_calibrated_counts": 604
+    },
+    {
+      "week_key": "20260608-20260614",
+      "week_end": "2026-06-14",
+      "official_humanitarian_zone_active": true,
+      "calibrated_tent_count": 138199.39785218914,
+      "calibrated_tents_in_humanitarian_zone": 83607.5020635185,
+      "fraction_of_tents_in_humanitarian_zone": 0.6049773252481224,
+      "percent_of_tents_in_humanitarian_zone": 60.49773252481224,
+      "percent_of_tents_in_humanitarian_zone_95_cri": [
+        58.6657286267876,
+        62.22403604139485
+      ],
+      "humanitarian_zone_area_km2": 43.19074873657916,
+      "humanitarian_zone_percent_of_gaza_land_area": 11.840183312427076,
+      "gaza_land_area_covered_percent": 90.14355336478181,
+      "humanitarian_zone_percent_of_covered_gaza_area": 13.134808725049558,
+      "tent_density_ratio_zone_vs_remainder_of_covered_gaza": 10.128359305632838,
+      "blocks_with_calibrated_counts": 607
+    }
+  ]
+}

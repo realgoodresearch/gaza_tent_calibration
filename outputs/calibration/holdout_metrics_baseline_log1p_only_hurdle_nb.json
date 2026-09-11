@@ -1,0 +1,11 @@
+{
+  "count_bias": 0.5273803791193056,
+  "mae": 4.525964797846892,
+  "rmse": 12.46004586691613,
+  "calibration_slope": 0.98196500955943,
+  "calibration_intercept": -0.35598470859658354,
+  "municipality_abs_error_mean": 30.454113415951312,
+  "municipality_abs_error_p95": 85.02658220917851,
+  "block_abs_error_mean": 8.90078341238773,
+  "block_abs_error_p95": 37.233744215467304
+}

@@ -1,0 +1,670 @@
+{
+  "design": "For each block, identify the first observation week containing the specified military action. Calculate corrected-tent percentage change at t and t+1 relative to t-1, then summarize equally across blocks.",
+  "confidence_interval_method": "Two-sided 95% Student-t confidence interval for the mean block-level percentage change.",
+  "baseline_filter": "Only block events with more than 100 corrected tents at t-1 are included.",
+  "ground_military_evidence": {
+    "definition": "First dated tank point within, or newly observed berm geometry intersecting, each block.",
+    "blocks_with_first_action_date": 478,
+    "malformed_berm_features_skipped": 1,
+    "summary": {
+      "t_action_week_vs_t_minus_1": {
+        "n_blocks": 24,
+        "mean_percent_change": -51.35427037881965,
+        "mean_percent_change_95_percent_confidence_interval": [
+          -69.05953788499407,
+          -33.64900287264523
+        ],
+        "median_percent_change": -61.12716992149416,
+        "interquartile_range": [
+          -79.06734914453327,
+          -38.81188515661577
+        ],
+        "blocks_with_tent_decline": 21,
+        "percent_blocks_with_tent_decline": 87.5
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "n_blocks": 24,
+        "mean_percent_change": -35.01322044833763,
+        "mean_percent_change_95_percent_confidence_interval": [
+          -66.61146391443117,
+          -3.4149769822440916
+        ],
+        "median_percent_change": -65.77510050530961,
+        "interquartile_range": [
+          -84.63471908501528,
+          -9.053837906215326
+        ],
+        "blocks_with_tent_decline": 18,
+        "percent_blocks_with_tent_decline": 75.0
+      }
+    },
+    "block_events": [
+      {
+        "block_id": 10,
+        "first_action_date": "2024-05-18",
+        "week_t_minus_1": "20240506-20240512",
+        "week_t": "20240513-20240519",
+        "week_t_plus_1": "20240520-20240526",
+        "corrected_tents_t_minus_1": 115.0845878924,
+        "corrected_tents_t": 31.7870019894,
+        "corrected_tents_t_plus_1": 41.3085017356,
+        "percent_change_t_vs_t_minus_1": -72.3794449182,
+        "percent_change_t_plus_1_vs_t_minus_1": -64.1059654537
+      },
+      {
+        "block_id": 11,
+        "first_action_date": "2024-05-18",
+        "week_t_minus_1": "20240506-20240512",
+        "week_t": "20240513-20240519",
+        "week_t_plus_1": "20240520-20240526",
+        "corrected_tents_t_minus_1": 123.8357866743,
+        "corrected_tents_t": 32.6852841172,
+        "corrected_tents_t_plus_1": 27.7501627205,
+        "percent_change_t_vs_t_minus_1": -73.6059462333,
+        "percent_change_t_plus_1_vs_t_minus_1": -77.5911604668
+      },
+      {
+        "block_id": 38,
+        "first_action_date": "2023-12-06",
+        "week_t_minus_1": "20231127-20231203",
+        "week_t": "20231204-20231210",
+        "week_t_plus_1": "20231211-20231217",
+        "corrected_tents_t_minus_1": 100.1865995159,
+        "corrected_tents_t": 37.614604148,
+        "corrected_tents_t_plus_1": 160.97128189,
+        "percent_change_t_vs_t_minus_1": -62.4554537934,
+        "percent_change_t_plus_1_vs_t_minus_1": 60.6714697054
+      },
+      {
+        "block_id": 39,
+        "first_action_date": "2023-12-24",
+        "week_t_minus_1": "20231211-20231217",
+        "week_t": "20231218-20231224",
+        "week_t_plus_1": "20231225-20231231",
+        "corrected_tents_t_minus_1": 154.7624789838,
+        "corrected_tents_t": 33.7329853269,
+        "corrected_tents_t_plus_1": 51.547818062,
+        "percent_change_t_vs_t_minus_1": -78.203382662,
+        "percent_change_t_plus_1_vs_t_minus_1": -66.6923026819
+      },
+      {
+        "block_id": 40,
+        "first_action_date": "2023-12-19",
+        "week_t_minus_1": "20231211-20231217",
+        "week_t": "20231218-20231224",
+        "week_t_plus_1": "20231225-20231231",
+        "corrected_tents_t_minus_1": 131.7752430473,
+        "corrected_tents_t": 17.194823458,
+        "corrected_tents_t_plus_1": 54.9985219225,
+        "percent_change_t_vs_t_minus_1": -86.9514006878,
+        "percent_change_t_plus_1_vs_t_minus_1": -58.263387985
+      },
+      {
+        "block_id": 44,
+        "first_action_date": "2023-12-06",
+        "week_t_minus_1": "20231127-20231203",
+        "week_t": "20231204-20231210",
+        "week_t_plus_1": "20231211-20231217",
+        "corrected_tents_t_minus_1": 132.0207642527,
+        "corrected_tents_t": 82.0642986628,
+        "corrected_tents_t_plus_1": 197.9697349884,
+        "percent_change_t_vs_t_minus_1": -37.8398548688,
+        "percent_change_t_plus_1_vs_t_minus_1": 49.9534835365
+      },
+      {
+        "block_id": 66,
+        "first_action_date": "2025-06-20",
+        "week_t_minus_1": "20250609-20250615",
+        "week_t": "20250616-20250622",
+        "week_t_plus_1": "20250623-20250629",
+        "corrected_tents_t_minus_1": 116.5748902705,
+        "corrected_tents_t": 82.6747225491,
+        "corrected_tents_t_plus_1": 128.1429703948,
+        "percent_change_t_vs_t_minus_1": -29.0801626686,
+        "percent_change_t_plus_1_vs_t_minus_1": 9.9233034639
+      },
+      {
+        "block_id": 88,
+        "first_action_date": "2024-01-26",
+        "week_t_minus_1": "20240115-20240121",
+        "week_t": "20240122-20240128",
+        "week_t_plus_1": "20240129-20240204",
+        "corrected_tents_t_minus_1": 3550.638542457,
+        "corrected_tents_t": 256.7533052317,
+        "corrected_tents_t_plus_1": 5551.1346771196,
+        "percent_change_t_vs_t_minus_1": -92.7688132103,
+        "percent_change_t_plus_1_vs_t_minus_1": 56.3418695184
+      },
+      {
+        "block_id": 675,
+        "first_action_date": "2023-11-30",
+        "week_t_minus_1": "20231120-20231126",
+        "week_t": "20231127-20231203",
+        "week_t_plus_1": "20231204-20231210",
+        "corrected_tents_t_minus_1": 328.0423373396,
+        "corrected_tents_t": 190.4805728147,
+        "corrected_tents_t_plus_1": 22.4041206544,
+        "percent_change_t_vs_t_minus_1": -41.9341496102,
+        "percent_change_t_plus_1_vs_t_minus_1": -93.1703569618
+      },
+      {
+        "block_id": 1772,
+        "first_action_date": "2024-05-18",
+        "week_t_minus_1": "20240506-20240512",
+        "week_t": "20240513-20240519",
+        "week_t_plus_1": "20240520-20240526",
+        "corrected_tents_t_minus_1": 115.3451426069,
+        "corrected_tents_t": 2.192396379,
+        "corrected_tents_t_plus_1": 1.4693466291,
+        "percent_change_t_vs_t_minus_1": -98.0992729044,
+        "percent_change_t_plus_1_vs_t_minus_1": -98.7261304673
+      },
+      {
+        "block_id": 2232,
+        "first_action_date": "2024-01-05",
+        "week_t_minus_1": "20231225-20231231",
+        "week_t": "20240101-20240107",
+        "week_t_plus_1": "20240108-20240114",
+        "corrected_tents_t_minus_1": 124.7891360002,
+        "corrected_tents_t": 50.1666227612,
+        "corrected_tents_t_plus_1": 43.8535250478,
+        "percent_change_t_vs_t_minus_1": -59.7988860495,
+        "percent_change_t_plus_1_vs_t_minus_1": -64.8578983288
+      },
+      {
+        "block_id": 2305,
+        "first_action_date": "2023-11-30",
+        "week_t_minus_1": "20231120-20231126",
+        "week_t": "20231127-20231203",
+        "week_t_plus_1": "20231204-20231210",
+        "corrected_tents_t_minus_1": 164.2467869855,
+        "corrected_tents_t": 13.3215537122,
+        "corrected_tents_t_plus_1": 39.9375264019,
+        "percent_change_t_vs_t_minus_1": -91.8893063562,
+        "percent_change_t_plus_1_vs_t_minus_1": -75.6844397782
+      },
+      {
+        "block_id": 2367,
+        "first_action_date": "2024-06-14",
+        "week_t_minus_1": "20240603-20240609",
+        "week_t": "20240610-20240616",
+        "week_t_plus_1": "20240617-20240623",
+        "corrected_tents_t_minus_1": 152.6044329352,
+        "corrected_tents_t": 61.4429106677,
+        "corrected_tents_t_plus_1": 74.8220663707,
+        "percent_change_t_vs_t_minus_1": -59.7371390294,
+        "percent_change_t_plus_1_vs_t_minus_1": -50.9699260162
+      },
+      {
+        "block_id": 2369,
+        "first_action_date": "2024-06-18",
+        "week_t_minus_1": "20240610-20240616",
+        "week_t": "20240617-20240623",
+        "week_t_plus_1": "20240624-20240630",
+        "corrected_tents_t_minus_1": 139.1078697088,
+        "corrected_tents_t": 92.0105659071,
+        "corrected_tents_t_plus_1": 17.6665402099,
+        "percent_change_t_vs_t_minus_1": -33.8566782025,
+        "percent_change_t_plus_1_vs_t_minus_1": -87.3001144746
+      },
+      {
+        "block_id": 2370,
+        "first_action_date": "2024-09-21",
+        "week_t_minus_1": "20240909-20240915",
+        "week_t": "20240916-20240922",
+        "week_t_plus_1": "20240923-20240929",
+        "corrected_tents_t_minus_1": 153.0983386242,
+        "corrected_tents_t": 28.0793856968,
+        "corrected_tents_t_plus_1": 43.7086415106,
+        "percent_change_t_vs_t_minus_1": -81.659248592,
+        "percent_change_t_plus_1_vs_t_minus_1": -71.4506101742
+      },
+      {
+        "block_id": 2371,
+        "first_action_date": "2025-03-23",
+        "week_t_minus_1": "20250310-20250316",
+        "week_t": "20250317-20250323",
+        "week_t_plus_1": "20250324-20250330",
+        "corrected_tents_t_minus_1": 1160.5601318172,
+        "corrected_tents_t": 706.3645342861,
+        "corrected_tents_t_plus_1": 529.9956473078,
+        "percent_change_t_vs_t_minus_1": -39.1358952526,
+        "percent_change_t_plus_1_vs_t_minus_1": -54.3327714973
+      },
+      {
+        "block_id": 2373,
+        "first_action_date": "2024-10-17",
+        "week_t_minus_1": "20241007-20241013",
+        "week_t": "20241014-20241020",
+        "week_t_plus_1": "20241021-20241027",
+        "corrected_tents_t_minus_1": 193.4613105847,
+        "corrected_tents_t": 294.9796476764,
+        "corrected_tents_t_plus_1": 531.5904366485,
+        "percent_change_t_vs_t_minus_1": 52.4747489743,
+        "percent_change_t_plus_1_vs_t_minus_1": 174.7786805754
+      },
+      {
+        "block_id": 2375,
+        "first_action_date": "2025-03-25",
+        "week_t_minus_1": "20250317-20250323",
+        "week_t": "20250324-20250330",
+        "week_t_plus_1": "20250331-20250406",
+        "corrected_tents_t_minus_1": 412.9986799315,
+        "corrected_tents_t": 611.4479287223,
+        "corrected_tents_t_plus_1": 349.4813344465,
+        "percent_change_t_vs_t_minus_1": 48.0508191512,
+        "percent_change_t_plus_1_vs_t_minus_1": -15.3795516963
+      },
+      {
+        "block_id": 133,
+        "first_action_date": "2025-07-22",
+        "week_t_minus_1": "20250714-20250720",
+        "week_t": "20250721-20250727",
+        "week_t_plus_1": "20250728-20250803",
+        "corrected_tents_t_minus_1": 697.0113010844,
+        "corrected_tents_t": 25.1846534813,
+        "corrected_tents_t_plus_1": 84.6321108943,
+        "percent_change_t_vs_t_minus_1": -96.3867654022,
+        "percent_change_t_plus_1_vs_t_minus_1": -87.8578567144
+      },
+      {
+        "block_id": 578,
+        "first_action_date": "2025-07-18",
+        "week_t_minus_1": "20250707-20250713",
+        "week_t": "20250714-20250720",
+        "week_t_plus_1": "20250721-20250727",
+        "corrected_tents_t_minus_1": 195.9940930449,
+        "corrected_tents_t": 111.685738645,
+        "corrected_tents_t_plus_1": 31.8563821464,
+        "percent_change_t_vs_t_minus_1": -43.0157629192,
+        "percent_change_t_plus_1_vs_t_minus_1": -83.7462539552
+      },
+      {
+        "block_id": 909,
+        "first_action_date": "2025-06-20",
+        "week_t_minus_1": "20250609-20250615",
+        "week_t": "20250616-20250622",
+        "week_t_plus_1": "20250623-20250629",
+        "corrected_tents_t_minus_1": 203.490295206,
+        "corrected_tents_t": 69.2108603224,
+        "corrected_tents_t_plus_1": 3.1193567769,
+        "percent_change_t_vs_t_minus_1": -65.9881272213,
+        "percent_change_t_plus_1_vs_t_minus_1": -98.4670734426
+      },
+      {
+        "block_id": 2351,
+        "first_action_date": "2023-12-10",
+        "week_t_minus_1": "20231127-20231203",
+        "week_t": "20231204-20231210",
+        "week_t_plus_1": "20231211-20231217",
+        "corrected_tents_t_minus_1": 116.6467381418,
+        "corrected_tents_t": 65.1933082472,
+        "corrected_tents_t_plus_1": 2.6962594178,
+        "percent_change_t_vs_t_minus_1": -44.1104746812,
+        "percent_change_t_plus_1_vs_t_minus_1": -97.6885256624
+      },
+      {
+        "block_id": 2356,
+        "first_action_date": "2023-12-10",
+        "week_t_minus_1": "20231127-20231203",
+        "week_t": "20231204-20231210",
+        "week_t_plus_1": "20231211-20231217",
+        "corrected_tents_t_minus_1": 242.0720470767,
+        "corrected_tents_t": 69.824189797,
+        "corrected_tents_t_plus_1": 78.6285920726,
+        "percent_change_t_vs_t_minus_1": -71.1556164207,
+        "percent_change_t_plus_1_vs_t_minus_1": -67.5185164821
+      },
+      {
+        "block_id": 2360,
+        "first_action_date": "2025-06-05",
+        "week_t_minus_1": "20250526-20250601",
+        "week_t": "20250602-20250608",
+        "week_t_plus_1": "20250609-20250615",
+        "corrected_tents_t_minus_1": 266.7174051213,
+        "corrected_tents_t": 338.7943817862,
+        "corrected_tents_t_plus_1": 591.623865532,
+        "percent_change_t_vs_t_minus_1": 27.0237244668,
+        "percent_change_t_plus_1_vs_t_minus_1": 121.8167446789
+      }
+    ]
+  },
+  "airstrike_or_attack_on_civilians": {
+    "definition": "First filtered airstrike/air strike or attack-on-civilian(s) incident point within each block.",
+    "blocks_with_first_action_date": 352,
+    "summary": {
+      "t_action_week_vs_t_minus_1": {
+        "n_blocks": 22,
+        "mean_percent_change": 15.577640734122282,
+        "mean_percent_change_95_percent_confidence_interval": [
+          -7.817616390293358,
+          38.97289785853792
+        ],
+        "median_percent_change": 14.928334225209014,
+        "interquartile_range": [
+          -10.066768606774938,
+          29.02861437143369
+        ],
+        "blocks_with_tent_decline": 8,
+        "percent_blocks_with_tent_decline": 36.36363636363637
+      },
+      "t_plus_1_vs_t_minus_1": {
+        "n_blocks": 18,
+        "mean_percent_change": 14.01435982551658,
+        "mean_percent_change_95_percent_confidence_interval": [
+          -19.35551560762054,
+          47.384235258653696
+        ],
+        "median_percent_change": 6.334867022108949,
+        "interquartile_range": [
+          -21.85871397773729,
+          62.64211814014338
+        ],
+        "blocks_with_tent_decline": 8,
+        "percent_blocks_with_tent_decline": 44.44444444444444
+      }
+    },
+    "block_events": [
+      {
+        "block_id": 33,
+        "first_action_date": "2025-07-26",
+        "week_t_minus_1": "20250714-20250720",
+        "week_t": "20250721-20250727",
+        "week_t_plus_1": "20250728-20250803",
+        "corrected_tents_t_minus_1": 107.956498249,
+        "corrected_tents_t": 26.508450844,
+        "corrected_tents_t_plus_1": null,
+        "percent_change_t_vs_t_minus_1": -75.4452476007,
+        "percent_change_t_plus_1_vs_t_minus_1": null
+      },
+      {
+        "block_id": 89,
+        "first_action_date": "2025-04-27",
+        "week_t_minus_1": "20250414-20250420",
+        "week_t": "20250421-20250427",
+        "week_t_plus_1": "20250428-20250504",
+        "corrected_tents_t_minus_1": 12167.1665771207,
+        "corrected_tents_t": 14922.2941698308,
+        "corrected_tents_t_plus_1": 13693.1382300778,
+        "percent_change_t_vs_t_minus_1": 22.6439539169,
+        "percent_change_t_plus_1_vs_t_minus_1": 12.5417174433
+      },
+      {
+        "block_id": 90,
+        "first_action_date": "2024-07-16",
+        "week_t_minus_1": "20240708-20240714",
+        "week_t": "20240715-20240721",
+        "week_t_plus_1": "20240722-20240728",
+        "corrected_tents_t_minus_1": 4872.3918582874,
+        "corrected_tents_t": 5622.1474349907,
+        "corrected_tents_t_plus_1": 6243.892488607,
+        "percent_change_t_vs_t_minus_1": 15.3878341174,
+        "percent_change_t_plus_1_vs_t_minus_1": 28.1484057565
+      },
+      {
+        "block_id": 94,
+        "first_action_date": "2025-05-16",
+        "week_t_minus_1": "20250505-20250511",
+        "week_t": "20250512-20250518",
+        "week_t_plus_1": "20250519-20250525",
+        "corrected_tents_t_minus_1": 3316.117649702,
+        "corrected_tents_t": 2462.7349705285,
+        "corrected_tents_t_plus_1": null,
+        "percent_change_t_vs_t_minus_1": -25.7343909149,
+        "percent_change_t_plus_1_vs_t_minus_1": null
+      },
+      {
+        "block_id": 664,
+        "first_action_date": "2025-03-19",
+        "week_t_minus_1": "20250310-20250316",
+        "week_t": "20250317-20250323",
+        "week_t_plus_1": "20250324-20250330",
+        "corrected_tents_t_minus_1": 231.2775943799,
+        "corrected_tents_t": 302.5981298253,
+        "corrected_tents_t_plus_1": 184.0344263912,
+        "percent_change_t_vs_t_minus_1": 30.8376328613,
+        "percent_change_t_plus_1_vs_t_minus_1": -20.4270405507
+      },
+      {
+        "block_id": 703,
+        "first_action_date": "2025-05-28",
+        "week_t_minus_1": "20250519-20250525",
+        "week_t": "20250526-20250601",
+        "week_t_plus_1": "20250602-20250608",
+        "corrected_tents_t_minus_1": 106.7849576834,
+        "corrected_tents_t": 189.9399673501,
+        "corrected_tents_t_plus_1": 264.2002015255,
+        "percent_change_t_vs_t_minus_1": 77.8714638005,
+        "percent_change_t_plus_1_vs_t_minus_1": 147.4133129396
+      },
+      {
+        "block_id": 708,
+        "first_action_date": "2025-07-19",
+        "week_t_minus_1": "20250707-20250713",
+        "week_t": "20250714-20250720",
+        "week_t_plus_1": "20250721-20250727",
+        "corrected_tents_t_minus_1": 658.6629034886,
+        "corrected_tents_t": 677.3604314092,
+        "corrected_tents_t_plus_1": 1089.1436578685,
+        "percent_change_t_vs_t_minus_1": 2.8387097287,
+        "percent_change_t_plus_1_vs_t_minus_1": 65.3567632396
+      },
+      {
+        "block_id": 719,
+        "first_action_date": "2025-03-19",
+        "week_t_minus_1": "20250310-20250316",
+        "week_t": "20250317-20250323",
+        "week_t_plus_1": "20250324-20250330",
+        "corrected_tents_t_minus_1": 143.9801232037,
+        "corrected_tents_t": 241.0890633722,
+        "corrected_tents_t_plus_1": 247.1569635323,
+        "percent_change_t_vs_t_minus_1": 67.4460738105,
+        "percent_change_t_plus_1_vs_t_minus_1": 71.6604750939
+      },
+      {
+        "block_id": 721,
+        "first_action_date": "2025-04-03",
+        "week_t_minus_1": "20250324-20250330",
+        "week_t": "20250331-20250406",
+        "week_t_plus_1": "20250414-20250420",
+        "corrected_tents_t_minus_1": 179.9582254771,
+        "corrected_tents_t": 165.3324316363,
+        "corrected_tents_t_plus_1": null,
+        "percent_change_t_vs_t_minus_1": -8.1273272183,
+        "percent_change_t_plus_1_vs_t_minus_1": null
+      },
+      {
+        "block_id": 724,
+        "first_action_date": "2025-09-12",
+        "week_t_minus_1": "20250901-20250907",
+        "week_t": "20250908-20250914",
+        "week_t_plus_1": "20250915-20250921",
+        "corrected_tents_t_minus_1": 284.0137885823,
+        "corrected_tents_t": null,
+        "corrected_tents_t_plus_1": 127.2704667696,
+        "percent_change_t_vs_t_minus_1": null,
+        "percent_change_t_plus_1_vs_t_minus_1": -55.1886310151
+      },
+      {
+        "block_id": 725,
+        "first_action_date": "2025-09-12",
+        "week_t_minus_1": "20250901-20250907",
+        "week_t": "20250908-20250914",
+        "week_t_plus_1": "20250915-20250921",
+        "corrected_tents_t_minus_1": 129.1202555535,
+        "corrected_tents_t": null,
+        "corrected_tents_t_plus_1": 39.8647293129,
+        "percent_change_t_vs_t_minus_1": null,
+        "percent_change_t_plus_1_vs_t_minus_1": -69.1258903244
+      },
+      {
+        "block_id": 727,
+        "first_action_date": "2025-09-07",
+        "week_t_minus_1": "20250825-20250831",
+        "week_t": "20250901-20250907",
+        "week_t_plus_1": "20250908-20250914",
+        "corrected_tents_t_minus_1": 207.5324947611,
+        "corrected_tents_t": 183.4613576269,
+        "corrected_tents_t_plus_1": null,
+        "percent_change_t_vs_t_minus_1": -11.5987316405,
+        "percent_change_t_plus_1_vs_t_minus_1": null
+      },
+      {
+        "block_id": 730,
+        "first_action_date": "2025-03-22",
+        "week_t_minus_1": "20250310-20250316",
+        "week_t": "20250317-20250323",
+        "week_t_plus_1": "20250324-20250330",
+        "corrected_tents_t_minus_1": 107.0685237688,
+        "corrected_tents_t": 259.6307383847,
+        "corrected_tents_t_plus_1": 165.431100035,
+        "percent_change_t_vs_t_minus_1": 142.4902569361,
+        "percent_change_t_plus_1_vs_t_minus_1": 54.5095553873
+      },
+      {
+        "block_id": 785,
+        "first_action_date": "2025-09-13",
+        "week_t_minus_1": "20250901-20250907",
+        "week_t": "20250908-20250914",
+        "week_t_plus_1": "20250915-20250921",
+        "corrected_tents_t_minus_1": 426.0885877026,
+        "corrected_tents_t": null,
+        "corrected_tents_t_plus_1": 330.9177029963,
+        "percent_change_t_vs_t_minus_1": null,
+        "percent_change_t_plus_1_vs_t_minus_1": -22.3359384534
+      },
+      {
+        "block_id": 787,
+        "first_action_date": "2025-07-09",
+        "week_t_minus_1": "20250630-20250706",
+        "week_t": "20250707-20250713",
+        "week_t_plus_1": "20250714-20250720",
+        "corrected_tents_t_minus_1": 2545.4262319143,
+        "corrected_tents_t": 3146.1865033388,
+        "corrected_tents_t_plus_1": 2535.9293054676,
+        "percent_change_t_vs_t_minus_1": 23.6015589017,
+        "percent_change_t_plus_1_vs_t_minus_1": -0.373097689
+      },
+      {
+        "block_id": 976,
+        "first_action_date": "2025-08-13",
+        "week_t_minus_1": "20250804-20250810",
+        "week_t": "20250811-20250817",
+        "week_t_plus_1": "20250818-20250824",
+        "corrected_tents_t_minus_1": 173.1589804289,
+        "corrected_tents_t": 173.1312290499,
+        "corrected_tents_t_plus_1": 286.3235211013,
+        "percent_change_t_vs_t_minus_1": -0.0160265318,
+        "percent_change_t_plus_1_vs_t_minus_1": 65.3529723911
+      },
+      {
+        "block_id": 1738,
+        "first_action_date": "2025-03-19",
+        "week_t_minus_1": "20250310-20250316",
+        "week_t": "20250317-20250323",
+        "week_t_plus_1": "20250324-20250330",
+        "corrected_tents_t_minus_1": 132.7271763742,
+        "corrected_tents_t": 161.9291809271,
+        "corrected_tents_t_plus_1": 108.4226405648,
+        "percent_change_t_vs_t_minus_1": 22.0015262516,
+        "percent_change_t_plus_1_vs_t_minus_1": -18.311649862
+      },
+      {
+        "block_id": 1784,
+        "first_action_date": "2025-05-13",
+        "week_t_minus_1": "20250505-20250511",
+        "week_t": "20250512-20250518",
+        "week_t_plus_1": "20250519-20250525",
+        "corrected_tents_t_minus_1": 569.050530363,
+        "corrected_tents_t": 572.7204360234,
+        "corrected_tents_t_plus_1": 172.8271380754,
+        "percent_change_t_vs_t_minus_1": 0.6449173605,
+        "percent_change_t_plus_1_vs_t_minus_1": -69.6288591515
+      },
+      {
+        "block_id": 1818,
+        "first_action_date": "2025-08-27",
+        "week_t_minus_1": "20250818-20250824",
+        "week_t": "20250825-20250831",
+        "week_t_plus_1": "20250901-20250907",
+        "corrected_tents_t_minus_1": 174.4099812651,
+        "corrected_tents_t": 17.491374917,
+        "corrected_tents_t_plus_1": 2.1357294706,
+        "percent_change_t_vs_t_minus_1": -89.9711158787,
+        "percent_change_t_plus_1_vs_t_minus_1": -98.7754545611
+      },
+      {
+        "block_id": 2334,
+        "first_action_date": "2025-04-06",
+        "week_t_minus_1": "20250324-20250330",
+        "week_t": "20250331-20250406",
+        "week_t_plus_1": "20250414-20250420",
+        "corrected_tents_t_minus_1": 469.1334344498,
+        "corrected_tents_t": 540.0806586341,
+        "corrected_tents_t_plus_1": null,
+        "percent_change_t_vs_t_minus_1": 15.1230372799,
+        "percent_change_t_plus_1_vs_t_minus_1": null
+      },
+      {
+        "block_id": 2336,
+        "first_action_date": "2025-05-31",
+        "week_t_minus_1": "20250519-20250525",
+        "week_t": "20250526-20250601",
+        "week_t_plus_1": "20250602-20250608",
+        "corrected_tents_t_minus_1": 443.9381583991,
+        "corrected_tents_t": 509.3463692828,
+        "corrected_tents_t_plus_1": null,
+        "percent_change_t_vs_t_minus_1": 14.7336311705,
+        "percent_change_t_plus_1_vs_t_minus_1": null
+      },
+      {
+        "block_id": 2338,
+        "first_action_date": "2025-03-29",
+        "week_t_minus_1": "20250317-20250323",
+        "week_t": "20250324-20250330",
+        "week_t_plus_1": "20250331-20250406",
+        "corrected_tents_t_minus_1": 354.409816054,
+        "corrected_tents_t": 286.8885390525,
+        "corrected_tents_t_plus_1": 354.8635194538,
+        "percent_change_t_vs_t_minus_1": -19.0517513745,
+        "percent_change_t_plus_1_vs_t_minus_1": 0.1280166009
+      },
+      {
+        "block_id": 2342,
+        "first_action_date": "2025-09-23",
+        "week_t_minus_1": "20250915-20250921",
+        "week_t": "20250922-20250928",
+        "week_t_plus_1": "20250929-20251005",
+        "corrected_tents_t_minus_1": 399.9692925034,
+        "corrected_tents_t": 866.4091738805,
+        "corrected_tents_t_plus_1": 902.8606721389,
+        "percent_change_t_vs_t_minus_1": 116.6189230322,
+        "percent_change_t_plus_1_vs_t_minus_1": 125.7324972345
+      },
+      {
+        "block_id": 2345,
+        "first_action_date": "2025-03-18",
+        "week_t_minus_1": "20250310-20250316",
+        "week_t": "20250317-20250323",
+        "week_t_plus_1": "20250324-20250330",
+        "corrected_tents_t_minus_1": 220.975559232,
+        "corrected_tents_t": 289.757333735,
+        "corrected_tents_t_plus_1": 299.6015853431,
+        "percent_change_t_vs_t_minus_1": 31.126417212,
+        "percent_change_t_plus_1_vs_t_minus_1": 35.5813223799
+      },
+      {
+        "block_id": 2371,
+        "first_action_date": "2025-07-14",
+        "week_t_minus_1": "20250707-20250713",
+        "week_t": "20250714-20250720",
+        "week_t_plus_1": "20250721-20250727",
+        "corrected_tents_t_minus_1": 216.5783965024,
+        "corrected_tents_t": 193.3758134542,
+        "corrected_tents_t_plus_1": null,
+        "percent_change_t_vs_t_minus_1": -10.7132490696,
+        "percent_change_t_plus_1_vs_t_minus_1": null
+      }
+    ]
+  }
+}

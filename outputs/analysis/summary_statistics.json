@@ -1,0 +1,436 @@
+{
+  "metric": "largest_sustained_week_to_week_change_municipal",
+  "source": "/Users/jessicarapson/Desktop/displacement-analysis/outputs/tent_counts/municipality_counts_by_week.csv",
+  "excluded_weeks": [
+    "20260518-20260524",
+    "20260525-20260531",
+    "20260601-20260607"
+  ],
+  "count_column": "corrected_count_mean",
+  "sustained_rule": {
+    "weeks_required_after_change": 3,
+    "weeks_required_before_from_week": 3,
+    "bounce_back_tolerance_fraction": 0.3,
+    "definition": "No bounce-back beyond a \u00b130% tolerance window around the pre-change level in the next 3 observed weeks, and pre-change level itself must be sustained for prior 3 observed weeks under the same tolerance rule"
+  },
+  "largest_change": {
+    "municipality": "Khan Yunis",
+    "from_week": "20240513-20240519",
+    "to_week": "20240520-20240526",
+    "previous_count": 36983.78399712344,
+    "previous_count_95_cri": [
+      30152.10847536249,
+      45726.44820184105
+    ],
+    "current_count": 104504.0494772838,
+    "current_count_95_cri": [
+      85649.31581743566,
+      126525.8462557013
+    ],
+    "change": 67520.26548016036,
+    "change_95_cri_conservative": [
+      39922.867615594616,
+      96373.73778033881
+    ],
+    "change_95_cri_independence_normal_mc": [
+      45703.743935405844,
+      89506.78820290069
+    ],
+    "abs_change": 67520.26548016036,
+    "sustained_weeks_checked": 3,
+    "history_window": {
+      "start_week": "20240401-20240407",
+      "end_week": "20240506-20240512"
+    },
+    "future_window": {
+      "start_week": "20240527-20240602",
+      "end_week": "20240610-20240616"
+    },
+    "change_ci_method_note": "Conservative interval = [current_p2.5 - previous_p97.5, current_p97.5 - previous_p2.5]. MC interval assumes independent normal marginals reconstructed from each week's 95% CrI."
+  },
+  "directional_trends_key_events": [
+    {
+      "event": "North Gaza evacuation order",
+      "event_date": "2023-10-13",
+      "pre_weeks": [
+        "2023-10-02",
+        "2023-10-09"
+      ],
+      "post_weeks": [
+        "2023-10-16",
+        "2023-10-23",
+        "2023-10-30",
+        "2023-11-06",
+        "2023-11-13",
+        "2023-11-20",
+        "2023-11-27",
+        "2023-12-04"
+      ],
+      "window_truncation": {
+        "pre_shorter_than_3_weeks": true,
+        "post_shorter_than_3_weeks": false
+      },
+      "north_total_pre": {
+        "mean": 726.4421928478387,
+        "p2_5": 514.0531212879639,
+        "p97_5": 938.046192851131
+      },
+      "north_total_post": {
+        "mean": 2465.149554909707,
+        "p2_5": 1939.289926125408,
+        "p97_5": 2985.8497456512728
+      },
+      "south_total_pre": {
+        "mean": 3747.8347969050437,
+        "p2_5": 3174.826987652175,
+        "p97_5": 4321.583832662481
+      },
+      "south_total_post": {
+        "mean": 12703.53102948765,
+        "p2_5": 11285.023349925637,
+        "p97_5": 14104.221209923797
+      },
+      "regional_magnitude_shift": {
+        "region": "south",
+        "direction": "increase",
+        "percent_change_mean": 240.70374130361583,
+        "mag_change_mean": 8951.066781561998,
+        "mag_change_p2_5": 7418.995949503616,
+        "mag_change_p97_5": 10459.741660299143,
+        "abs_mag_change_mean": 8951.066781561998,
+        "abs_mag_change_p2_5": 7418.995949503616,
+        "abs_mag_change_p97_5": 10459.741660299143,
+        "percent_change_p2_5": 181.7421422715686,
+        "percent_change_p97_5": 312.5249521316645
+      },
+      "municipality_greatest_change": {
+        "municipality": "Khan Yunis",
+        "pre_count": 1460.262609471631,
+        "post_count": 6014.361027713679,
+        "change": 4554.098418242047,
+        "change_95_cri_conservative": [
+          2947.0108380048046,
+          6223.791809399184
+        ],
+        "percent_change": 311.86845357150264
+      }
+    },
+    {
+      "event": "Rafah evacuation order",
+      "event_date": "2024-05-06",
+      "pre_weeks": [
+        "2024-04-15",
+        "2024-04-22",
+        "2024-04-29"
+      ],
+      "post_weeks": [
+        "2024-05-06",
+        "2024-05-13",
+        "2024-05-20"
+      ],
+      "window_truncation": {
+        "pre_shorter_than_3_weeks": false,
+        "post_shorter_than_3_weeks": false
+      },
+      "north_total_pre": {
+        "mean": 5998.569015745903,
+        "p2_5": 4528.6361067215175,
+        "p97_5": 7448.9101794543885
+      },
+      "north_total_post": {
+        "mean": 2276.8447075759905,
+        "p2_5": 1758.1411565700516,
+        "p97_5": 2796.7451829478623
+      },
+      "south_total_pre": {
+        "mean": 62594.54002755537,
+        "p2_5": 51798.92207501814,
+        "p97_5": 73364.34597082167
+      },
+      "south_total_post": {
+        "mean": 98983.51714731648,
+        "p2_5": 85822.61794123444,
+        "p97_5": 112232.6794946109
+      },
+      "regional_magnitude_shift": {
+        "region": "south",
+        "direction": "increase",
+        "percent_change_mean": 59.401878419007055,
+        "mag_change_mean": 36417.075802623905,
+        "mag_change_p2_5": 19241.675186311346,
+        "mag_change_p97_5": 53545.169331106816,
+        "abs_mag_change_mean": 36417.075802623905,
+        "abs_mag_change_p2_5": 19241.675186311346,
+        "abs_mag_change_p97_5": 53545.169331106816,
+        "percent_change_p2_5": 27.43903743173847,
+        "percent_change_p97_5": 98.59300132107471
+      },
+      "municipality_greatest_change": {
+        "municipality": "Khan Yunis",
+        "pre_count": 22905.822223806357,
+        "post_count": 59805.062638758136,
+        "change": 36899.24041495178,
+        "change_95_cri_conservative": [
+          20701.280868489837,
+          54074.45346948603
+        ],
+        "percent_change": 161.0910975140716
+      }
+    },
+    {
+      "event": "End of ceasefire",
+      "event_date": "2025-03-18",
+      "pre_weeks": [
+        "2025-02-24",
+        "2025-03-10",
+        "2025-03-17"
+      ],
+      "post_weeks": [
+        "2025-03-24",
+        "2025-03-31",
+        "2025-04-14"
+      ],
+      "window_truncation": {
+        "pre_shorter_than_3_weeks": false,
+        "post_shorter_than_3_weeks": false
+      },
+      "north_total_pre": {
+        "mean": 39023.24683801936,
+        "p2_5": 30611.466506572324,
+        "p97_5": 47329.56208807314
+      },
+      "north_total_post": {
+        "mean": 43496.468124845196,
+        "p2_5": 33627.55349575359,
+        "p97_5": 53421.357385043855
+      },
+      "south_total_pre": {
+        "mean": 96918.54649687209,
+        "p2_5": 75595.61719144255,
+        "p97_5": 118206.34989136942
+      },
+      "south_total_post": {
+        "mean": 134886.87727484445,
+        "p2_5": 112089.06859551414,
+        "p97_5": 157868.4532997732
+      },
+      "regional_magnitude_shift": {
+        "region": "south",
+        "direction": "increase",
+        "percent_change_mean": 41.00029247097211,
+        "mag_change_mean": 37958.76851785864,
+        "mag_change_p2_5": 6560.571221648452,
+        "mag_change_p97_5": 69237.53331908543,
+        "abs_mag_change_mean": 38051.203857058856,
+        "abs_mag_change_p2_5": 7218.022717723055,
+        "abs_mag_change_p97_5": 69237.53331908543,
+        "percent_change_p2_5": 5.859397062590833,
+        "percent_change_p97_5": 86.89671382384871
+      },
+      "municipality_greatest_change": {
+        "municipality": "Khan Yunis",
+        "pre_count": 75620.6663364689,
+        "post_count": 103212.72387445136,
+        "change": 27592.05753798246,
+        "change_95_cri_conservative": [
+          -16146.308661098054,
+          70813.19019773544
+        ],
+        "percent_change": 36.48745624008855
+      }
+    },
+    {
+      "event": "Gaza City evacuation order",
+      "event_date": "2025-09-09",
+      "pre_weeks": [
+        "2025-08-25",
+        "2025-09-01",
+        "2025-09-08"
+      ],
+      "post_weeks": [
+        "2025-09-15",
+        "2025-09-22",
+        "2025-09-29"
+      ],
+      "window_truncation": {
+        "pre_shorter_than_3_weeks": false,
+        "post_shorter_than_3_weeks": false
+      },
+      "north_total_pre": {
+        "mean": 36974.26322215126,
+        "p2_5": 27056.84015254772,
+        "p97_5": 46879.173571925916
+      },
+      "north_total_post": {
+        "mean": 20870.444738902643,
+        "p2_5": 15336.967761405822,
+        "p97_5": 26462.47883617171
+      },
+      "south_total_pre": {
+        "mean": 155087.29980123986,
+        "p2_5": 137021.57371247435,
+        "p97_5": 172938.94446148394
+      },
+      "south_total_post": {
+        "mean": 219479.10850715783,
+        "p2_5": 191137.490035685,
+        "p97_5": 247136.93884687513
+      },
+      "regional_magnitude_shift": {
+        "region": "south",
+        "direction": "increase",
+        "percent_change_mean": 42.16371879999081,
+        "mag_change_mean": 64595.782048359164,
+        "mag_change_p2_5": 31087.804241925616,
+        "mag_change_p97_5": 97760.9221069554,
+        "abs_mag_change_mean": 64595.91868802434,
+        "abs_mag_change_p2_5": 31087.804241925616,
+        "abs_mag_change_p97_5": 97760.9221069554,
+        "percent_change_p2_5": 18.774149677000036,
+        "percent_change_p97_5": 67.94306738577104
+      },
+      "municipality_greatest_change": {
+        "municipality": "Deir al Balah",
+        "pre_count": 17364.362135268744,
+        "post_count": 41308.70123995502,
+        "change": 23944.339104686278,
+        "change_95_cri_conservative": [
+          9402.240068623276,
+          40248.4573047695
+        ],
+        "percent_change": 137.8935714318751
+      }
+    }
+  ],
+  "north_gaza_ceasefire_counts": {
+    "after_ceasefire_date": "2025-01-19",
+    "end_ceasefire_date": "2025-03-18",
+    "north_municipalities": [
+      "Beit Hanoun",
+      "Beit Lahiya",
+      "Gaza",
+      "Jabalya"
+    ],
+    "start_snapshot": {
+      "sum": {
+        "mean": 3105.0563842136967,
+        "p2_5": 2393.2748991969916,
+        "p97_5": 3832.2725828452735
+      },
+      "municipality_weeks_used": [
+        {
+          "municipality": "Beit Hanoun",
+          "week_key": "20241202-20241208"
+        },
+        {
+          "municipality": "Beit Lahiya",
+          "week_key": "20250120-20250126"
+        },
+        {
+          "municipality": "Gaza",
+          "week_key": "20250120-20250126"
+        },
+        {
+          "municipality": "Jabalya",
+          "week_key": "20250120-20250126"
+        }
+      ]
+    },
+    "end_snapshot": {
+      "sum": {
+        "mean": 49575.52585486251,
+        "p2_5": 39290.61743295827,
+        "p97_5": 59786.611268158726
+      },
+      "municipality_weeks_used": [
+        {
+          "municipality": "Beit Hanoun",
+          "week_key": "20250505-20250511"
+        },
+        {
+          "municipality": "Beit Lahiya",
+          "week_key": "20250317-20250323"
+        },
+        {
+          "municipality": "Gaza",
+          "week_key": "20250317-20250323"
+        },
+        {
+          "municipality": "Jabalya",
+          "week_key": "20250317-20250323"
+        }
+      ]
+    },
+    "percent_increase": {
+      "mean": 1520.5502095280476,
+      "p2_5": 1066.4952775686195,
+      "p97_5": 2122.9732701585094
+    }
+  },
+  "north_gaza_percent_within_50m_destroyed_pre_2025_01_19": {
+    "weeks": [
+      {
+        "week_key": "20241202-20241208",
+        "points": 1406,
+        "near": 263
+      },
+      {
+        "week_key": "20250505-20250511",
+        "points": 65861,
+        "near": 27682
+      }
+    ],
+    "total_points": 67267,
+    "near_destroyed_50m_points": 27945,
+    "percent_near_destroyed_50m": 41.54340166797984
+  },
+  "rafah_percent_within_50m_destroyed_pre_2025_01_19_ceasefire_period": {
+    "period_start": "2025-01-19",
+    "period_end": "2025-03-18",
+    "weeks": [
+      {
+        "week_key": "20250113-20250119",
+        "points": 6212,
+        "near": 87
+      },
+      {
+        "week_key": "20250120-20250126",
+        "points": 14104,
+        "near": 402
+      },
+      {
+        "week_key": "20250127-20250202",
+        "points": 10153,
+        "near": 200
+      },
+      {
+        "week_key": "20250203-20250209",
+        "points": 0,
+        "near": 0
+      },
+      {
+        "week_key": "20250210-20250216",
+        "points": 4451,
+        "near": 10
+      },
+      {
+        "week_key": "20250224-20250302",
+        "points": 5279,
+        "near": 101
+      },
+      {
+        "week_key": "20250310-20250316",
+        "points": 4816,
+        "near": 23
+      },
+      {
+        "week_key": "20250317-20250323",
+        "points": 4819,
+        "near": 55
+      }
+    ],
+    "total_points": 49834,
+    "near_destroyed_50m_points": 878,
+    "percent_near_destroyed_50m": 1.7618493398081632
+  }
+}

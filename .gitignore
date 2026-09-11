@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.env
+venv/
+.venv/
+data/tent_predictions/*.gpkg
+outputs/*.geojson
+*.tif
+data/tent_predictions/**/*.gpkg
+src/validation/*.h5
+src/calibration/artifacts/*.nc
+
+# Large/generated files
+.cache/
+src/calibration/artifacts/
+src/validation/tile_validation_samples.h5
+data/tent_predictions/merged/
