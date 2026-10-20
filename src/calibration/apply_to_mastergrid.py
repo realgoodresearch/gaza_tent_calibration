@@ -56,6 +56,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--land-use-cache", type=Path, default=ROOT / "outputs" / "tent_counts" / "mastergrid_land_use_labels.csv")
     parser.add_argument("--postprocess-eps-m", type=float, default=40.0)
     parser.add_argument("--postprocess-min-samples", type=int, default=3)
+    parser.add_argument("--hours-from-sunrise-cap", type=float, default=None, help="Optional upper cap for the model time-since-sunrise feature.")
     parser.add_argument("--overwrite", action="store_true")
     return parser.parse_args()
 
@@ -171,8 +172,9 @@ def main() -> None:
     args = parse_args()
     args.points = args.points or DATA / "tent_predictions" / "merged" / f"{args.week_key}.gpkg"
     args.coverage = args.coverage or DATA / "tent_predictions" / "coverage" / f"{args.week_key}_coverage.geojson"
-    output = args.output or ROOT / "outputs" / "tent_counts" / "mastergrid" / f"{args.week_key}_mastergrid_predictions.tif"
-    postprocessed_output = args.postprocessed_points_output or ROOT / "outputs" / "tent_counts" / "mastergrid" / f"{args.week_key}_postprocessed_points.gpkg"
+    output_dir = ROOT / "outputs" / "tent_counts" / "mastergrid" / args.week_key
+    output = args.output or output_dir / f"{args.week_key}_mastergrid_predictions.tif"
+    postprocessed_output = args.postprocessed_points_output or output_dir / f"{args.week_key}_postprocessed_points.gpkg"
     if output.exists() and not args.overwrite:
         raise FileExistsError(f"Output exists: {output}; pass --overwrite to replace it")
     if postprocessed_output.exists() and not args.overwrite:
@@ -206,6 +208,10 @@ def main() -> None:
         if column in grid.columns and column in cell_data.columns:
             default = pd.to_numeric(cell_data[column], errors="coerce").median()
             grid[column] = pd.to_numeric(grid[column], errors="coerce").fillna(default)
+    if args.hours_from_sunrise_cap is not None:
+        if args.hours_from_sunrise_cap < 0:
+            raise ValueError("--hours-from-sunrise-cap must be non-negative")
+        grid["hours_from_sunrise"] = grid["hours_from_sunrise"].clip(upper=args.hours_from_sunrise_cap)
     grid = _compute_week_context_features(grid, _week_date(args.week_key), args.spatial_context)
     municipality_names = sorted(_read_to_target(args.municipalities)["NAME"].dropna().astype(str).unique())
     active = grid[grid.prediction_available].copy()
