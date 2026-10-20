@@ -90,6 +90,23 @@ The principal calibration outputs are:
 
 See `src/calibration/README.md` for model-selection and artifact details.
 
+## Mastergrid application
+
+Apply the fitted posterior to a supplied EPSG:32636 mastergrid without refitting:
+
+```bash
+python src/calibration/apply_to_mastergrid.py --week-key 20260803-20260809
+```
+
+The command reads the matching point GeoPackage and coverage GeoJSON from
+`data/tent_predictions/`, preserves the mastergrid transform and valid-data mask,
+and writes an eight-band GeoTIFF plus a GeoPackage of postprocessed model-input points
+to `outputs/tent_counts/mastergrid/`. Its bands are valid-mastergrid mask, approximately
+10-m coverage fraction, center-based prediction availability, source TentNetFA points,
+postprocessed model-input points, posterior mean adjusted count, and 2.5%/97.5% credible
+bounds for the expected count. The first run builds a
+mastergrid-specific land-use cache. Use `--help` for explicit path overrides.
+
 ## Analysis scripts
 
 Scripts are designed to run from the repository root. Important outputs include:

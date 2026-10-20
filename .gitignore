@@ -17,5 +17,7 @@ mastergrid/*
 # Large/generated files
 .cache/
 src/calibration/artifacts/
+outputs/tent_counts/mastergrid/
+outputs/tent_counts/mastergrid_land_use_labels.csv
 src/validation/tile_validation_samples.h5
 data/tent_predictions/merged/
