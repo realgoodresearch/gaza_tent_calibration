@@ -11,6 +11,8 @@ outputs/*.geojson
 data/tent_predictions/**/*.gpkg
 src/validation/*.h5
 src/calibration/artifacts/*.nc
+mastergrid/*
+*.egg-info
 
 # Large/generated files
 .cache/
