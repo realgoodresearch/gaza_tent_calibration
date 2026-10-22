@@ -57,6 +57,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--postprocess-eps-m", type=float, default=40.0)
     parser.add_argument("--postprocess-min-samples", type=int, default=3)
     parser.add_argument("--hours-from-sunrise-cap", type=float, default=None, help="Optional upper cap for the model time-since-sunrise feature.")
+    parser.add_argument("--hours-from-sunrise-offset", type=float, default=0.0, help="Offset applied only to the model time-since-sunrise feature.")
     parser.add_argument("--overwrite", action="store_true")
     return parser.parse_args()
 
@@ -208,6 +209,8 @@ def main() -> None:
         if column in grid.columns and column in cell_data.columns:
             default = pd.to_numeric(cell_data[column], errors="coerce").median()
             grid[column] = pd.to_numeric(grid[column], errors="coerce").fillna(default)
+    if args.hours_from_sunrise_offset:
+        grid["hours_from_sunrise"] = grid["hours_from_sunrise"] + args.hours_from_sunrise_offset
     if args.hours_from_sunrise_cap is not None:
         if args.hours_from_sunrise_cap < 0:
             raise ValueError("--hours-from-sunrise-cap must be non-negative")
@@ -247,7 +250,7 @@ def main() -> None:
             bands[6][row, col] = cell.adjusted_count_p2_5
             bands[7][row, col] = cell.adjusted_count_p97_5
     _write_raster(output, metadata, bands)
-    summary = {"week_key": args.week_key, "mastergrid_cells": int(len(grid)), "prediction_cells": int(active.shape[0]), "coverage_area_km2": float((grid.coverage_fraction * grid.cell_area_m2).sum() / 1e6), "source_points": int(grid.source_points.sum()), "model_input_points": int(grid.model_input_points.sum()), "postprocessing": postprocess.__dict__, "output": str(output), "postprocessed_points": str(postprocessed_output)}
+    summary = {"week_key": args.week_key, "mastergrid_cells": int(len(grid)), "prediction_cells": int(active.shape[0]), "coverage_area_km2": float((grid.coverage_fraction * grid.cell_area_m2).sum() / 1e6), "source_points": int(grid.source_points.sum()), "model_input_points": int(grid.model_input_points.sum()), "postprocessing": postprocess.__dict__, "output": str(output), "postprocessed_points": str(postprocessed_output), "hours_from_sunrise_offset": args.hours_from_sunrise_offset, "hours_from_sunrise_cap": args.hours_from_sunrise_cap}
     summary_path = output.with_suffix(".json")
     summary_path.write_text(json.dumps(summary, indent=2))
     print(json.dumps(summary, indent=2))
